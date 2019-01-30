@@ -1,7 +1,7 @@
 # Verve-Ad-SDK-iOS
 
 ## Integrating the SDK
-Add the provided framework file to your application by adding it as an Embedded Binary to your target. You can do this by pressing the "+" button under the "Embedded Binaries" section under the "General" tab of your application's target or by dragging and dropping the framework file into this section. If dragging and dropping be sure to move the framework file into the same file as your Xcode project. Be sure to check "Copy Items If Needed" when prompted.
+Add the provided framework file to your application by adding it as an Embedded Binary to your target. You can do this by pressing the "+" button under the "Embedded Binaries" section under the "General" tab of your application's target or by dragging and dropping the framework file into this section. If dragging and dropping be sure to move the framework file into the same file as your Xcode project. Check "Copy Items If Needed" when prompted.
 
 ## Interstitial Ads
 An Interstitial Ad must be loaded and shown on a UIViewController. This VC should also conform to the VRVInterstitialAdDelegate protocol.
@@ -19,10 +19,16 @@ to set the VC that will show the ad.
 ```
 
 ### Loading and Presenting an Interstitial Ad
-To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. Once a loaded ad is ready to be presented the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called. You can now safely call `+ (void)loadInterstitialAdForZone:(NSString *)zone;`, passing in the relevant zone, to present the ad.
+To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. Once a loaded ad is ready to be presented the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called. After this delegate call you can safely call `+ (void)loadInterstitialAdForZone:(NSString *)zone;`, passing in the relevant zone, to present the ad.
 
 Sample Code
 ```objc
+#import "ViewController.h"
+#import <verveSDK/VRVInterstitialAd.h>
+
+@interface ViewController () <VRVInterstitialAdDelegate>
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -41,7 +47,8 @@ Sample Code
 ```
 
 ### Other Delegate Calls
-If there is a failure loading or presenting the ad `- (void)onInterstitialAdFailedForZone:(NSString *)zone;` will be called. When the ad closes `- (void)onInterstitialAdClosedForZone:(NSString *)zone;` will be called.
+If there is a failure loading or presenting the ad `- (void)onInterstitialAdFailedForZone:(NSString *)zone;` will be called. 
+When the ad closes `- (void)onInterstitialAdClosedForZone:(NSString *)zone;` will be called.
 
 ## Rewarded Ads
 Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<verveSDK/VRVRewardedAd.h>`. If using both Interstitial and Rewarded ads keep in mind that only one delegate can be active at a time between these two types of full screen ads. Calling `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate;` will remove the Interstitial ad delegate and vice versa.
@@ -52,7 +59,14 @@ The only significant way that Rewarded Ads differ from Interstitial ads in their
 >To test rewarded ads use the zone "reward".
 
 ## Banner Ads
-To create a banner ad instantiate a VRVBannerAdView object using `- (instancetype)initWithDelegate:(id<VRVBannerAdDelegate>)delegate bannerSize:(VRVBannerAdSize)adSize andRootVC:(UIViewController *)rootVC;`. This view will automatically be sized to fit the width of the screen in portrait mode according to the following ratios for different VRVBannerAdSize's:
+To create a banner ad instantiate a VRVBannerAdView object using 
+```objc
+- (instancetype)initWithDelegate:(id<VRVBannerAdDelegate>)delegate 
+                      bannerSize:(VRVBannerAdSize)adSize 
+                       andRootVC:(UIViewController *)rootVC;
+``` 
+
+This view will automatically be sized to fit the width of the screen in portrait mode according to the following ratios for different VRVBannerAdSize's:
 
 | Size          | Constant           | Description          |
 | ------------- |:------------------:| --------------------:|
@@ -75,7 +89,7 @@ A delegate must be attached to a banner ad which conforms to the VRVBannerAdDele
 
 `- (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;` will be called if the ad will close in the banner ad.
 
-Additionally, a reference to the UIViewController that will hold the banner ad must be passed to it. The delegate and rootVC can be the same object.
+Additionally, a reference to the UIViewController (rootVC) that will hold the banner ad must be passed to it. The delegate and rootVC can be the same object.
 
 ### Scroll View Reference
 Some ads will change behavior according to the scrolling of a view. To use this feature you must call the function `- (void)informBannerAdOfScrollViewEvent:(UIScrollView *)scrollView;` on the banner view object when this scroll view scrolls. This is generally done within the function `- (void)scrollViewDidScroll:(UIScrollView *)scrollView`, which is a delegate call for `UIScrollViewDelegate`.
@@ -84,10 +98,13 @@ Some ads will change behavior according to the scrolling of a view. To use this 
 
 Sample Code:
 ```objc
+#import "ViewController.h"
+#import <verveSDK/VRVBannerAdView.h>
+
 @interface ViewController () <VRVBannerAdDelegate, UIScrollViewDelegate>
 
-@property (nonatomic) VRVBannerAdView *bannerView;
-@property (weak, nonatomic) IBOutlet UIScroll *scrollView;
+@property VRVBannerAdView *bannerView;
+@property UIScrollView *scrollView;
 
 @end
 
@@ -96,14 +113,25 @@ Sample Code:
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.bannerView = [[VRVBannerAdView alloc] initWithDelegate:self bannerSize:VRVBannerSizeBanner andRootVC:self];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:self.scrollView];
+    
+    self.bannerView = [[VRVBannerAdView alloc] initWithDelegate:self 
+                                                     bannerSize:VRVBannerSizeBanner 
+                                                      andRootVC:self];
     [self.view addSubview:self.bannerView];
     [self.bannerView loadAdForZone:@"banner"];
 }
 
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone {
     if ([zone isEqualToString:@"banner"] && [bannerAd isEqual:self.bannerView]) {
-        NSLayoutConstraint *bottomBanner = [NSLayoutConstraint constraintWithItem:bannerAd attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view.layoutMarginsGuide attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+        NSLayoutConstraint *bottomBanner = [NSLayoutConstraint constraintWithItem:bannerAd 
+                                                                        attribute:NSLayoutAttributeBottom 
+                                                                        relatedBy:NSLayoutRelationEqual 
+                                                                           toItem:self.view.layoutMarginsGuide 
+                                                                        attribute:NSLayoutAttributeBottom 
+                                                                       multiplier:1 
+                                                                         constant:0];
         [self.view addConstraint:bottomBanner];
     }
 }
