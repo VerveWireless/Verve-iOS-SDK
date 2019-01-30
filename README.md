@@ -141,4 +141,6 @@ Sample Code:
         [self.bannerView informBannerAdOfScrollViewEvent:scrollView];
     }
 }
+
+@end
 ```
