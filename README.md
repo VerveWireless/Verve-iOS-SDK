@@ -36,7 +36,7 @@ Sample Code
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [VRVInterstitialAd setInterstitialAdDelegate:self];
+    [VRVInterstitialAd setInterstitialAdDelegate:self appID:@"6cFM0mTUUh"];
     [VRVInterstitialAd loadInterstitialAdForZone:@"vast2"];
 }
 
@@ -121,6 +121,7 @@ Sample Code:
     [self.view addSubview:self.scrollView];
     
     self.bannerView = [[VRVBannerAdView alloc] initWithDelegate:self 
+                                                          appID:@"6cFM0mTUUh"
                                                      bannerSize:VRVBannerSizeBanner 
                                                       andRootVC:self];
     [self.view addSubview:self.bannerView];
