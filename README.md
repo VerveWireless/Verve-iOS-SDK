@@ -6,6 +6,9 @@ Add the provided framework file to your application by adding it as an Embedded 
 ## App ID
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled "appID".
 
+## App Transport Security
+The Ad SDK will need to communicate with HTTP endpoints to function. To allow this you will have to add a value to the `info.plist` file associated with your application's target. To do this, click on your application's project in Xcode, then select the app's target. Click the `info` tab and add a new key to the `Custom iOS Target Properties` called `App Transport Security Settings`. This should create a dictionary, to which you should add the key `Allow Arbitrary Loads` and set the value for that key to `YES`.
+
 ## Interstitial Ads
 An Interstitial Ad must be loaded and shown on a UIViewController. This VC should also conform to the VRVInterstitialAdDelegate protocol.
 
