@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, VRVBannerAdSize) {
     VRVBannerSizeBanner,
     VRVBannerSizeTabletBanner,
-    VRVBannerSizeMedRectangle
+    VRVBannerSizeMedRectangle,
+    VRVBannerSizeNone
 };
 
 @class VRVBannerAdView;
@@ -29,7 +30,7 @@ typedef NS_ENUM(NSUInteger, VRVBannerAdSize) {
 
 @interface VRVBannerAdView : UIView
 
-- (instancetype)initWithDelegate:(id<VRVBannerAdDelegate>)delegate bannerSize:(VRVBannerAdSize)adSize andRootVC:(UIViewController *)rootVC;
+- (instancetype)initWithDelegate:(id<VRVBannerAdDelegate>)delegate appID:(NSString *)appID bannerSize:(VRVBannerAdSize)adSize andRootVC:(UIViewController *)rootVC;
 - (void)loadAdForZone:(NSString *)zone;
 
 //Optional

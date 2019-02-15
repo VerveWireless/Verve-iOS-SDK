@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VRVInterstitialAd : NSObject
 
-+ (void)setInterstitialAdDelegate:(UIViewController<VRVInterstitialAdDelegate> *)delegate;
++ (void)setInterstitialAdDelegate:(UIViewController<VRVInterstitialAdDelegate> *)delegate appID:(NSString *)appID;
 + (void)loadInterstitialAdForZone:(NSString *)zone;
 + (void)showInterstitialAdForZone:(NSString *)zone;
 

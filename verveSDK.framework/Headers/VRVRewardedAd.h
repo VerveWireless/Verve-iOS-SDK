@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VRVRewardedAd : NSObject
 
-+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate;
++ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;
 + (void)loadRewardedAdForZone:(NSString *)zone;
 + (void)showRewardedAdForZone:(NSString *)zone;
 
