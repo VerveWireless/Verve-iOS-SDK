@@ -5,7 +5,9 @@ Add the provided framework file to your application by adding it as an Embedded 
 
 ### XML Library
 You will also need to update a couple of Build Settings for your app's target:
+
 `Header Search Paths` needs to contain `/usr/include/libxml2`
+
 `Other Linker Flags` needs to contain `-lxml2`
 
 ## App ID
