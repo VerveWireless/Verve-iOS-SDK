@@ -36,13 +36,14 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 
 ### Interstitial Delegate Callbacks - VRVInterstitialAdDelegate
 ```objc
-- (void)onInterstitialAdReadyForZone:(NSString *)zone;
     // Called when ad has been successfully loaded, and is ready to be shown
-- (void)onInterstitialAdFailedForZone:(NSString *)zone;
-    // Called when no ad is available to be shown, or an ad has failed to load
-- (void)onInterstitialAdClosedForZone:(NSString *)zone;
-    // Called when ad has been closed and dismissed from view
+- (void)onInterstitialAdReadyForZone:(NSString *)zone;
 
+    // Called when no ad is available to be shown, or an ad has failed to load
+- (void)onInterstitialAdFailedForZone:(NSString *)zone;
+
+    // Called when ad has been closed and dismissed from view
+- (void)onInterstitialAdClosedForZone:(NSString *)zone;
 ```
 
 ### Sample Code
@@ -95,15 +96,17 @@ After successfully closing the ad once it's been viewed, `- (void)onRewardedAdCl
 The only significant way that Rewarded Ads differ from Interstitial ads in their execution is the delegate call `- (void)onRewardedAdRewardedForZone:(NSString *)zone;`. This delegate function will be called when a rewarded ad has reached the point where the user has met the requirements for the reward.
 
 ```objc
-- (void)onRewardedAdReadyForZone:(NSString *)zone;
     // Called when ad has been successfully loaded, and is ready to be shown
-- (void)onRewardedAdFailedForZone:(NSString *)zone;
+- (void)onRewardedAdReadyForZone:(NSString *)zone;
+    
     // Called when no ad is available to be shown, or an ad has failed to load
-- (void)onRewardedAdRewardedForZone:(NSString *)zone;
+- (void)onRewardedAdFailedForZone:(NSString *)zone;
+    
     // Called when a user has completed the ad view, and has earned the reward
-- (void)onRewardedAdClosedForZone:(NSString *)zone;
+- (void)onRewardedAdRewardedForZone:(NSString *)zone;
+    
     // Called when ad has been closed and dismissed from view
-
+- (void)onRewardedAdClosedForZone:(NSString *)zone;
 ```
 
 ## Banner Ads
@@ -127,22 +130,19 @@ This view will automatically be sized to fit the width of the screen in portrait
 After creation, call `+ (void)loadAdForZone:(NSString *)zone;` on the created VRVBannerView object to load an ad, which will display in the view as soon as it's loaded.
 
 ### VRVBannerAdDelegate / RootVC
-A delegate must be attached to a banner ad which conforms to the VRVBannerAdDelegate protocol:
+A delegate must be attached to a banner ad which conforms to the VRVBannerAdDelegate protocol. Additionally, a reference to the UIViewController (rootVC) that will hold the banner ad must be passed to it. The delegate and rootVC can be the same object.
+
 ```objc
-- (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone;
     // Called when ad has been successfully loaded
-- (void)onBannerAd:(VRVBannerAdView *)bannerAd failedForZone:(NSString *)zone;
+- (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone;
+    
     // Called when no ad is available to be shown, or an ad has failed to load
-- (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;
+- (void)onBannerAd:(VRVBannerAdView *)bannerAd failedForZone:(NSString *)zone;
+    
     // Called when the banner ad will close
+- (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;
 ```
-`- (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone;` will be called after `- (void)loadAdForZone:(NSString *)zone;`, when the ad is ready and being shown on the banner view.
 
-`- (void)onBannerAd:(VRVBannerAdView *)bannerAd failedForZone:(NSString *)zone;` will be called if any errors occur loading and displaying the ad.
-
-`- (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;` will be called if the ad will close in the banner ad.
-
-Additionally, a reference to the UIViewController (rootVC) that will hold the banner ad must be passed to it. The delegate and rootVC can be the same object.
 
 ### Scroll View Reference
 Some ads will change behavior according to the scrolling of a view. To use this feature you must call the function `- (void)informBannerAdOfScrollViewEvent:(UIScrollView *)scrollView;` on the banner view object when this scroll view scrolls. This is generally done within the function `- (void)scrollViewDidScroll:(UIScrollView *)scrollView`, which is a delegate call for `UIScrollViewDelegate`.
