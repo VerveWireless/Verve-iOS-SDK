@@ -3,8 +3,17 @@
 ## Integrating the SDK Framework
 Add the provided framework file to your application by adding it as an Embedded Binary to your target. You can do this by pressing the "+" button under the "Embedded Binaries" section under the "General" tab of your application's target or by dragging and dropping the framework file into this section. If dragging and dropping be sure to move the framework file into the same file as your Xcode project. Check "Copy Items If Needed" when prompted.
 
+
 ### App ID
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `appID`. If you do not have an `appID`, please contact your Verve Publisher Services account manager.
+=======
+
+### XML Library
+You will also need to update a couple of Build Settings for your app's target:
+
+`Header Search Paths` needs to contain `/usr/include/libxml2`
+
+`Other Linker Flags` needs to contain `-lxml2`
 
 ### App Transport Security
 The Ad SDK will need to communicate with HTTP endpoints to function. To allow this you will have to add a value to the `info.plist` file associated with your application's target. To do this, click on your application's project in Xcode, then select the app's target. Click the `info` tab and add a new key to the `Custom iOS Target Properties` called `App Transport Security Settings`. This should create a dictionary, to which you should add the key `Allow Arbitrary Loads` and set the value for that key to `YES`.
