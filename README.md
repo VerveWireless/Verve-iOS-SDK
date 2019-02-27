@@ -6,7 +6,6 @@ Add the provided framework file to your application by adding it as an Embedded 
 
 ### App ID
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `appID`. If you do not have an `appID`, please contact your Verve Publisher Services account manager.
-=======
 
 ### XML Library
 You will also need to update a couple of Build Settings for your app's target:
@@ -90,7 +89,7 @@ First, import the Rewarded Ad header by calling `#import <verveSDK/VRVRewardedAd
 Then, use `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;`
 to set the VC that will show the ad.
 
-### Loading an Rewarded Video Ad
+### Loading a Rewarded Video Ad
 To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. 
 
 Once an ad is ready to be shown, the delegate function `- (void)onRewardedAdReadyForZone:(NSString *)zone;` will be called. 
