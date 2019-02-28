@@ -100,7 +100,7 @@ After loading successfully, you can safely call `+ (void)showRewardedAdForZone:(
 
 After successfully closing the ad once it's been viewed, `- (void)onRewardedAdClosedForZone:(NSString *)zone;` will be called.
 
-### Rewarded Video Delegate Call
+### Rewarded Video Delegate Callbacks - VRVRewardedAdDelegate
 The only significant way that Rewarded Ads differ from Interstitial ads in their execution is the delegate call `- (void)onRewardedAdRewardedForZone:(NSString *)zone;`. This delegate function will be called when a rewarded ad has reached the point where the user has met the requirements for the reward.
 
 ```objc
