@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double verveSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char verveSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <verveSDK/PublicHeader.h>
-#import <verveSDK/VRVInterstitialAd.h>
-#import <verveSDK/VRVRewardedAd.h>
-#import <verveSDK/VRVBannerAdView.h>
+#import <verveAdSDK/VRVInterstitialAd.h>
+#import <verveAdSDK/VRVRewardedAd.h>
+#import <verveAdSDK/VRVBannerAdView.h>
 
