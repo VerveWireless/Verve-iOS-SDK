@@ -24,7 +24,7 @@ Verve ads can only be shown to IP addresses located inside the US. If you are te
 An Interstitial Ad must be loaded and shown on a UIViewController. This VC should also conform to the VRVInterstitialAdDelegate protocol.
 
 ### Import Headers and Set AppID
-First, import the Interstitial Ad header by calling `#import <verveSDK/VRVInterstitialAd.h>` with your other import statements. 
+First, import the Interstitial Ad header by calling `#import <verveAdSDK/VRVInterstitialAd.h>` with your other import statements.
 
 Then, use `+ (void)setInterstitialAdDelegate:(UIViewController<VRVInterstitialAdDelegate> *)delegate appID:(NSString *)appID;`
 to set the VC that will show the ad.
@@ -32,9 +32,9 @@ to set the VC that will show the ad.
 >Interstitial Ads will present in their own UIViewController, however a root View Controller must be designated. This root VC should be the active VC when attempting to present an ad.
 
 ### Loading an Interstitial Ad
-To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. 
+To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
 
-Once an ad is ready to be shown, the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called. 
+Once an ad is ready to be shown, the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called.
 
 ### Show an Interstitial Ad
 
@@ -57,7 +57,7 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 ### Sample Code
 ```objc
 #import "ViewController.h"
-#import <verveSDK/VRVInterstitialAd.h>
+#import <verveAdSDK/VRVInterstitialAd.h>
 
 @interface ViewController () <VRVInterstitialAdDelegate>
 @end
@@ -81,18 +81,18 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 
 
 ## Rewarded Video
-Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<verveSDK/VRVRewardedAd.h>`. If using both Interstitial and Rewarded ads keep in mind that only one delegate can be active at a time between these two types of full screen ads. Calling `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;` will remove the Interstitial ad delegate and vice versa.
+Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<verveAdSDK/VRVRewardedAd.h>`. If using both Interstitial and Rewarded ads keep in mind that only one delegate can be active at a time between these two types of full screen ads. Calling `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;` will remove the Interstitial ad delegate and vice versa.
 
 ### Import Headers and Set AppID
-First, import the Rewarded Ad header by calling `#import <verveSDK/VRVRewardedAd.h>` with your other import statements. 
+First, import the Rewarded Ad header by calling `#import <verveSDK/VRVRewardedAd.h>` with your other import statements.
 
 Then, use `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;`
 to set the VC that will show the ad.
 
 ### Loading a Rewarded Video Ad
-To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. 
+To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
 
-Once an ad is ready to be shown, the delegate function `- (void)onRewardedAdReadyForZone:(NSString *)zone;` will be called. 
+Once an ad is ready to be shown, the delegate function `- (void)onRewardedAdReadyForZone:(NSString *)zone;` will be called.
 
 ### Show a Rewarded Video Ad
 
@@ -106,32 +106,32 @@ The only significant way that Rewarded Ads differ from Interstitial ads in their
 ```objc
     // Called when ad has been successfully loaded, and is ready to be shown
 - (void)onRewardedAdReadyForZone:(NSString *)zone;
-    
+
     // Called when no ad is available to be shown, or an ad has failed to load
 - (void)onRewardedAdFailedForZone:(NSString *)zone;
-    
+
     // Called when a user has completed the ad view, and has earned the reward
 - (void)onRewardedAdRewardedForZone:(NSString *)zone;
-    
+
     // Called when ad has been closed and dismissed from view
 - (void)onRewardedAdClosedForZone:(NSString *)zone;
 ```
 
 ## Banner Ads
-To create a banner ad instantiate a VRVBannerAdView object using 
+To create a banner ad instantiate a VRVBannerAdView object using
 ```objc
 - (instancetype)initWithDelegate:(id<VRVBannerAdDelegate>)delegate
                            appID:(NSString *)appID
-                      bannerSize:(VRVBannerAdSize)adSize 
+                      bannerSize:(VRVBannerAdSize)adSize
                        andRootVC:(UIViewController *)rootVC;
-``` 
+```
 
 This view will automatically be sized to fit the width of the screen in portrait mode according to the following ratios for different VRVBannerAdSize's:
 
 | Size          | Constant           | Description          |
 | ------------- |:------------------:| --------------------:|
 | 320x50        | VRVBannerSizeBanner| Standard banner      |
-| 728x90        | VRVBannerSizeTabletBanner	     | IAB Leaderboard      | 
+| 728x90        | VRVBannerSizeTabletBanner	     | IAB Leaderboard      |
 | 300x250	    | VRVBannerSizeMedRectangle   | IAB Medium Rectangle |
 
 ### Loading a Banner Ad
@@ -143,10 +143,10 @@ A delegate must be attached to a banner ad which conforms to the VRVBannerAdDele
 ```objc
     // Called when ad has been successfully loaded
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone;
-    
+
     // Called when no ad is available to be shown, or an ad has failed to load
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd failedForZone:(NSString *)zone;
-    
+
     // Called when the banner ad will close
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;
 ```
@@ -160,7 +160,7 @@ Some ads will change behavior according to the scrolling of a view. To use this 
 ### Sample Code:
 ```objc
 #import "ViewController.h"
-#import <verveSDK/VRVBannerAdView.h>
+#import <verveAdSDK/VRVBannerAdView.h>
 
 @interface ViewController () <VRVBannerAdDelegate, UIScrollViewDelegate>
 
@@ -173,13 +173,13 @@ Some ads will change behavior according to the scrolling of a view. To use this 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:self.scrollView];
-    
-    self.bannerView = [[VRVBannerAdView alloc] initWithDelegate:self 
+
+    self.bannerView = [[VRVBannerAdView alloc] initWithDelegate:self
                                                           appID:@"6cFM0mTUUh"
-                                                     bannerSize:VRVBannerSizeBanner 
+                                                     bannerSize:VRVBannerSizeBanner
                                                       andRootVC:self];
     [self.view addSubview:self.bannerView];
     [self.bannerView loadAdForZone:@"banner"];
@@ -187,12 +187,12 @@ Some ads will change behavior according to the scrolling of a view. To use this 
 
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd readyForZone:(NSString *)zone {
     if ([zone isEqualToString:@"banner"] && [bannerAd isEqual:self.bannerView]) {
-        NSLayoutConstraint *bottomBanner = [NSLayoutConstraint constraintWithItem:bannerAd 
-                                                                        attribute:NSLayoutAttributeBottom 
-                                                                        relatedBy:NSLayoutRelationEqual 
-                                                                           toItem:self.view.layoutMarginsGuide 
-                                                                        attribute:NSLayoutAttributeBottom 
-                                                                       multiplier:1 
+        NSLayoutConstraint *bottomBanner = [NSLayoutConstraint constraintWithItem:bannerAd
+                                                                        attribute:NSLayoutAttributeBottom
+                                                                        relatedBy:NSLayoutRelationEqual
+                                                                           toItem:self.view.layoutMarginsGuide
+                                                                        attribute:NSLayoutAttributeBottom
+                                                                       multiplier:1
                                                                          constant:0];
         [self.view addConstraint:bottomBanner];
     }
