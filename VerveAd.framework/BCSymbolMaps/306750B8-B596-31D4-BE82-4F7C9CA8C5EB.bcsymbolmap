@@ -1,0 +1,1540 @@
+BCSymbolMap Version: 2.0
+-[VRVMonitoring init]
+-[VRVMonitoring initWithLogLevel:]
+-[VRVMonitoring logLevel]
+-[VRVMonitoring setLogLevel:]
+-[VRVMonitoring .cxx_destruct]
+_OBJC_IVAR_$_VRVMonitoring._logLevel
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVMonitoring.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVMonitoring.h
+-[VRVClickOutViewController viewDidLoad]
+-[VRVClickOutViewController initWithBrand:andUrl:]
+-[VRVClickOutViewController formatBrandName]
+-[VRVClickOutViewController formatDoneButton]
+-[VRVClickOutViewController formatWebview]
+-[VRVClickOutViewController loadClickOutUrl]
+-[VRVClickOutViewController doneButtonTapped:]
+-[VRVClickOutViewController brandNameLabel]
+-[VRVClickOutViewController setBrandNameLabel:]
+-[VRVClickOutViewController brandName]
+-[VRVClickOutViewController setBrandName:]
+-[VRVClickOutViewController webView]
+-[VRVClickOutViewController setWebView:]
+-[VRVClickOutViewController doneButton]
+-[VRVClickOutViewController setDoneButton:]
+-[VRVClickOutViewController url]
+-[VRVClickOutViewController setUrl:]
+-[VRVClickOutViewController .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+_OBJC_IVAR_$_VRVClickOutViewController._webView
+_OBJC_IVAR_$_VRVClickOutViewController._brandName
+_OBJC_IVAR_$_VRVClickOutViewController._brandNameLabel
+_OBJC_IVAR_$_VRVClickOutViewController._doneButton
+_OBJC_IVAR_$_VRVClickOutViewController._url
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVClickOutViewController.m
+-[VRVFSAd initFromAd:]
+-[VRVFSAd rewarded]
+-[VRVFSAd setRewarded:]
+_OBJC_IVAR_$_VRVFSAd._rewarded
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAd.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAd.h
++[VRVAdFactory generateAdFromDictionary:]
++[VRVAdFactory generateVASTAdFromXML:mediaFileName:andTemplate:]
++[VRVAdFactory parseMacroDictionaryIntoSDKVars:]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdFactory.m
++[VRVInterstitialAd sharedInstance]
+___35+[VRVInterstitialAd sharedInstance]_block_invoke
++[VRVInterstitialAd setInterstitialAdDelegate:appID:]
++[VRVInterstitialAd loadInterstitialAdForZone:]
++[VRVInterstitialAd loadInterstitialAdForZone:markup:]
++[VRVInterstitialAd showInterstitialAdForZone:]
++[VRVInterstitialAd showVRVLogs:]
+-[VRVInterstitialAd onFSAdReadyForZone:]
+-[VRVInterstitialAd onFSAdFailedForZone:]
+-[VRVInterstitialAd onFSAdClosedForZone:]
+-[VRVInterstitialAd delegate]
+-[VRVInterstitialAd setDelegate:]
+-[VRVInterstitialAd .cxx_destruct]
+_sharedInstance.instance
+_sharedInstance.onceToken
+___block_descriptor_32_e5_v8@?0l
+___block_literal_global
+_OBJC_IVAR_$_VRVInterstitialAd._delegate
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_VRVFSAdDelegate
+l_OBJC_LABEL_PROTOCOL_$_VRVFSAdDelegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVInterstitialAd.m
+__35+[VRVInterstitialAd sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
++[VRVManifestHandler sharedHandler]
+___35+[VRVManifestHandler sharedHandler]_block_invoke
+-[VRVManifestHandler init]
++[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]
+___61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke
+___copy_helper_block_e8_32b
+___destroy_helper_block_e8_32s
+___61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke.25
++[VRVManifestHandler manfiestIsValid]
+-[VRVManifestHandler manifest]
+-[VRVManifestHandler setManifest:]
+-[VRVManifestHandler expiryDate]
+-[VRVManifestHandler setExpiryDate:]
+-[VRVManifestHandler .cxx_destruct]
+_sharedHandler.handler
+_sharedHandler.onceToken
+_OBJC_IVAR_$_VRVManifestHandler._expiryDate
+___block_descriptor_40_e8_32bs_e21_v16@?0@"VRVManifest"8l
+___block_descriptor_40_e8_32bs_e17_v16@?0@"NSError"8l
+_OBJC_IVAR_$_VRVManifestHandler._manifest
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestHandler.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestHandler.h
+__61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke.25
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32b
+__61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke
+__35+[VRVManifestHandler sharedHandler]_block_invoke
++[VRV_GDataXMLNode load]
++[VRV_GDataXMLNode elementWithName:]
+_GDataGetXMLString
++[VRV_GDataXMLNode elementWithName:stringValue:]
++[VRV_GDataXMLNode elementWithName:URI:]
+_GDataFakeQNameForURIAndName
++[VRV_GDataXMLNode attributeWithName:stringValue:]
++[VRV_GDataXMLNode attributeWithName:URI:stringValue:]
++[VRV_GDataXMLNode textWithStringValue:]
++[VRV_GDataXMLNode namespaceWithName:stringValue:]
++[VRV_GDataXMLNode nodeConsumingXMLNode:]
+-[VRV_GDataXMLNode initConsumingXMLNode:]
++[VRV_GDataXMLNode nodeBorrowingXMLNode:]
+-[VRV_GDataXMLNode initBorrowingXMLNode:]
+-[VRV_GDataXMLNode releaseCachedValues]
+-[VRV_GDataXMLNode stringFromXMLString:]
+-[VRV_GDataXMLNode dealloc]
+-[VRV_GDataXMLNode setStringValue:]
+-[VRV_GDataXMLNode stringValue]
+-[VRV_GDataXMLNode XMLString]
+-[VRV_GDataXMLNode localName]
+-[VRV_GDataXMLNode prefix]
+-[VRV_GDataXMLNode URI]
+-[VRV_GDataXMLNode qualifiedName]
+-[VRV_GDataXMLNode name]
++[VRV_GDataXMLNode localNameForName:]
++[VRV_GDataXMLNode prefixForName:]
+-[VRV_GDataXMLNode childCount]
+-[VRV_GDataXMLNode children]
+-[VRV_GDataXMLNode childAtIndex:]
+-[VRV_GDataXMLNode kind]
+-[VRV_GDataXMLNode nodesForXPath:error:]
+-[VRV_GDataXMLNode nodesForXPath:namespaces:error:]
+-[VRV_GDataXMLNode description]
+-[VRV_GDataXMLNode copyWithZone:]
+-[VRV_GDataXMLNode isEqual:]
+-[VRV_GDataXMLNode hash]
+-[VRV_GDataXMLNode methodSignatureForSelector:]
+-[VRV_GDataXMLNode XMLNodeCopy]
+-[VRV_GDataXMLNode XMLNode]
+-[VRV_GDataXMLNode shouldFreeXMLNode]
+-[VRV_GDataXMLNode setShouldFreeXMLNode:]
+-[VRV_GDataXMLNode .cxx_destruct]
+-[VRV_GDataXMLElement initWithXMLString:error:]
+-[VRV_GDataXMLElement namespaces]
+-[VRV_GDataXMLElement setNamespaces:]
+-[VRV_GDataXMLElement addNamespace:]
+-[VRV_GDataXMLElement addChild:]
+-[VRV_GDataXMLElement removeChild:]
+-[VRV_GDataXMLElement elementsForName:]
+-[VRV_GDataXMLElement elementsForLocalName:URI:]
+-[VRV_GDataXMLElement attributes]
+-[VRV_GDataXMLElement addAttribute:]
+-[VRV_GDataXMLElement attributeForXMLNode:]
+-[VRV_GDataXMLElement attributeForName:]
+-[VRV_GDataXMLElement attributeForLocalName:URI:]
+-[VRV_GDataXMLElement resolvePrefixForNamespaceURI:]
++[VRV_GDataXMLElement deleteNamespacePtr:fromXMLNode:]
++[VRV_GDataXMLElement fixQualifiedNamesForNode:graftingToTreeNode:]
++[VRV_GDataXMLElement fixDuplicateNamespacesForNode:graftingToTreeNode:namespaceSubstitutionMap:]
++[VRV_GDataXMLElement fixUpNamespacesForNode:graftingToTreeNode:namespaceSubstitutionMap:]
++[VRV_GDataXMLElement fixUpNamespacesForNode:graftingToTreeNode:]
+-[VRV_GDataXMLDocument initWithXMLString:options:error:]
+-[VRV_GDataXMLDocument initWithData:options:error:]
+-[VRV_GDataXMLDocument initWithRootElement:]
+-[VRV_GDataXMLDocument addStringsCacheToDoc]
+_StringCacheKeyRetainCallBack
+_StringCacheKeyReleaseCallBack
+_StringCacheKeyCopyDescriptionCallBack
+_StringCacheKeyEqualCallBack
+_StringCacheKeyHashCallBack
+-[VRV_GDataXMLDocument description]
+-[VRV_GDataXMLDocument dealloc]
+-[VRV_GDataXMLDocument rootElement]
+-[VRV_GDataXMLDocument XMLData]
+-[VRV_GDataXMLDocument setVersion:]
+-[VRV_GDataXMLDocument setCharacterEncoding:]
+-[VRV_GDataXMLDocument nodesForXPath:error:]
+-[VRV_GDataXMLDocument nodesForXPath:namespaces:error:]
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VAST/XML Support/GDataXMLNode.m
+StringCacheKeyHashCallBack
+StringCacheKeyEqualCallBack
+StringCacheKeyCopyDescriptionCallBack
+StringCacheKeyReleaseCallBack
+StringCacheKeyRetainCallBack
+SplitQNameReverse
+AreEqualOrBothNilPrivate
+GDataFakeQNameForURIAndName
+GDataGetXMLString
++[VRVDeviceInfo sharedInstance]
+___31+[VRVDeviceInfo sharedInstance]_block_invoke
+-[VRVDeviceInfo init]
+-[VRVDeviceInfo createUUID]
+-[VRVDeviceInfo getCarrierName]
+-[VRVDeviceInfo getIPAddress]
+-[VRVDeviceInfo getDeviceModel]
+-[VRVDeviceInfo getAppName]
+-[VRVDeviceInfo getScreenWidth]
+-[VRVDeviceInfo getScreenHeight]
+-[VRVDeviceInfo getScreenDPI]
+-[VRVDeviceInfo getVersion]
+-[VRVDeviceInfo getDeviceLanguage]
+-[VRVDeviceInfo constructUserAgent]
+-[VRVDeviceInfo getAdvertiserId]
+-[VRVDeviceInfo getAdTracking]
+-[VRVDeviceInfo getName]
+-[VRVDeviceInfo sessionId]
+-[VRVDeviceInfo carrierName]
+-[VRVDeviceInfo deviceIpAddress]
+-[VRVDeviceInfo deviceModel]
+-[VRVDeviceInfo deviceLang]
+-[VRVDeviceInfo deviceName]
+-[VRVDeviceInfo hostAppName]
+-[VRVDeviceInfo screenWidth]
+-[VRVDeviceInfo screenHeight]
+-[VRVDeviceInfo screenDPI]
+-[VRVDeviceInfo systemVersion]
+-[VRVDeviceInfo userAgent]
+-[VRVDeviceInfo advertisingId]
+-[VRVDeviceInfo adTrackingBlocked]
+-[VRVDeviceInfo connectionType]
+-[VRVDeviceInfo coppa]
+-[VRVDeviceInfo setCoppa:]
+-[VRVDeviceInfo appSessionId]
+-[VRVDeviceInfo setAppSessionId:]
+-[VRVDeviceInfo carrier]
+-[VRVDeviceInfo setCarrier:]
+-[VRVDeviceInfo ipAddress]
+-[VRVDeviceInfo setIpAddress:]
+-[VRVDeviceInfo model]
+-[VRVDeviceInfo setModel:]
+-[VRVDeviceInfo appName]
+-[VRVDeviceInfo setAppName:]
+-[VRVDeviceInfo width]
+-[VRVDeviceInfo setWidth:]
+-[VRVDeviceInfo height]
+-[VRVDeviceInfo setHeight:]
+-[VRVDeviceInfo dpi]
+-[VRVDeviceInfo setDpi:]
+-[VRVDeviceInfo version]
+-[VRVDeviceInfo setVersion:]
+-[VRVDeviceInfo language]
+-[VRVDeviceInfo setLanguage:]
+-[VRVDeviceInfo constructedUserAgent]
+-[VRVDeviceInfo setConstructedUserAgent:]
+-[VRVDeviceInfo adId]
+-[VRVDeviceInfo setAdId:]
+-[VRVDeviceInfo name]
+-[VRVDeviceInfo setName:]
+-[VRVDeviceInfo adTrackingIsBlocked]
+-[VRVDeviceInfo setAdTrackingIsBlocked:]
+-[VRVDeviceInfo .cxx_destruct]
+_OBJC_IVAR_$_VRVDeviceInfo._coppa
+_OBJC_IVAR_$_VRVDeviceInfo._appSessionId
+_OBJC_IVAR_$_VRVDeviceInfo._carrier
+_OBJC_IVAR_$_VRVDeviceInfo._ipAddress
+_OBJC_IVAR_$_VRVDeviceInfo._model
+_OBJC_IVAR_$_VRVDeviceInfo._appName
+_OBJC_IVAR_$_VRVDeviceInfo._width
+_OBJC_IVAR_$_VRVDeviceInfo._height
+_OBJC_IVAR_$_VRVDeviceInfo._version
+_OBJC_IVAR_$_VRVDeviceInfo._constructedUserAgent
+_OBJC_IVAR_$_VRVDeviceInfo._adId
+_OBJC_IVAR_$_VRVDeviceInfo._adTrackingIsBlocked
+_OBJC_IVAR_$_VRVDeviceInfo._language
+_OBJC_IVAR_$_VRVDeviceInfo._dpi
+_OBJC_IVAR_$_VRVDeviceInfo._name
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVDeviceInfo.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVDeviceInfo.h
+__31+[VRVDeviceInfo sharedInstance]_block_invoke
+-[VRVAd init]
+-[VRVAd initWithSdkType:creativeTag:assets:adCopy:flags:trackers:payload:andCompleteAd:]
+-[VRVAd adIsValid]
+-[VRVAd adClosed]
+-[VRVAd adRewarded]
+-[VRVAd sdkType]
+-[VRVAd setSdkType:]
+-[VRVAd creativeTag]
+-[VRVAd setCreativeTag:]
+-[VRVAd assets]
+-[VRVAd setAssets:]
+-[VRVAd adCopy]
+-[VRVAd setAdCopy:]
+-[VRVAd flags]
+-[VRVAd setFlags:]
+-[VRVAd trackers]
+-[VRVAd setTrackers:]
+-[VRVAd payload]
+-[VRVAd setPayload:]
+-[VRVAd html]
+-[VRVAd setHtml:]
+-[VRVAd fullAd]
+-[VRVAd setFullAd:]
+-[VRVAd isVast]
+-[VRVAd setIsVast:]
+-[VRVAd xml]
+-[VRVAd setXml:]
+-[VRVAd mediaFile]
+-[VRVAd setMediaFile:]
+-[VRVAd delegate]
+-[VRVAd setDelegate:]
+-[VRVAd zone]
+-[VRVAd setZone:]
+-[VRVAd .cxx_destruct]
+_OBJC_IVAR_$_VRVAd._sdkType
+_OBJC_IVAR_$_VRVAd._creativeTag
+_OBJC_IVAR_$_VRVAd._assets
+_OBJC_IVAR_$_VRVAd._adCopy
+_OBJC_IVAR_$_VRVAd._flags
+_OBJC_IVAR_$_VRVAd._trackers
+_OBJC_IVAR_$_VRVAd._payload
+_OBJC_IVAR_$_VRVAd._fullAd
+_OBJC_IVAR_$_VRVAd._isVast
+_OBJC_IVAR_$_VRVAd._xml
+_OBJC_IVAR_$_VRVAd._mediaFile
+_OBJC_IVAR_$_VRVAd._html
+_OBJC_IVAR_$_VRVAd._delegate
+_OBJC_IVAR_$_VRVAd._zone
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAd.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAd.h
+-[VRVFSAdViewController viewWillAppear:]
+-[VRVFSAdViewController dealloc]
+-[VRVFSAdViewController loadWebView:forViewController:]
+-[VRVFSAdViewController viewWillTransitionToSize:withTransitionCoordinator:]
+-[VRVFSAdViewController bridgeOpened:]
+-[VRVFSAdViewController closeActionSentByBridge:]
+-[VRVFSAdViewController enableRedirectActionSentByBridge:]
+-[VRVFSAdViewController openUrl:actionSentByBridge:]
+___52-[VRVFSAdViewController openUrl:actionSentByBridge:]_block_invoke
+___copy_helper_block_e8_32s
+-[VRVFSAdViewController rewardActionSentByBridge:]
+-[VRVFSAdViewController displayOptinSentByBridge:]
+-[VRVFSAdViewController videoOptinSentByBridge:]
+-[VRVFSAdViewController deviceDataRequestSentByBridge:]
+-[VRVFSAdViewController allowScroll:sentByBridge:]
+-[VRVFSAdViewController sendBridgeMessageFromNotification:]
+-[VRVFSAdViewController loadedWebView]
+-[VRVFSAdViewController setLoadedWebView:]
+-[VRVFSAdViewController .cxx_destruct]
+___block_descriptor_40_e8_32s_e5_v8@?0l
+_OBJC_IVAR_$_VRVFSAdViewController._loadedWebView
+l_OBJC_PROTOCOL_$_VRVBridgeDelegate
+l_OBJC_LABEL_PROTOCOL_$_VRVBridgeDelegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAdViewController.m
+__copy_helper_block_e8_32s
+__52-[VRVFSAdViewController openUrl:actionSentByBridge:]_block_invoke
++[VRVOMHandler sharedHandler]
+___29+[VRVOMHandler sharedHandler]_block_invoke
+-[VRVOMHandler init]
+-[VRVOMHandler createOMIDSessionForWebView:ofType:]
+-[VRVOMHandler sendImpressionEventForWebView:]
+-[VRVOMHandler destroyOMIDSessionForWebView:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___45-[VRVOMHandler destroyOMIDSessionForWebView:]_block_invoke
+___copy_helper_block_e8_32s40s48r
+___destroy_helper_block_e8_32s40s48r
+-[VRVOMHandler sdkStarted]
+-[VRVOMHandler setSdkStarted:]
+-[VRVOMHandler partner]
+-[VRVOMHandler setPartner:]
+-[VRVOMHandler omidSessions]
+-[VRVOMHandler setOmidSessions:]
+-[VRVOMHandler webviews]
+-[VRVOMHandler setWebviews:]
+-[VRVOMHandler .cxx_destruct]
+_OBJC_IVAR_$_VRVOMHandler._sdkStarted
+_OBJC_IVAR_$_VRVOMHandler._partner
+_OBJC_IVAR_$_VRVOMHandler._omidSessions
+_OBJC_IVAR_$_VRVOMHandler._webviews
+___block_descriptor_56_e8_32s40s48r_e17_v16@?0@"NSTimer"8l
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVOMHandler.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVOMHandler.h
+__destroy_helper_block_e8_32s40s48r
+__copy_helper_block_e8_32s40s48r
+__45-[VRVOMHandler destroyOMIDSessionForWebView:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__29+[VRVOMHandler sharedHandler]_block_invoke
++[VRVHandler sharedHandler]
+___27+[VRVHandler sharedHandler]_block_invoke
+-[VRVHandler initializeWithVerveContext:]
+-[VRVHandler onDidFetchConfiguration]
+-[VRVHandler context]
+-[VRVHandler setContext:]
+-[VRVHandler .cxx_destruct]
+_OBJC_IVAR_$_VRVHandler._context
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVHandler.m
+__27+[VRVHandler sharedHandler]_block_invoke
+-[VRVDeveloper init]
+-[VRVDeveloper initWithPublisherId:applicationId:applicationName:active:]
+-[VRVDeveloper publisherId]
+-[VRVDeveloper setPublisherId:]
+-[VRVDeveloper applicationId]
+-[VRVDeveloper setApplicationId:]
+-[VRVDeveloper applicationName]
+-[VRVDeveloper setApplicationName:]
+-[VRVDeveloper active]
+-[VRVDeveloper setActive:]
+-[VRVDeveloper .cxx_destruct]
+_OBJC_IVAR_$_VRVDeveloper._publisherId
+_OBJC_IVAR_$_VRVDeveloper._applicationId
+_OBJC_IVAR_$_VRVDeveloper._applicationName
+_OBJC_IVAR_$_VRVDeveloper._active
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVDeveloper.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVDeveloper.h
++[VRVReachability reachabilityWithHostName:]
++[VRVReachability reachabilityWithAddress:]
++[VRVReachability reachabilityForInternetConnection]
+-[VRVReachability startNotifier]
+_ReachabilityCallback
+-[VRVReachability stopNotifier]
+-[VRVReachability dealloc]
+-[VRVReachability networkStatusForFlags:]
+-[VRVReachability connectionRequired]
+-[VRVReachability currentReachabilityStatus]
+_OBJC_IVAR_$_VRVReachability._reachabilityRef
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Macros/VRVReachability.m
+PrintReachabilityFlags
+ReachabilityCallback
++[VRVFSAdHandler sharedHandler]
+___31+[VRVFSAdHandler sharedHandler]_block_invoke
+-[VRVFSAdHandler init]
+-[VRVFSAdHandler setFSAdDelegate:andRootVC:rewarded:]
+-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.43
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.49
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.51
+-[VRVFSAdHandler processFSAd:forZone:rewarded:]
+___47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke
+___47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.100
+-[VRVFSAdHandler processFSAdFailureInZone:rewarded:]
+-[VRVFSAdHandler showFSAdForZone:rewarded:]
+___43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
+-[VRVFSAdHandler fireAdFailedForZone:rewarded:]
+-[VRVFSAdHandler fireAdReadyForZone:rewarded:]
+-[VRVFSAdHandler adWillCloseInZone:]
+-[VRVFSAdHandler adRewardedForZone:]
+-[VRVFSAdHandler interstitialDelegate]
+-[VRVFSAdHandler setInterstitialDelegate:]
+-[VRVFSAdHandler rewardedDelegate]
+-[VRVFSAdHandler setRewardedDelegate:]
+-[VRVFSAdHandler loadedAds]
+-[VRVFSAdHandler setLoadedAds:]
+-[VRVFSAdHandler rewardedRootVC]
+-[VRVFSAdHandler setRewardedRootVC:]
+-[VRVFSAdHandler interstitialRootVC]
+-[VRVFSAdHandler setInterstitialRootVC:]
+-[VRVFSAdHandler .cxx_destruct]
+_OBJC_IVAR_$_VRVFSAdHandler._loadedAds
+___block_descriptor_49_e8_32s40s_e15_v16@?0@"VRVAd"8l
+___block_descriptor_49_e8_32s40s_e17_v16@?0@"NSError"8l
+___block_descriptor_49_e8_32s40s_e17_v16@?0@"VRVFSAd"8l
+___block_descriptor_49_e8_32s40s_e18_v16@?0@"NSString"8l
+___block_descriptor_48_e8_32s40s_e5_v8@?0l
+_OBJC_IVAR_$_VRVFSAdHandler._interstitialDelegate
+_OBJC_IVAR_$_VRVFSAdHandler._rewardedDelegate
+_OBJC_IVAR_$_VRVFSAdHandler._rewardedRootVC
+_OBJC_IVAR_$_VRVFSAdHandler._interstitialRootVC
+l_OBJC_PROTOCOL_$_VRVAdDelegate
+l_OBJC_LABEL_PROTOCOL_$_VRVAdDelegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAdHandler.m
+__43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
+__47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.100
+__47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.51
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.49
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.43
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke
+__31+[VRVFSAdHandler sharedHandler]_block_invoke
+-[VRVTracker init]
+-[VRVTracker initWithTriggers:type:method:url:headers:]
+-[VRVTracker triggers]
+-[VRVTracker setTriggers:]
+-[VRVTracker type]
+-[VRVTracker setType:]
+-[VRVTracker method]
+-[VRVTracker setMethod:]
+-[VRVTracker url]
+-[VRVTracker setUrl:]
+-[VRVTracker headers]
+-[VRVTracker setHeaders:]
+-[VRVTracker .cxx_destruct]
+_OBJC_IVAR_$_VRVTracker._triggers
+_OBJC_IVAR_$_VRVTracker._type
+_OBJC_IVAR_$_VRVTracker._method
+_OBJC_IVAR_$_VRVTracker._url
+_OBJC_IVAR_$_VRVTracker._headers
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVTracker.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVTracker.h
+-[VRVBannerAdView initWithDelegate:appID:bannerSize:andRootVC:]
+-[VRVBannerAdView dealloc]
+-[VRVBannerAdView setBannerSizeFromAdSize:]
+-[VRVBannerAdView calculateBannerSizeForAdSize:]
+-[VRVBannerAdView calculateHeightForWidth:andAdSize:]
+-[VRVBannerAdView addObservers]
+-[VRVBannerAdView observeValueForKeyPath:ofObject:change:context:]
+-[VRVBannerAdView checkVisibilityAndSendToBridge]
+___49-[VRVBannerAdView checkVisibilityAndSendToBridge]_block_invoke
+-[VRVBannerAdView informBannerAdOfScrollViewEvent:]
+-[VRVBannerAdView setWebviewSize]
+-[VRVBannerAdView loadAdForZone:]
+___33-[VRVBannerAdView loadAdForZone:]_block_invoke
+___33-[VRVBannerAdView loadAdForZone:]_block_invoke.119
+-[VRVBannerAdView fireAdReadyForZone:]
+___38-[VRVBannerAdView fireAdReadyForZone:]_block_invoke
+-[VRVBannerAdView fireAdFailedForZone:]
+___39-[VRVBannerAdView fireAdFailedForZone:]_block_invoke
+-[VRVBannerAdView fireAdClosedForZone:]
+___39-[VRVBannerAdView fireAdClosedForZone:]_block_invoke
+-[VRVBannerAdView putBlockOnMainQueue:]
+-[VRVBannerAdView bridgeOpened:]
+-[VRVBannerAdView closeActionSentByBridge:]
+-[VRVBannerAdView enableRedirectActionSentByBridge:]
+-[VRVBannerAdView openUrl:actionSentByBridge:]
+-[VRVBannerAdView expandPixels:allowTouch:actionSentByBridge:]
+-[VRVBannerAdView expandPercent:allowTouch:actionSentByBridge:]
+-[VRVBannerAdView createTouchPassthroughZoneFromExpansion:]
+-[VRVBannerAdView pointInside:withEvent:]
+-[VRVBannerAdView collapseActionSentByBridge:]
+-[VRVBannerAdView displayOptinSentByBridge:]
+-[VRVBannerAdView videoOptinSentByBridge:]
+-[VRVBannerAdView deviceDataRequestSentByBridge:]
+-[VRVBannerAdView allowScroll:sentByBridge:]
+-[VRVBannerAdView sendBridgeMessageFromNotification:]
++[VRVBannerAdView showVRVLogs:]
+-[VRVBannerAdView loadedWebView]
+-[VRVBannerAdView setLoadedWebView:]
+-[VRVBannerAdView delegate]
+-[VRVBannerAdView setDelegate:]
+-[VRVBannerAdView rootVC]
+-[VRVBannerAdView setRootVC:]
+-[VRVBannerAdView scrollView]
+-[VRVBannerAdView setScrollView:]
+-[VRVBannerAdView heightConstraint]
+-[VRVBannerAdView setHeightConstraint:]
+-[VRVBannerAdView bridgeOpen]
+-[VRVBannerAdView setBridgeOpen:]
+-[VRVBannerAdView impressionSent]
+-[VRVBannerAdView setImpressionSent:]
+-[VRVBannerAdView defaultHeight]
+-[VRVBannerAdView setDefaultHeight:]
+-[VRVBannerAdView touchIgnoreZone]
+-[VRVBannerAdView setTouchIgnoreZone:]
+-[VRVBannerAdView .cxx_destruct]
+_OBJC_IVAR_$_VRVBannerAdView._delegate
+_OBJC_IVAR_$_VRVBannerAdView._rootVC
+_OBJC_IVAR_$_VRVBannerAdView._loadedWebView
+_OBJC_IVAR_$_VRVBannerAdView._bridgeOpen
+_OBJC_IVAR_$_VRVBannerAdView._impressionSent
+_OBJC_IVAR_$_VRVBannerAdView._touchIgnoreZone
+_OBJC_IVAR_$_VRVBannerAdView._defaultHeight
+___block_descriptor_48_e8_32s40s_e15_v16@?0@"VRVAd"8l
+___block_descriptor_48_e8_32s40s_e17_v16@?0@"NSError"8l
+_OBJC_IVAR_$_VRVBannerAdView._scrollView
+_OBJC_IVAR_$_VRVBannerAdView._heightConstraint
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVBannerAdView.m
+__39-[VRVBannerAdView fireAdClosedForZone:]_block_invoke
+__39-[VRVBannerAdView fireAdFailedForZone:]_block_invoke
+__38-[VRVBannerAdView fireAdReadyForZone:]_block_invoke
+__33-[VRVBannerAdView loadAdForZone:]_block_invoke.119
+__33-[VRVBannerAdView loadAdForZone:]_block_invoke
+__49-[VRVBannerAdView checkVisibilityAndSendToBridge]_block_invoke
++[VRVMacros sharedMacros]
+___25+[VRVMacros sharedMacros]_block_invoke
+-[VRVMacros init]
++[VRVMacros sharedMacroDict]
++[VRVMacros setValueInMacroDictionary:forKey:]
+-[VRVMacros macroDict]
+-[VRVMacros setMacroDict:]
+-[VRVMacros .cxx_destruct]
+_sharedMacros.macros
+_sharedMacros.onceToken
+_OBJC_IVAR_$_VRVMacros._macroDict
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVMacros.m
+__25+[VRVMacros sharedMacros]_block_invoke
+-[VRVUrlParser fillMacrosForUrl:withIndividualMacros:]
+-[VRVUrlParser createRandString]
+-[VRVUrlParser createTimeStampString]
+-[VRVUrlParser createOrientationString]
+-[VRVUrlParser fillMacrosForString:]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVUrlParser.m
+UIDeviceOrientationIsPortrait
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+-[NSString(VRVValidation) isEmpty]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Categories/NSString+VRVValidation.m
++[VRVRewardedAd sharedInstance]
+___31+[VRVRewardedAd sharedInstance]_block_invoke
++[VRVRewardedAd setRewardedAdDelegate:appID:]
++[VRVRewardedAd loadRewardedAdForZone:]
++[VRVRewardedAd loadRewardedAdForZone:markup:]
++[VRVRewardedAd showRewardedAdForZone:]
++[VRVRewardedAd showVRVLogs:]
+-[VRVRewardedAd onFSAdReadyForZone:]
+-[VRVRewardedAd onFSAdFailedForZone:]
+-[VRVRewardedAd onFSAdClosedForZone:]
+-[VRVRewardedAd onFSAdRewardedForZone:]
+-[VRVRewardedAd delegate]
+-[VRVRewardedAd setDelegate:]
+-[VRVRewardedAd .cxx_destruct]
+_OBJC_IVAR_$_VRVRewardedAd._delegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVRewardedAd.m
+__31+[VRVRewardedAd sharedInstance]_block_invoke
++[VRVManifestFactory createManifestFromDictionary:]
++[VRVManifestFactory createDeveloperFromDictionary:]
++[VRVManifestFactory createPrivacyFromDictionary:]
++[VRVManifestFactory createViewabilityFromDictionary:]
++[VRVManifestFactory createMonitoringFromDictionary:]
++[VRVManifestFactory createTrackerFromDictionary:]
++[VRVManifestFactory createDemandSourcesFromDictionary:]
++[VRVManifestFactory createDemandSourceFromDictionary:]
++[VRVManifestFactory createTemplatesFromArray:]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestFactory.m
+-[VRVDemandSource init]
+-[VRVDemandSource initWithSource:rank:timeout:autofetch:url:]
+-[VRVDemandSource source]
+-[VRVDemandSource setSource:]
+-[VRVDemandSource rank]
+-[VRVDemandSource setRank:]
+-[VRVDemandSource timeout]
+-[VRVDemandSource setTimeout:]
+-[VRVDemandSource autofetch]
+-[VRVDemandSource setAutofetch:]
+-[VRVDemandSource url]
+-[VRVDemandSource setUrl:]
+-[VRVDemandSource .cxx_destruct]
+_OBJC_IVAR_$_VRVDemandSource._source
+_OBJC_IVAR_$_VRVDemandSource._rank
+_OBJC_IVAR_$_VRVDemandSource._timeout
+_OBJC_IVAR_$_VRVDemandSource._autofetch
+_OBJC_IVAR_$_VRVDemandSource._url
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.h
+-[VRVViewability init]
+-[VRVViewability initWithName:active:included:]
+-[VRVViewability name]
+-[VRVViewability setName:]
+-[VRVViewability active]
+-[VRVViewability setActive:]
+-[VRVViewability included]
+-[VRVViewability setIncluded:]
+-[VRVViewability .cxx_destruct]
+_OBJC_IVAR_$_VRVViewability._name
+_OBJC_IVAR_$_VRVViewability._active
+_OBJC_IVAR_$_VRVViewability._included
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVViewability.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVViewability.h
++[VRVLocationService sharedService]
+___35+[VRVLocationService sharedService]_block_invoke
++[VRVLocationService makeLocationRequest]
+___41+[VRVLocationService makeLocationRequest]_block_invoke
+-[VRVLocationService locationManager:didUpdateLocations:]
+-[VRVLocationService locationManager:didFailWithError:]
++[VRVLocationService locationServiceAvailable]
++[VRVLocationService setMacrosFromLocation:]
+-[VRVLocationService manager]
+-[VRVLocationService setManager:]
+-[VRVLocationService .cxx_destruct]
+_sharedService.service
+_sharedService.onceToken
+___block_literal_global.3
+_OBJC_IVAR_$_VRVLocationService._manager
+l_OBJC_PROTOCOL_$_CLLocationManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVLocationService.m
+__41+[VRVLocationService makeLocationRequest]_block_invoke
+__35+[VRVLocationService sharedService]_block_invoke
+-[VRVAdWebView init]
+-[VRVAdWebView loadAd:]
+___23-[VRVAdWebView loadAd:]_block_invoke
+-[VRVAdWebView webView:didFinishNavigation:]
+-[VRVAdWebView webView:decidePolicyForNavigationAction:decisionHandler:]
+-[VRVAdWebView respondToScroll:]
+-[VRVAdWebView respondToAllowScroll:]
+-[VRVAdWebView startVolumeListener]
+-[VRVAdWebView volumeChanged:]
+-[VRVAdWebView getCurrentVolume]
+-[VRVAdWebView sendDeviceData]
+-[VRVAdWebView sendBridgeMessageToAd:]
+-[VRVAdWebView enableRedirect:]
+-[VRVAdWebView respondToOptin:]
+-[VRVAdWebView address]
+-[VRVAdWebView bridge]
+-[VRVAdWebView setBridge:]
+-[VRVAdWebView loadedAd]
+-[VRVAdWebView setLoadedAd:]
+-[VRVAdWebView allowRedirect]
+-[VRVAdWebView setAllowRedirect:]
+-[VRVAdWebView scrollInitialized]
+-[VRVAdWebView setScrollInitialized:]
+-[VRVAdWebView .cxx_destruct]
+_OBJC_IVAR_$_VRVAdWebView._bridge
+_OBJC_IVAR_$_VRVAdWebView._allowRedirect
+_OBJC_IVAR_$_VRVAdWebView._scrollInitialized
+_OBJC_IVAR_$_VRVAdWebView._loadedAd
+l_OBJC_PROTOCOL_$_WKNavigationDelegate
+l_OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.h
+UIInterfaceOrientationIsPortrait
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+__23-[VRVAdWebView loadAd:]_block_invoke
+-[VRVManifest init]
+-[VRVManifest initWithTtl:developer:privacy:viewability:monitoring:trackers:demandSources:templates:vastTemplateURI:]
+-[VRVManifest ttl]
+-[VRVManifest setTtl:]
+-[VRVManifest developer]
+-[VRVManifest setDeveloper:]
+-[VRVManifest privacy]
+-[VRVManifest setPrivacy:]
+-[VRVManifest viewability]
+-[VRVManifest setViewability:]
+-[VRVManifest monitoring]
+-[VRVManifest setMonitoring:]
+-[VRVManifest trackers]
+-[VRVManifest setTrackers:]
+-[VRVManifest demandSources]
+-[VRVManifest setDemandSources:]
+-[VRVManifest templates]
+-[VRVManifest setTemplates:]
+-[VRVManifest vastTemplateURI]
+-[VRVManifest setVastTemplateURI:]
+-[VRVManifest .cxx_destruct]
+_OBJC_IVAR_$_VRVManifest._ttl
+_OBJC_IVAR_$_VRVManifest._developer
+_OBJC_IVAR_$_VRVManifest._privacy
+_OBJC_IVAR_$_VRVManifest._viewability
+_OBJC_IVAR_$_VRVManifest._monitoring
+_OBJC_IVAR_$_VRVManifest._trackers
+_OBJC_IVAR_$_VRVManifest._demandSources
+_OBJC_IVAR_$_VRVManifest._templates
+_OBJC_IVAR_$_VRVManifest._vastTemplateURI
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVManifest.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVManifest.h
++[VRVTrackerHandler sharedHandler]
+___34+[VRVTrackerHandler sharedHandler]_block_invoke
+-[VRVTrackerHandler init]
+___25-[VRVTrackerHandler init]_block_invoke
+___25-[VRVTrackerHandler init]_block_invoke.24
++[VRVTrackerHandler sendTrackerForEvent:]
+-[VRVTrackerHandler trackers]
+-[VRVTrackerHandler setTrackers:]
+-[VRVTrackerHandler .cxx_destruct]
+___block_descriptor_40_e8_32s_e21_v16@?0@"VRVManifest"8l
+___block_descriptor_32_e17_v16@?0@"NSError"8l
+___block_literal_global.26
+_OBJC_IVAR_$_VRVTrackerHandler._trackers
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Trackers/VRVTrackerHandler.m
+__25-[VRVTrackerHandler init]_block_invoke.24
+__25-[VRVTrackerHandler init]_block_invoke
+__34+[VRVTrackerHandler sharedHandler]_block_invoke
+-[VRVTrackerClient sendTrackerEventToURL:withHeaders:andMethod:]
+-[VRVTrackerClient createRequestFromUrl:headers:andMethod:]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Trackers/VRVTrackerClient.m
+-[VRVPrivacy init]
+-[VRVPrivacy initWithCoppa:consentRequired:]
+-[VRVPrivacy coppa]
+-[VRVPrivacy setCoppa:]
+-[VRVPrivacy consentRequired]
+-[VRVPrivacy setConsentRequired:]
+_OBJC_IVAR_$_VRVPrivacy._coppa
+_OBJC_IVAR_$_VRVPrivacy._consentRequired
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPrivacy.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPrivacy.h
+-[VRVManifestClient getManifestWithSuccess:andFailure:]
+___55-[VRVManifestClient getManifestWithSuccess:andFailure:]_block_invoke
+-[VRVManifestClient createManifestHeaders]
+___block_descriptor_40_e8_32bs_e22_v16@?0@"NSDictionary"8l
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestClient.m
+__55-[VRVManifestClient getManifestWithSuccess:andFailure:]_block_invoke
++[VRVLog sharedLogger]
+___22+[VRVLog sharedLogger]_block_invoke
+-[VRVLog init]
+-[VRVLog showVRVLogs:]
+-[VRVLog VRVLog:]
+-[VRVLog VRVLog:withObject:]
+-[VRVLog VRVLog:withFirstObject:andSecondObject:]
+-[VRVLog VRVLog:withFirstObject:secondObject:andThirdObject:]
+-[VRVLog showLogs]
+-[VRVLog setShowLogs:]
+_sharedLogger.logger
+_sharedLogger.onceToken
+_OBJC_IVAR_$_VRVLog._showLogs
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVLog.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVLog.h
+__22+[VRVLog sharedLogger]_block_invoke
+-[VRVDemandSources init]
+-[VRVDemandSources initWithWorkFlow:demandSources:]
+-[VRVDemandSources workflow]
+-[VRVDemandSources setWorkflow:]
+-[VRVDemandSources demandSources]
+-[VRVDemandSources setDemandSources:]
+-[VRVDemandSources .cxx_destruct]
+_OBJC_IVAR_$_VRVDemandSources._workflow
+_OBJC_IVAR_$_VRVDemandSources._demandSources
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.h
+-[VRVVastWorkflow processXMLData:withSuccess:andFailure:]
+-[VRVVastWorkflow workflowWithDoc:]
+-[VRVVastWorkflow verifyCorrectMediaTypeForDoc:]
+-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]
+___59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke
+___59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke.84
+-[VRVVastWorkflow processVastAds:intoSingleDocWithRootDoc:]
+-[VRVVastWorkflow mergeNodesForXPath:inDocument:toRootDocument:]
+-[VRVVastWorkflow processDataIntoXMLDoc:]
+-[VRVVastWorkflow stripCDATATagFromString:]
+-[VRVVastWorkflow getNodesForXPath:inDoc:]
+-[VRVVastWorkflow redirects]
+-[VRVVastWorkflow setRedirects:]
+-[VRVVastWorkflow vastAds]
+-[VRVVastWorkflow setVastAds:]
+-[VRVVastWorkflow mediaFileName]
+-[VRVVastWorkflow setMediaFileName:]
+-[VRVVastWorkflow successBlock]
+-[VRVVastWorkflow setSuccessBlock:]
+-[VRVVastWorkflow failureBlock]
+-[VRVVastWorkflow setFailureBlock:]
+-[VRVVastWorkflow .cxx_destruct]
+___block_descriptor_40_e8_32s_e16_v16@?0@"NSData"8l
+___block_descriptor_40_e8_32s_e17_v16@?0@"NSError"8l
+_OBJC_IVAR_$_VRVVastWorkflow._redirects
+_OBJC_IVAR_$_VRVVastWorkflow._vastAds
+_OBJC_IVAR_$_VRVVastWorkflow._mediaFileName
+_OBJC_IVAR_$_VRVVastWorkflow._successBlock
+_OBJC_IVAR_$_VRVVastWorkflow._failureBlock
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VAST/VRVVastWorkflow.m
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke.84
+__59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke
+-[VRVTemplate init]
+-[VRVTemplate initWithTemplateId:templateType:templateUri:assets:]
+-[VRVTemplate templateId]
+-[VRVTemplate setTemplateId:]
+-[VRVTemplate templateType]
+-[VRVTemplate setTemplateType:]
+-[VRVTemplate templateUri]
+-[VRVTemplate setTemplateUri:]
+-[VRVTemplate assets]
+-[VRVTemplate setAssets:]
+-[VRVTemplate .cxx_destruct]
+_OBJC_IVAR_$_VRVTemplate._templateId
+_OBJC_IVAR_$_VRVTemplate._templateType
+_OBJC_IVAR_$_VRVTemplate._templateUri
+_OBJC_IVAR_$_VRVTemplate._assets
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVTemplate.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVTemplate.h
+-[VRVBannerAd initFromAd:]
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Banner Ads/VRVBannerAd.m
+-[VRVBridge respondToBridgeAction:]
+-[VRVBridge getValueFromExpandAction:]
+-[VRVBridge getTouchFromExpandAction:]
+-[VRVBridge getAllowScrollAndFireMethodForAction:]
+-[VRVBridge open]
+-[VRVBridge fireCloseMethod]
+-[VRVBridge fireOpenUrlMethodWithUrl:]
+-[VRVBridge fireExpandPixelsMethodWithPixels:andTouch:]
+-[VRVBridge fireExpandPercentMethodWithPercent:andTouch:]
+-[VRVBridge fireCollapseMethod]
+-[VRVBridge fireEnableRedirectMethod]
+-[VRVBridge fireRewardMethod]
+-[VRVBridge fireDeviceDataMethod]
+-[VRVBridge fireAllowScrollMethodWithAllow:]
+-[VRVBridge handleOptin:]
+-[VRVBridge delegate]
+-[VRVBridge setDelegate:]
+-[VRVBridge .cxx_destruct]
+_OBJC_IVAR_$_VRVBridge._delegate
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVBridge.m
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVBridge.h
+-[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]
+___62-[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]_block_invoke
+-[VRVAdClient getBannerAdForZone:withSuccess:andFailure:]
+___57-[VRVAdClient getBannerAdForZone:withSuccess:andFailure:]_block_invoke
+-[VRVAdClient getAdForZone:isBannerAd:isRewarded:withSuccess:andFailure:]
+___73-[VRVAdClient getAdForZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke
+___copy_helper_block_e8_32s40s48b56b
+___destroy_helper_block_e8_32s40s48s56s
+-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]
+___105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke
+___copy_helper_block_e8_32s40s48s56b64b
+___destroy_helper_block_e8_32s40s48s56s64s
+___105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke.58
+___copy_helper_block_e8_32b40b
+___105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke.61
+-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]
+___62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke
+___copy_helper_block_e8_32s40b48b
+___destroy_helper_block_e8_32s40s48s
+___62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.69
+-[VRVAdClient generateAdFromData:success:andFailure:]
+___53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke
+___53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.90
+___block_descriptor_40_e8_32bs_e15_v16@?0@"VRVAd"8l
+___block_descriptor_66_e8_32s40s48bs56bs_e21_v16@?0@"VRVManifest"8l
+___block_descriptor_74_e8_32s40s48s56bs64bs_e5_v8@?0l
+___block_descriptor_48_e8_32bs40bs_e15_v16@?0@"VRVAd"8l
+___block_descriptor_56_e8_32s40bs48bs_e16_v16@?0@"NSData"8l
+___block_descriptor_40_e8_32bs_e31_v24@?0@"NSString"8@"NSString"16l
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdClient.m
+__53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.90
+__53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke
+__62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.69
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40b48b
+__62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke
+__105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke.61
+__copy_helper_block_e8_32b40b
+__105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke.58
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56b64b
+__105-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48b56b
+__73-[VRVAdClient getAdForZone:isBannerAd:isRewarded:withSuccess:andFailure:]_block_invoke
+__57-[VRVAdClient getBannerAdForZone:withSuccess:andFailure:]_block_invoke
+__62-[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]_block_invoke
++[VRVBannerAdHandler sharedHandler]
+___35+[VRVBannerAdHandler sharedHandler]_block_invoke
+-[VRVBannerAdHandler init]
+-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]
+___65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke
+___65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke_2
+___copy_helper_block_e8_32s40s48b
+___65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke.31
+___65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke.36
+-[VRVBannerAdHandler loadedAds]
+-[VRVBannerAdHandler setLoadedAds:]
+-[VRVBannerAdHandler .cxx_destruct]
+_OBJC_IVAR_$_VRVBannerAdHandler._loadedAds
+___block_descriptor_56_e8_32s40s48bs_e18_v16@?0@"NSString"8l
+___block_descriptor_56_e8_32s40bs48bs_e21_v16@?0@"VRVBannerAd"8l
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Banner Ads/VRVBannerAdHandler.m
+__65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke.36
+__65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke.31
+__copy_helper_block_e8_32s40s48b
+__65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke_2
+__65-[VRVBannerAdHandler loadBannerAdForZone:withSuccess:andFailure:]_block_invoke
+__35+[VRVBannerAdHandler sharedHandler]_block_invoke
++[VRVNetworkClient makeJSONRequestWithURL:method:headers:success:andFailure:]
+___77+[VRVNetworkClient makeJSONRequestWithURL:method:headers:success:andFailure:]_block_invoke
++[VRVNetworkClient makeHTMLRequestWithURL:method:success:andFailure:]
+___69+[VRVNetworkClient makeHTMLRequestWithURL:method:success:andFailure:]_block_invoke
++[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]
+___68+[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]_block_invoke
++[VRVNetworkClient createRequestFromUrl:headers:andMethod:]
+___block_descriptor_48_e8_32bs40bs_e46_v32@?0@"NSData"8@"NSURLResponse"16@"NSError"24l
+/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVNetworkClient.m
+__68+[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]_block_invoke
+__69+[VRVNetworkClient makeHTMLRequestWithURL:method:success:andFailure:]_block_invoke
+__77+[VRVNetworkClient makeJSONRequestWithURL:method:headers:success:andFailure:]_block_invoke
+/Users/samboyce/Library/Developer/Xcode/DerivedData/SDKWorkspace-epayckwdsaeunkcqnbodpsffkrje/Build/Intermediates.noindex/DependentBuilds/VerveAd.build/Release-iphoneos/VerveAd.build/DerivedSources/VerveAd_vers.c
++[OMIDVerveMethodInvoker performSelectorAsync:target:]
+___54+[OMIDVerveMethodInvoker performSelectorAsync:target:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
++[OMIDVerveMethodInvoker performSelectorAsync:target:argument:]
+___63+[OMIDVerveMethodInvoker performSelectorAsync:target:argument:]_block_invoke
+___copy_helper_block_.5
+___destroy_helper_block_.6
++[OMIDVerveMethodInvoker performSelectorSync:target:argument:]
+___62+[OMIDVerveMethodInvoker performSelectorSync:target:argument:]_block_invoke
+___copy_helper_block_.8
+___destroy_helper_block_.9
+___block_descriptor_tmp
+___block_descriptor_tmp.7
+___block_descriptor_tmp.10
+Apple LLVM version 8.1.0 (clang-802.0.42)
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDMethodInvoker.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp
+__destroy_helper_block_
+__copy_helper_block_
+__62+[OMIDVerveMethodInvoker performSelectorSync:target:argument:]_block_invoke
+__63+[OMIDVerveMethodInvoker performSelectorAsync:target:argument:]_block_invoke
+__54+[OMIDVerveMethodInvoker performSelectorAsync:target:]_block_invoke
+-[OMIDVerveAdSession initWithConfiguration:adSessionContext:error:]
+-[OMIDVerveAdSession addToRegistry]
+-[OMIDVerveAdSession friendlyObstructions]
+-[OMIDVerveAdSession adEventsPublisher]
+-[OMIDVerveAdSession videoEventsPublisher]
+-[OMIDVerveAdSession mainAdView]
+-[OMIDVerveAdSession setMainAdView:]
+-[OMIDVerveAdSession internal_setMainAdView:]
+-[OMIDVerveAdSession start]
+-[OMIDVerveAdSession onStart]
+-[OMIDVerveAdSession finish]
+-[OMIDVerveAdSession onFinish]
+-[OMIDVerveAdSession addFriendlyObstruction:]
+-[OMIDVerveAdSession internal_addFriendlyObstruction:]
+-[OMIDVerveAdSession removeFriendlyObstruction:]
+-[OMIDVerveAdSession internal_removeFriendlyObstruction:]
+-[OMIDVerveAdSession removeAllFriendlyObstructions]
+-[OMIDVerveAdSession internal_removeAllFriendlyObstructions]
+-[OMIDVerveAdSession logErrorWithType:message:]
+-[OMIDVerveAdSession setDeviceVolume]
+-[OMIDVerveAdSession deviceVolume]
+-[OMIDVerveAdSession configuration]
+-[OMIDVerveAdSession identifier]
+-[OMIDVerveAdSession eventFilter]
+-[OMIDVerveAdSession bridge]
+-[OMIDVerveAdSession statePublisher]
+-[OMIDVerveAdSession delegate]
+-[OMIDVerveAdSession setDelegate:]
+-[OMIDVerveAdSession lastPublishedViewStateWasPopulated]
+-[OMIDVerveAdSession setLastPublishedViewStateWasPopulated:]
+-[OMIDVerveAdSession .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveAdSession._identifier
+_OBJC_IVAR_$_OMIDVerveAdSession._context
+_OBJC_IVAR_$_OMIDVerveAdSession._configuration
+_OBJC_IVAR_$_OMIDVerveAdSession._friendlyObstructions
+_OBJC_IVAR_$_OMIDVerveAdSession._bridge
+_OBJC_IVAR_$_OMIDVerveAdSession._eventFilter
+_OBJC_IVAR_$_OMIDVerveAdSession._statePublisher
+_OBJC_IVAR_$_OMIDVerveAdSession._mainAdView
+_OBJC_IVAR_$_OMIDVerveAdSession._delegate
+_OBJC_IVAR_$_OMIDVerveAdSession._lastPublishedViewStateWasPopulated
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSession.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSession.h
++[OMIDVerveStateWatcher getInstance]
+___36+[OMIDVerveStateWatcher getInstance]_block_invoke
+-[OMIDVerveStateWatcher appIsActive]
+-[OMIDVerveStateWatcher start]
+-[OMIDVerveStateWatcher stop]
+-[OMIDVerveStateWatcher adSessionDidBecomeActive:]
+-[OMIDVerveStateWatcher updateAppStateWithUIApplicationState:]
+-[OMIDVerveStateWatcher appStateString]
+-[OMIDVerveStateWatcher appStateFromUIApplicationState:]
+-[OMIDVerveStateWatcher observeValueForKeyPath:ofObject:change:context:]
+-[OMIDVerveStateWatcher deviceVolume]
+-[OMIDVerveStateWatcher onAppDidBecomeActive]
+-[OMIDVerveStateWatcher onAppWillResignActive]
+-[OMIDVerveStateWatcher onAppDidEnterBackground]
+-[OMIDVerveStateWatcher appState]
+-[OMIDVerveStateWatcher delegate]
+-[OMIDVerveStateWatcher setDelegate:]
+-[OMIDVerveStateWatcher .cxx_destruct]
+_getInstance.pred
+_getInstance.omidStateWatcher
+_OBJC_IVAR_$_OMIDVerveStateWatcher._appState
+_OBJC_IVAR_$_OMIDVerveStateWatcher._delegate
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDStateWatcher.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDStateWatcher.h
+__36+[OMIDVerveStateWatcher getInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/dispatch/once.h
+-[OMIDVerveViewKey hash]
+-[OMIDVerveViewKey isEqual:]
+-[OMIDVerveViewKey copyWithZone:]
+-[OMIDVerveViewKey view]
+-[OMIDVerveViewKey setView:]
+-[OMIDVerveViewKey .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveViewKey._view
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewKey.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewKey.h
+-[OMIDVerveEventFilter initWithFinalEventCode:]
+-[OMIDVerveEventFilter isFinalEventAccepted]
+___44-[OMIDVerveEventFilter isFinalEventAccepted]_block_invoke
+-[OMIDVerveEventFilter acceptEventWithCode:]
+-[OMIDVerveEventFilter acceptEventWithCode:blockingEventCodes:]
+___63-[OMIDVerveEventFilter acceptEventWithCode:blockingEventCodes:]_block_invoke
+___copy_helper_block_.3
+___destroy_helper_block_.4
+-[OMIDVerveEventFilter acceptAnyEventWithRequiredEventCodes:]
+___61-[OMIDVerveEventFilter acceptAnyEventWithRequiredEventCodes:]_block_invoke
+___copy_helper_block_.6
+___destroy_helper_block_.7
+-[OMIDVerveEventFilter .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveEventFilter._finalEventCode
+_OBJC_IVAR_$_OMIDVerveEventFilter._syncQueue
+_OBJC_IVAR_$_OMIDVerveEventFilter._codes
+___block_descriptor_tmp.5
+___block_descriptor_tmp.8
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDEventFilter.m
+__61-[OMIDVerveEventFilter acceptAnyEventWithRequiredEventCodes:]_block_invoke
+__63-[OMIDVerveEventFilter acceptEventWithCode:blockingEventCodes:]_block_invoke
+__44-[OMIDVerveEventFilter isFinalEventAccepted]_block_invoke
+-[OMIDVerveJSTimer init]
+-[OMIDVerveJSTimer setupMethodsForJSObject:]
+___44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke
+___44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.10
+___copy_helper_block_.13
+___destroy_helper_block_.14
+___44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.19
+___copy_helper_block_.20
+___destroy_helper_block_.21
+___44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.25
+___copy_helper_block_.26
+___destroy_helper_block_.27
+-[OMIDVerveJSTimer scheduleTimerWithTimeout:callback:repeatable:]
+-[OMIDVerveJSTimer scheduleTimerWithId:timeout:callback:repeatable:]
+___68-[OMIDVerveJSTimer scheduleTimerWithId:timeout:callback:repeatable:]_block_invoke
+___copy_helper_block_.44
+___destroy_helper_block_.45
+-[OMIDVerveJSTimer handleTimerWithId:timeout:callback:repeatable:]
+-[OMIDVerveJSTimer cancelTimerWithId:]
+-[OMIDVerveJSTimer cancelAllTimers]
+-[OMIDVerveJSTimer jsInvoker]
+-[OMIDVerveJSTimer setJsInvoker:]
+-[OMIDVerveJSTimer timerIds]
+-[OMIDVerveJSTimer timerIdCounter]
+-[OMIDVerveJSTimer .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveJSTimer._timerIds
+___block_descriptor_tmp.16
+___block_descriptor_tmp.22
+___block_descriptor_tmp.28
+_OBJC_IVAR_$_OMIDVerveJSTimer._timerIdCounter
+___block_descriptor_tmp.47
+_OBJC_IVAR_$_OMIDVerveJSTimer._jsInvoker
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDJSTimer.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDJSTimer.h
+__68-[OMIDVerveJSTimer scheduleTimerWithId:timeout:callback:repeatable:]_block_invoke
+__44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.25
+__44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.19
+__44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke.10
+__44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke
+-[OMIDVerveWKWebViewJSExecutor initWithWebView:]
+-[OMIDVerveWKWebViewJSExecutor supportBackgroundThread]
+-[OMIDVerveWKWebViewJSExecutor jsEnvironment]
+-[OMIDVerveWKWebViewJSExecutor injectJavaScriptFromString:]
+-[OMIDVerveWKWebViewJSExecutor .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveWKWebViewJSExecutor._webView
+l_OBJC_PROTOCOL_$_OMIDVerveJSExecutor
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveJSExecutor
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDWKWebViewJSExecutor.m
+-[OMIDVerveProcessorFactory init]
+-[OMIDVerveProcessorFactory rootProcessor]
+-[OMIDVerveProcessorFactory .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveProcessorFactory._viewProcessor
+_OBJC_IVAR_$_OMIDVerveProcessorFactory._windowProcessor
+_OBJC_IVAR_$_OMIDVerveProcessorFactory._screenProcessor
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDProcessorFactory.m
+-[OMIDVerveUIWebViewJSExecutor initWithWebView:]
+-[OMIDVerveUIWebViewJSExecutor supportBackgroundThread]
+-[OMIDVerveUIWebViewJSExecutor jsEnvironment]
+-[OMIDVerveUIWebViewJSExecutor injectJavaScriptFromString:]
+-[OMIDVerveUIWebViewJSExecutor .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveUIWebViewJSExecutor._webView
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDUIWebViewJSExecutor.m
++[OMIDVerveDictionaryUtil stateWithFrame:clipsToBounds:]
++[OMIDVerveDictionaryUtil state:addFriendlyObstructionForSessions:]
++[OMIDVerveDictionaryUtil state:addSessionId:]
++[OMIDVerveDictionaryUtil state:addChildState:]
++[OMIDVerveDictionaryUtil state:isEqualToState:]
++[OMIDVerveDictionaryUtil emptyState]
++[OMIDVerveDictionaryUtil stringFromJSON:]
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDDictionaryUtil.m
+-[OMIDVerveBridge initWithJSExecutor:]
+-[OMIDVerveBridge publishCommand:]
+-[OMIDVerveBridge internal_publishCommand:]
+-[OMIDVerveBridge publishInitWithConfiguration:]
+-[OMIDVerveBridge publishStartEventWithAdSessionId:JSONContext:verificationParameters:]
+-[OMIDVerveBridge publishErrorWithType:errorMessage:]
+-[OMIDVerveBridge publishFinishEvent]
+-[OMIDVerveBridge publishImpressionEvent]
+-[OMIDVerveBridge publishVideoEventWithName:parameters:]
+-[OMIDVerveBridge publishEventWithName:parameters:commandName:]
+-[OMIDVerveBridge getStringError:]
+-[OMIDVerveBridge getStringOwner:]
+-[OMIDVerveBridge jsExecutor]
+-[OMIDVerveBridge .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveBridge._jsExecutor
+l_OBJC_PROTOCOL_$_OMIDVerveCommandPublisher
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveCommandPublisher
+l_OBJC_PROTOCOL_$_OMIDVerveSessionEventsPublisher
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveSessionEventsPublisher
+l_OBJC_PROTOCOL_$_OMIDVerveAdEventsPublisher
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveAdEventsPublisher
+l_OBJC_PROTOCOL_$_OMIDVerveVideoEventsPublisher
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveVideoEventsPublisher
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDBridge.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDBridge.h
+-[OMIDVerveAdSessionStatePublisher initWithCommandPublisher:]
+-[OMIDVerveAdSessionStatePublisher cleanupAdState]
+-[OMIDVerveAdSessionStatePublisher publishNativeViewStateWithCommand:timestamp:]
+-[OMIDVerveAdSessionStatePublisher publishEmptyNativeViewStateWithCommand:timestamp:]
+-[OMIDVerveAdSessionStatePublisher publishAppState:]
+-[OMIDVerveAdSessionStatePublisher publishDeviceVolume:]
+-[OMIDVerveAdSessionStatePublisher commandPublisher]
+-[OMIDVerveAdSessionStatePublisher adState]
+-[OMIDVerveAdSessionStatePublisher timestamp]
+-[OMIDVerveAdSessionStatePublisher .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveAdSessionStatePublisher._commandPublisher
+_OBJC_IVAR_$_OMIDVerveAdSessionStatePublisher._timestamp
+_OBJC_IVAR_$_OMIDVerveAdSessionStatePublisher._adState
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionStatePublisher.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionStatePublisher.h
+-[OMIDVerveAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:isolateVerificationScripts:error:]
+-[OMIDVerveAdSessionConfiguration initWithImpressionOwner:videoEventsOwner:error:]
+-[OMIDVerveAdSessionConfiguration impressionOwner]
+-[OMIDVerveAdSessionConfiguration setImpressionOwner:]
+-[OMIDVerveAdSessionConfiguration videoEventsOwner]
+-[OMIDVerveAdSessionConfiguration setVideoEventsOwner:]
+-[OMIDVerveAdSessionConfiguration isolateVerificationScripts]
+-[OMIDVerveAdSessionConfiguration setIsolateVerificationScripts:]
+_OBJC_IVAR_$_OMIDVerveAdSessionConfiguration._impressionOwner
+_OBJC_IVAR_$_OMIDVerveAdSessionConfiguration._videoEventsOwner
+_OBJC_IVAR_$_OMIDVerveAdSessionConfiguration._isolateVerificationScripts
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionConfiguration.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionConfiguration.h
++[OMIDVerveTreeWalker getInstance]
+___34+[OMIDVerveTreeWalker getInstance]_block_invoke
+-[OMIDVerveTreeWalker init]
+-[OMIDVerveTreeWalker start]
+-[OMIDVerveTreeWalker stop]
+-[OMIDVerveTreeWalker pause]
+-[OMIDVerveTreeWalker updateTreeState]
+-[OMIDVerveTreeWalker beforeWalk]
+-[OMIDVerveTreeWalker afterWalk]
+-[OMIDVerveTreeWalker doWalk]
+-[OMIDVerveTreeWalker walkView:processor:parentState:]
+-[OMIDVerveTreeWalker walkChildrenForView:processor:state:type:]
+-[OMIDVerveTreeWalker handleAdView:withState:]
+-[OMIDVerveTreeWalker checkFriendlyObstruction:withState:]
+-[OMIDVerveTreeWalker onTick:]
+-[OMIDVerveTreeWalker timeLogger]
+-[OMIDVerveTreeWalker setTimeLogger:]
+-[OMIDVerveTreeWalker processorFactory]
+-[OMIDVerveTreeWalker adViewCache]
+-[OMIDVerveTreeWalker statePublisher]
+-[OMIDVerveTreeWalker .cxx_destruct]
+_getInstance.omidTreeWalker
+_OBJC_IVAR_$_OMIDVerveTreeWalker._processorFactory
+_OBJC_IVAR_$_OMIDVerveTreeWalker._adViewCache
+_OBJC_IVAR_$_OMIDVerveTreeWalker._statePublisher
+_OBJC_IVAR_$_OMIDVerveTreeWalker._timer
+_OBJC_IVAR_$_OMIDVerveTreeWalker._count
+_OBJC_IVAR_$_OMIDVerveTreeWalker._date1
+_OBJC_IVAR_$_OMIDVerveTreeWalker._date2
+_OBJC_IVAR_$_OMIDVerveTreeWalker._timeLogger
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDTreeWalker.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDTreeWalker.h
+__34+[OMIDVerveTreeWalker getInstance]_block_invoke
+-[OMIDVerveViewProcessor stateForView:]
+-[OMIDVerveViewProcessor childrenForView:]
+-[OMIDVerveViewProcessor orderedChildrenForView:]
+-[OMIDVerveViewProcessor frameInWindowSystemForView:]
+-[OMIDVerveViewProcessor windowForView:]
+-[OMIDVerveViewProcessor addView:toDictionary:]
+-[OMIDVerveViewProcessor buildChildrenFromDictionary:]
+___54-[OMIDVerveViewProcessor buildChildrenFromDictionary:]_block_invoke
+-[OMIDVerveViewProcessor processorForChildren]
+-[OMIDVerveViewProcessor setProcessorForChildren:]
+-[OMIDVerveViewProcessor .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveViewProcessor._processorForChildren
+l_OBJC_PROTOCOL_$_OMIDVerveNodeProcessor
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveNodeProcessor
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewProcessor.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewProcessor.h
+__54-[OMIDVerveViewProcessor buildChildrenFromDictionary:]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[OMIDVerveLightJSExecutor lightJSExecutor]
+-[OMIDVerveLightJSExecutor initWithTimer:networkBridge:]
+___56-[OMIDVerveLightJSExecutor initWithTimer:networkBridge:]_block_invoke
+-[OMIDVerveLightJSExecutor supportBackgroundThread]
+-[OMIDVerveLightJSExecutor jsEnvironment]
+-[OMIDVerveLightJSExecutor injectJavaScriptFromString:]
+___55-[OMIDVerveLightJSExecutor injectJavaScriptFromString:]_block_invoke
+___copy_helper_block_.22
+___destroy_helper_block_.23
+-[OMIDVerveLightJSExecutor invokeCallback:]
+-[OMIDVerveLightJSExecutor invokeCallback:argument:]
+-[OMIDVerveLightJSExecutor invokeScript:]
+-[OMIDVerveLightJSExecutor jsContext]
+-[OMIDVerveLightJSExecutor timer]
+-[OMIDVerveLightJSExecutor networkBridge]
+-[OMIDVerveLightJSExecutor dispatchQueue]
+-[OMIDVerveLightJSExecutor .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveLightJSExecutor._dispatchQueue
+_OBJC_IVAR_$_OMIDVerveLightJSExecutor._timer
+_OBJC_IVAR_$_OMIDVerveLightJSExecutor._networkBridge
+_OBJC_IVAR_$_OMIDVerveLightJSExecutor._jsContext
+___block_descriptor_tmp.24
+l_OBJC_PROTOCOL_$_OMIDVerveJSInvoker
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveJSInvoker
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDLightJSExecutor.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDLightJSExecutor.h
+__55-[OMIDVerveLightJSExecutor injectJavaScriptFromString:]_block_invoke
+__56-[OMIDVerveLightJSExecutor initWithTimer:networkBridge:]_block_invoke
++[OMIDVerveManager getInstance]
+___31+[OMIDVerveManager getInstance]_block_invoke
+-[OMIDVerveManager setup]
+-[OMIDVerveManager start]
+-[OMIDVerveManager stop]
+-[OMIDVerveManager appDidBecomeActive]
+-[OMIDVerveManager appDidResignActive]
+-[OMIDVerveManager adSessionRegistryDidBecomeActive]
+-[OMIDVerveManager adSessionRegistryDidResignActive]
+-[OMIDVerveManager adSessionDidBecomeActive:]
+_getInstance.omidManagerInstance
+l_OBJC_PROTOCOL_$_OMIDVerveAdSessionRegistryStateObserver
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveAdSessionRegistryStateObserver
+l_OBJC_PROTOCOL_$_OMIDVerveStateWatcherDelegate
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveStateWatcherDelegate
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDManager.m
+__31+[OMIDVerveManager getInstance]_block_invoke
+-[OMIDVerveJSNetworkBridge setupMethodsForJSObject:]
+___52-[OMIDVerveJSNetworkBridge setupMethodsForJSObject:]_block_invoke
+___52-[OMIDVerveJSNetworkBridge setupMethodsForJSObject:]_block_invoke.10
+-[OMIDVerveJSNetworkBridge downloadJavaScriptResourceWithURL:successCallback:failureCallback:]
+___94-[OMIDVerveJSNetworkBridge downloadJavaScriptResourceWithURL:successCallback:failureCallback:]_block_invoke
+___copy_helper_block_.28
+___destroy_helper_block_.29
+-[OMIDVerveJSNetworkBridge sendURL:successCallback:failureCallback:]
+___68-[OMIDVerveJSNetworkBridge sendURL:successCallback:failureCallback:]_block_invoke
+___copy_helper_block_.38
+___destroy_helper_block_.39
+-[OMIDVerveJSNetworkBridge injectJavaScriptFromURL:]
+___52-[OMIDVerveJSNetworkBridge injectJavaScriptFromURL:]_block_invoke
+___copy_helper_block_.50
+___destroy_helper_block_.51
+-[OMIDVerveJSNetworkBridge getOMIDError:]
+-[OMIDVerveJSNetworkBridge jsInvoker]
+-[OMIDVerveJSNetworkBridge setJsInvoker:]
+-[OMIDVerveJSNetworkBridge .cxx_destruct]
+___block_descriptor_tmp.15
+___block_descriptor_tmp.31
+___block_descriptor_tmp.40
+___block_descriptor_tmp.52
+_OBJC_IVAR_$_OMIDVerveJSNetworkBridge._jsInvoker
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDJSNetworkBridge.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDJSNetworkBridge.h
+__52-[OMIDVerveJSNetworkBridge injectJavaScriptFromURL:]_block_invoke
+__68-[OMIDVerveJSNetworkBridge sendURL:successCallback:failureCallback:]_block_invoke
+__94-[OMIDVerveJSNetworkBridge downloadJavaScriptResourceWithURL:successCallback:failureCallback:]_block_invoke
+__52-[OMIDVerveJSNetworkBridge setupMethodsForJSObject:]_block_invoke.10
+__52-[OMIDVerveJSNetworkBridge setupMethodsForJSObject:]_block_invoke
++[OMIDVerveJSExecutorFactory JSExecutorForContext:]
++[OMIDVerveJSExecutorFactory JSExecutorWithWebView:]
++[OMIDVerveJSExecutorFactory JSExecutorWithResources:script:]
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDJSExecutorFactory.m
++[OMIDVerveAdSessionRegistry getInstance]
+___41+[OMIDVerveAdSessionRegistry getInstance]_block_invoke
+-[OMIDVerveAdSessionRegistry init]
+-[OMIDVerveAdSessionRegistry adSessions]
+-[OMIDVerveAdSessionRegistry activeAdSessions]
+-[OMIDVerveAdSessionRegistry observers]
+-[OMIDVerveAdSessionRegistry isActive]
+-[OMIDVerveAdSessionRegistry addAdSession:]
+-[OMIDVerveAdSessionRegistry removeAdSession:]
+-[OMIDVerveAdSessionRegistry addStateObserver:]
+-[OMIDVerveAdSessionRegistry adSessionDidStart:]
+-[OMIDVerveAdSessionRegistry adSessionDidFinish:]
+-[OMIDVerveAdSessionRegistry adSession:didRegisterAdView:]
+-[OMIDVerveAdSessionRegistry .cxx_destruct]
+_getInstance.instance
+_OBJC_IVAR_$_OMIDVerveAdSessionRegistry._adSessions
+_OBJC_IVAR_$_OMIDVerveAdSessionRegistry._activeAdSessions
+_OBJC_IVAR_$_OMIDVerveAdSessionRegistry._observers
+l_OBJC_PROTOCOL_$_OMIDVerveAdSessionDelegate
+l_OBJC_LABEL_PROTOCOL_$_OMIDVerveAdSessionDelegate
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionRegistry.m
+__41+[OMIDVerveAdSessionRegistry getInstance]_block_invoke
+-[OMIDVerveWindowProcessor frameInWindowSystemForView:]
+-[OMIDVerveWindowProcessor windowForView:]
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDWindowProcessor.m
++[OMIDVerveError setOMIDErrorFor:code:message:]
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDError.m
++[OMIDVerveCommand commandWithName:]
++[OMIDVerveCommand stringWithQuotesFromString:]
++[OMIDVerveCommand stringFromArguments:]
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDCommand.m
+-[OMIDVerveScreenProcessor stateForView:]
+-[OMIDVerveScreenProcessor childrenForView:]
+-[OMIDVerveScreenProcessor orderedChildrenForView:]
+-[OMIDVerveScreenProcessor isInternalWindow:]
+-[OMIDVerveScreenProcessor processorForChildren]
+-[OMIDVerveScreenProcessor setProcessorForChildren:]
+-[OMIDVerveScreenProcessor .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveScreenProcessor._processorForChildren
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDScreenProcessor.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDScreenProcessor.h
+UIInterfaceOrientationIsLandscape
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
++[OMIDVerveContext sharedContext]
+___33+[OMIDVerveContext sharedContext]_block_invoke
+-[OMIDVerveContext toJSON]
+_sharedContext.pred
+_sharedContext.context
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDContext.m
+__33+[OMIDVerveContext sharedContext]_block_invoke
+-[OMIDVerveAdSessionContext initWithPartner:webView:customReferenceIdentifier:error:]
+-[OMIDVerveAdSessionContext initWithPartner:script:resources:customReferenceIdentifier:error:]
+-[OMIDVerveAdSessionContext toJSON]
+-[OMIDVerveAdSessionContext resourcesJSON]
+-[OMIDVerveAdSessionContext typeString]
+-[OMIDVerveAdSessionContext partner]
+-[OMIDVerveAdSessionContext type]
+-[OMIDVerveAdSessionContext webView]
+-[OMIDVerveAdSessionContext resources]
+-[OMIDVerveAdSessionContext script]
+-[OMIDVerveAdSessionContext identifier]
+-[OMIDVerveAdSessionContext .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._partner
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._webView
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._type
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._identifier
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._resources
+_OBJC_IVAR_$_OMIDVerveAdSessionContext._script
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdSessionContext.m
+-[OMIDVerveAdViewCache initWithAdSessionRegistry:]
+-[OMIDVerveAdViewCache prepare]
+-[OMIDVerveAdViewCache buildRootViewsFromAdView:]
+-[OMIDVerveAdViewCache prepareFriendlyObstructionsForAdSession:]
+-[OMIDVerveAdViewCache addFriendlyObstruction:forAdSession:]
+-[OMIDVerveAdViewCache cleanup]
+-[OMIDVerveAdViewCache onAdViewProcessed]
+-[OMIDVerveAdViewCache sessionIdForView:]
+-[OMIDVerveAdViewCache friendlySessionIdsForView:]
+___50-[OMIDVerveAdViewCache friendlySessionIdsForView:]_block_invoke
+-[OMIDVerveAdViewCache typeForView:]
+-[OMIDVerveAdViewCache adViews]
+-[OMIDVerveAdViewCache friendlyObstructions]
+-[OMIDVerveAdViewCache rootViews]
+-[OMIDVerveAdViewCache visibleSessionIds]
+-[OMIDVerveAdViewCache hiddenSessionIds]
+-[OMIDVerveAdViewCache adSessionRegistry]
+-[OMIDVerveAdViewCache .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveAdViewCache._adSessionRegistry
+_OBJC_IVAR_$_OMIDVerveAdViewCache._adViews
+_OBJC_IVAR_$_OMIDVerveAdViewCache._friendlyObstructions
+_OBJC_IVAR_$_OMIDVerveAdViewCache._key
+_OBJC_IVAR_$_OMIDVerveAdViewCache._rootViews
+_OBJC_IVAR_$_OMIDVerveAdViewCache._visibleSessionIds
+_OBJC_IVAR_$_OMIDVerveAdViewCache._hiddenSessionIds
+_OBJC_IVAR_$_OMIDVerveAdViewCache._isAdViewProcessed
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdViewCache.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdViewCache.h
+__50-[OMIDVerveAdViewCache friendlySessionIdsForView:]_block_invoke
++[OMIDVerveDevice deviceDictionary]
+___35+[OMIDVerveDevice deviceDictionary]_block_invoke
++[OMIDVerveDevice deviceType]
++[OMIDVerveDevice deviceOs]
++[OMIDVerveDevice deviceOsVersion]
++[OMIDVerveDevice toJSON]
+_deviceDictionary.dict
+_deviceDictionary.oncePredicate
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDDevice.m
+__35+[OMIDVerveDevice deviceDictionary]_block_invoke
+-[OMIDVerveAdEvents initWithAdSession:error:]
+-[OMIDVerveAdEvents impressionOccurredWithError:]
+-[OMIDVerveAdEvents startSessionIfNeeded]
+-[OMIDVerveAdEvents .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveAdEvents._adSession
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDAdEvents.m
++[OMIDVerveSDK versionString]
++[OMIDVerveSDK isCompatibleWithOMIDAPIVersion:]
++[OMIDVerveSDK majorVersionFrom:]
++[OMIDVerveSDK sharedInstance]
+___30+[OMIDVerveSDK sharedInstance]_block_invoke
+-[OMIDVerveSDK activateWithOMIDAPIVersion:error:]
+___49-[OMIDVerveSDK activateWithOMIDAPIVersion:error:]_block_invoke
+-[OMIDVerveSDK isActive]
+_sharedInstance.sharedInstance
+_activateWithOMIDAPIVersion:error:.onceToken
+___block_descriptor_tmp.42
+___block_literal_global.43
+_OBJC_IVAR_$_OMIDVerveSDK._active
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDSDK.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDSDK.h
+__49-[OMIDVerveSDK activateWithOMIDAPIVersion:error:]_block_invoke
+__30+[OMIDVerveSDK sharedInstance]_block_invoke
+-[OMIDVervePartner initWithName:versionString:]
+-[OMIDVervePartner toJSON]
+-[OMIDVervePartner name]
+-[OMIDVervePartner versionString]
+-[OMIDVervePartner .cxx_destruct]
+_OBJC_IVAR_$_OMIDVervePartner._name
+_OBJC_IVAR_$_OMIDVervePartner._versionString
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDPartner.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDPartner.h
++[OMIDVerveLoadTask sharedSession]
+___34+[OMIDVerveLoadTask sharedSession]_block_invoke
++[OMIDVerveLoadTask taskToLoadStringFromURL:attemptsCount:completionHandler:]
++[OMIDVerveLoadTask taskToLoadStringFromURL:attemptsCount:completionQueue:completionHandler:]
+___93+[OMIDVerveLoadTask taskToLoadStringFromURL:attemptsCount:completionQueue:completionHandler:]_block_invoke
++[OMIDVerveLoadTask taskToSendPingToURL:completionQueue:completionHandler:]
+-[OMIDVerveLoadTask initWithURL:attemptsCount:completionQueue:]
+-[OMIDVerveLoadTask start]
+___26-[OMIDVerveLoadTask start]_block_invoke
+-[OMIDVerveLoadTask handleResponseWithData:error:]
+___50-[OMIDVerveLoadTask handleResponseWithData:error:]_block_invoke
+___copy_helper_block_.39
+___destroy_helper_block_.40
+-[OMIDVerveLoadTask url]
+-[OMIDVerveLoadTask attemptsCount]
+-[OMIDVerveLoadTask attemptNumber]
+-[OMIDVerveLoadTask completionQueue]
+-[OMIDVerveLoadTask responseParser]
+-[OMIDVerveLoadTask setResponseParser:]
+-[OMIDVerveLoadTask completionHandler]
+-[OMIDVerveLoadTask setCompletionHandler:]
+-[OMIDVerveLoadTask .cxx_destruct]
+_sharedSession.pred
+_sharedSession.session
+___block_descriptor_tmp.19
+___block_literal_global.20
+_OBJC_IVAR_$_OMIDVerveLoadTask._url
+_OBJC_IVAR_$_OMIDVerveLoadTask._attemptsCount
+_OBJC_IVAR_$_OMIDVerveLoadTask._completionQueue
+___block_descriptor_tmp.30
+_OBJC_IVAR_$_OMIDVerveLoadTask._attemptNumber
+_OBJC_IVAR_$_OMIDVerveLoadTask._responseParser
+___block_descriptor_tmp.41
+_OBJC_IVAR_$_OMIDVerveLoadTask._completionHandler
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDLoadTask.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDLoadTask.h
+__50-[OMIDVerveLoadTask handleResponseWithData:error:]_block_invoke
+__26-[OMIDVerveLoadTask start]_block_invoke
+__93+[OMIDVerveLoadTask taskToLoadStringFromURL:attemptsCount:completionQueue:completionHandler:]_block_invoke
+__34+[OMIDVerveLoadTask sharedSession]_block_invoke
+-[OMIDVerveStatePublisher initWithAdSessionRegistry:]
+-[OMIDVerveStatePublisher publishState:toSessions:timestamp:]
+___61-[OMIDVerveStatePublisher publishState:toSessions:timestamp:]_block_invoke
+___61-[OMIDVerveStatePublisher publishState:toSessions:timestamp:]_block_invoke_2
+-[OMIDVerveStatePublisher publishEmptyStateToSessions:timestamp:]
+___65-[OMIDVerveStatePublisher publishEmptyStateToSessions:timestamp:]_block_invoke
+-[OMIDVerveStatePublisher publishNativeViewStateCommand:toSessions:timestamp:]
+-[OMIDVerveStatePublisher publishEmptyStateCommand:toSessions:timestamp:]
+-[OMIDVerveStatePublisher cleanupCache]
+___39-[OMIDVerveStatePublisher cleanupCache]_block_invoke
+___copy_helper_block_.41
+___destroy_helper_block_.42
+-[OMIDVerveStatePublisher previousState]
+-[OMIDVerveStatePublisher adSessionRegistry]
+-[OMIDVerveStatePublisher .cxx_destruct]
+_OBJC_IVAR_$_OMIDVerveStatePublisher._adSessionRegistry
+_OBJC_IVAR_$_OMIDVerveStatePublisher._queue
+_OBJC_IVAR_$_OMIDVerveStatePublisher._previousState
+___block_descriptor_tmp.43
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDStatePublisher.m
+/Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDStatePublisher.h
+__39-[OMIDVerveStatePublisher cleanupCache]_block_invoke
+__65-[OMIDVerveStatePublisher publishEmptyStateToSessions:timestamp:]_block_invoke
+__61-[OMIDVerveStatePublisher publishState:toSessions:timestamp:]_block_invoke_2
+__61-[OMIDVerveStatePublisher publishState:toSessions:timestamp:]_block_invoke
