@@ -32,13 +32,13 @@ to set the VC that will show the ad.
 >Interstitial Ads will present in their own UIViewController, however a root View Controller must be designated. This root VC should be the active VC when attempting to present an ad.
 
 ### Loading an Interstitial Ad
-To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
+To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. A nil or NULL zone will be treated as an empty string.
 
 Once an ad is ready to be shown, the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called.
 
 ### Show an Interstitial Ad
 
-After loading successfully, you can safely call `+ (void)showInterstitialAdForZone:(NSString *)zone;`, passing in the relevant zone, to show the ad.
+After loading successfully, you can safely call `+ (void)showInterstitialAdForZone:(nullable NSString *)zone;` to show the ad.
 
 After successfully closing the ad once it's been viewed, `- (void)onInterstitialAdClosedForZone:(NSString *)zone;` will be called.
 
@@ -81,26 +81,22 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 
 
 ## Rewarded Video
-Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<VerveAd/VRVRewardedAd.h>`. If using both Interstitial and Rewarded ads keep in mind that only one delegate can be active at a time between these two types of full screen ads. Calling `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;` will remove the Interstitial ad delegate and vice versa.
+Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<VerveAd/VRVRewardedAd.h>`.
 
 ### Import Headers and Set AppID
-<<<<<<< HEAD
 First, import the Rewarded Ad header by calling `#import <VerveAd/VRVRewardedAd.h>` with your other import statements.
-=======
-First, import the Rewarded Ad header by calling `#import <verveAdSDK/VRVRewardedAd.h>` with your other import statements.
->>>>>>> e0329d6c33123e95f954319666cf2b8065912a30
 
 Then, use `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;`
 to set the VC that will show the ad.
 
 ### Loading a Rewarded Video Ad
-To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
+To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. A nil or NULL zone will be treated as an empty string.
 
 Once an ad is ready to be shown, the delegate function `- (void)onRewardedAdReadyForZone:(NSString *)zone;` will be called.
 
 ### Show a Rewarded Video Ad
 
-After loading successfully, you can safely call `+ (void)showRewardedAdForZone:(NSString *)zone;`, passing in the relevant zone, to show the ad.
+After loading successfully, you can safely call `+ (void)showRewardedAdForZone:(nullable NSString *)zone;` to show the ad.
 
 After successfully closing the ad once it's been viewed, `- (void)onRewardedAdClosedForZone:(NSString *)zone;` will be called.
 
@@ -139,7 +135,7 @@ This view will automatically be sized to fit the width of the screen in portrait
 | 300x250	    | VRVBannerSizeMedRectangle   | IAB Medium Rectangle |
 
 ### Loading a Banner Ad
-After creation, call `+ (void)loadAdForZone:(NSString *)zone;` on the created VRVBannerView object to load an ad, which will display in the view as soon as it's loaded.
+After creation, call `+ (void)loadAdForZone:(nullable NSString *)zone;` on the created VRVBannerView object to load an ad, which will display in the view as soon as it's loaded.
 
 ### VRVBannerAdDelegate / RootVC
 A delegate must be attached to a banner ad which conforms to the VRVBannerAdDelegate protocol. Additionally, a reference to the UIViewController (rootVC) that will hold the banner ad must be passed to it. The delegate and rootVC can be the same object.
