@@ -84,7 +84,11 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<VerveAd/VRVRewardedAd.h>`. If using both Interstitial and Rewarded ads keep in mind that only one delegate can be active at a time between these two types of full screen ads. Calling `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;` will remove the Interstitial ad delegate and vice versa.
 
 ### Import Headers and Set AppID
+<<<<<<< HEAD
 First, import the Rewarded Ad header by calling `#import <VerveAd/VRVRewardedAd.h>` with your other import statements.
+=======
+First, import the Rewarded Ad header by calling `#import <verveAdSDK/VRVRewardedAd.h>` with your other import statements.
+>>>>>>> e0329d6c33123e95f954319666cf2b8065912a30
 
 Then, use `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate> *)delegate appID:(NSString *)appID;`
 to set the VC that will show the ad.
