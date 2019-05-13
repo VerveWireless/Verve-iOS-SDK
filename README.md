@@ -7,6 +7,9 @@ Add the provided framework file to your application by adding it as an Embedded 
 ### App ID
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `appID`. If you do not have an `appID`, please contact your Verve Publisher Services account manager.
 
+### Zones
+The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use "keywords" these should be passed in the Zone field. If using an arbitrary string limit the string length to 100 characters. The "|" character is also restricted. A nil or NULL Zone will be treated as an empty string.
+
 ### XML Library
 You will also need to update a couple of Build Settings for your app's target:
 
@@ -32,7 +35,7 @@ to set the VC that will show the ad.
 >Interstitial Ads will present in their own UIViewController, however a root View Controller must be designated. This root VC should be the active VC when attempting to present an ad.
 
 ### Loading an Interstitial Ad
-To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. A nil or NULL zone will be treated as an empty string.
+To load an Interstitial Ad call `+ (void)loadInterstitialAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
 
 Once an ad is ready to be shown, the delegate function `- (void)onInterstitialAdReadyForZone:(NSString *)zone;` will be called.
 
@@ -90,7 +93,7 @@ Then, use `+ (void)setRewardedAdDelegate:(UIViewController<VRVRewardedAdDelegate
 to set the VC that will show the ad.
 
 ### Loading a Rewarded Video Ad
-To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded. A nil or NULL zone will be treated as an empty string.
+To load an Rewarded Video Ad call `+ (void)loadRewardedAdForZone:(nullable NSString *)zone;` and pass in the desired zone. Only one ad per zone will be loaded.
 
 Once an ad is ready to be shown, the delegate function `- (void)onRewardedAdReadyForZone:(NSString *)zone;` will be called.
 
