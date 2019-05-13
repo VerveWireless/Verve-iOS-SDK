@@ -8,7 +8,9 @@ Add the provided framework file to your application by adding it as an Embedded 
 Verve should have sent you a unique identifier for your application. This identifier should be used to fill in the fields labelled `appID`. If you do not have an `appID`, please contact your Verve Publisher Services account manager.
 
 ### Zones
-The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use "keywords" these should be passed in the Zone field. If using an arbitrary string, limit the string length to 100 characters. The "|" character is also restricted. A nil or NULL Zone will be treated as an empty string.
+The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use specific "keywords" when making ad requests, these should be passed in the Zone field. 
+
+Alternatively you can this string to group your data for reporting, just limit the string length to 100 characters. Also note the "|" character is a restricted character. A nil or NULL Zone will be treated as an empty string.
 
 ### XML Library
 You will also need to update a couple of Build Settings for your app's target:
