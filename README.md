@@ -92,6 +92,8 @@ After successfully closing the ad once it's been viewed, `- (void)onInterstitial
 ## Rewarded Video
 Rewarded Ads work in exactly the same manner as Interstitial ads, only they use the function calls included in `<VerveAd/VRVRewardedAd.h>`.
 
+![alt text](https://cdn.mediabrix.com/sdk4/images/Ad.png)
+
 ### Import Headers and Set AppID
 First, import the Rewarded Ad header by calling `#import <VerveAd/VRVRewardedAd.h>` with your other import statements.
 
