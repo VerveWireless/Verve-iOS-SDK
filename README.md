@@ -7,7 +7,7 @@ Add the provided framework files (Verve, VerveAd, and Roam) to your application 
 ![alt text](https://cdn.mediabrix.com/sdk4/images/iOS-Frameworks.png)
 
 ### App ID and Secret
-Verve should have sent you unique identifiers for your application. The App ID should be used to fill in the fields labelled `appID`. If you do not have an App ID or Secret, please contact your Verve Publisher Services account manager.
+Once you have been signed up by our Publisher Services team, the credentials for your application will be sent out to you automatically. The App ID should be used to fill in the fields labelled `appID`. If you do not have an App ID or Secret, please contact your Verve Publisher Services Account Manager.
 
 ### Initialization
 In your AppDelegate class you should import the Verve SDK with your other imports `#import <Verve/Verve.h>`, in the `(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` call you should initialize the Verve SDK like so:
