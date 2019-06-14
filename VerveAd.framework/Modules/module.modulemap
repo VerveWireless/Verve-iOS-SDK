@@ -1,6 +1,0 @@
-framework module VerveAd {
-  umbrella header "VerveAd.h"
-
-  export *
-  module * { export * }
-}
