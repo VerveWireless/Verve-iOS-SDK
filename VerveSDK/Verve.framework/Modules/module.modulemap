@@ -1,0 +1,6 @@
+framework module Verve {
+  umbrella header "Verve.h"
+
+  export *
+  module * { export * }
+}

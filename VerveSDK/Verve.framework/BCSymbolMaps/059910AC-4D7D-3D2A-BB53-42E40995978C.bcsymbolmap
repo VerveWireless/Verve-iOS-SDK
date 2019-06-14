@@ -1,0 +1,423 @@
+BCSymbolMap Version: 2.0
++[Verve sharedInstance]
+___23+[Verve sharedInstance]_block_invoke
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
+-[Verve initializeWithApplicationID:secret:]
+-[Verve initializeWithApplicationID:secret:options:]
+-[Verve didInitializeWithOptions:]
+-[Verve didFailToInitializeWithError:]
+-[Verve initializationDelegate]
+-[Verve setInitializationDelegate:]
+-[Verve initializationController]
+-[Verve setInitializationController:]
+-[Verve .cxx_destruct]
+_sharedInstance.sharedInstance
+_sharedInstance.onceToken
+___block_descriptor_24_e4__e5_v4@?0l
+_OBJC_IVAR_$_Verve._initializationDelegate
+_OBJC_IVAR_$_Verve._initializationController
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_VRVInitializationControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_VRVInitializationControllerDelegate
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/Verve.m
+/Users/Mohammad/dev/verve/verve-sdk-ios
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/Verve.h
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
+__23+[Verve sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
++[VRVRegistrationRequestBuilder registrationRequestWithUserIdentifier:appIdentifier:environment:keepUserAnonymous:]
++[VRVRegistrationRequestBuilder localizedLocationAuthorization]
+___clang_at_available_requires_core_foundation_framework
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVRegistrationRequestBuilder.m
+-[VRVUserDefaults initWithFile:]
+-[VRVUserDefaults objectForKey:]
+-[VRVUserDefaults setObject:forKey:]
+-[VRVUserDefaults boolForKey:]
+-[VRVUserDefaults setBool:forKey:]
+-[VRVUserDefaults removeObjectForKey:]
+-[VRVUserDefaults removeAllObjects]
+-[VRVUserDefaults synchronize]
+-[VRVUserDefaults loadUserDefaults]
+-[VRVUserDefaults saveUserDefaults]
+___35-[VRVUserDefaults saveUserDefaults]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+-[VRVUserDefaults filePath]
+-[VRVUserDefaults setFilePath:]
+-[VRVUserDefaults userDefaults]
+-[VRVUserDefaults setUserDefaults:]
+-[VRVUserDefaults .cxx_destruct]
+___block_descriptor_24_e4_20s_e5_v4@?0l
+_OBJC_IVAR_$_VRVUserDefaults._filePath
+_OBJC_IVAR_$_VRVUserDefaults._userDefaults
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVUserDefaults.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVUserDefaults.h
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__35-[VRVUserDefaults saveUserDefaults]_block_invoke
+-[VRVRegistrationRequest JSONDictionary]
+-[VRVRegistrationRequest userInfo]
+-[VRVRegistrationRequest setUserInfo:]
+-[VRVRegistrationRequest appInfo]
+-[VRVRegistrationRequest setAppInfo:]
+-[VRVRegistrationRequest deviceInfo]
+-[VRVRegistrationRequest setDeviceInfo:]
+-[VRVRegistrationRequest connectionInfo]
+-[VRVRegistrationRequest setConnectionInfo:]
+-[VRVRegistrationRequest .cxx_destruct]
+-[VRVUserInfo JSONDictionary]
+-[VRVUserInfo localizedAuthorizationStatus:]
+-[VRVUserInfo identifier]
+-[VRVUserInfo setIdentifier:]
+-[VRVUserInfo languageCode]
+-[VRVUserInfo setLanguageCode:]
+-[VRVUserInfo limitAdTracking]
+-[VRVUserInfo setLimitAdTracking:]
+-[VRVUserInfo location]
+-[VRVUserInfo setLocation:]
+-[VRVUserInfo locationAuthorization]
+-[VRVUserInfo setLocationAuthorization:]
+-[VRVUserInfo .cxx_destruct]
+-[VRVAppInfo JSONDictionary]
+-[VRVAppInfo packageName]
+-[VRVAppInfo setPackageName:]
+-[VRVAppInfo appVersion]
+-[VRVAppInfo setAppVersion:]
+-[VRVAppInfo sdkVersion]
+-[VRVAppInfo setSdkVersion:]
+-[VRVAppInfo applicationId]
+-[VRVAppInfo setApplicationId:]
+-[VRVAppInfo environment]
+-[VRVAppInfo setEnvironment:]
+-[VRVAppInfo .cxx_destruct]
+-[VRVSharedDeviceInfo JSONDictionary]
+-[VRVSharedDeviceInfo manufacturer]
+-[VRVSharedDeviceInfo setManufacturer:]
+-[VRVSharedDeviceInfo model]
+-[VRVSharedDeviceInfo setModel:]
+-[VRVSharedDeviceInfo systemName]
+-[VRVSharedDeviceInfo setSystemName:]
+-[VRVSharedDeviceInfo systemVersion]
+-[VRVSharedDeviceInfo setSystemVersion:]
+-[VRVSharedDeviceInfo systemApi]
+-[VRVSharedDeviceInfo setSystemApi:]
+-[VRVSharedDeviceInfo screenSize]
+-[VRVSharedDeviceInfo setScreenSize:]
+-[VRVSharedDeviceInfo screenDpi]
+-[VRVSharedDeviceInfo setScreenDpi:]
+-[VRVSharedDeviceInfo bluetoothOn]
+-[VRVSharedDeviceInfo setBluetoothOn:]
+-[VRVSharedDeviceInfo .cxx_destruct]
+-[VRVConnectionInfo JSONDictionary]
+-[VRVConnectionInfo carrier]
+-[VRVConnectionInfo setCarrier:]
+-[VRVConnectionInfo connectionType]
+-[VRVConnectionInfo setConnectionType:]
+-[VRVConnectionInfo .cxx_destruct]
+-[VRVUserInfoLocation JSONDictionary]
+-[VRVUserInfoLocation latitude]
+-[VRVUserInfoLocation setLatitude:]
+-[VRVUserInfoLocation longitude]
+-[VRVUserInfoLocation setLongitude:]
+-[VRVUserInfoLocation timestamp]
+-[VRVUserInfoLocation setTimestamp:]
+-[VRVUserInfoLocation .cxx_destruct]
+_OBJC_IVAR_$_VRVRegistrationRequest._userInfo
+_OBJC_IVAR_$_VRVRegistrationRequest._appInfo
+_OBJC_IVAR_$_VRVRegistrationRequest._deviceInfo
+_OBJC_IVAR_$_VRVRegistrationRequest._connectionInfo
+_OBJC_IVAR_$_VRVUserInfo._identifier
+_OBJC_IVAR_$_VRVUserInfo._languageCode
+_OBJC_IVAR_$_VRVUserInfo._limitAdTracking
+_OBJC_IVAR_$_VRVUserInfo._location
+_OBJC_IVAR_$_VRVUserInfo._locationAuthorization
+_OBJC_IVAR_$_VRVAppInfo._packageName
+_OBJC_IVAR_$_VRVAppInfo._appVersion
+_OBJC_IVAR_$_VRVAppInfo._sdkVersion
+_OBJC_IVAR_$_VRVAppInfo._applicationId
+_OBJC_IVAR_$_VRVAppInfo._environment
+_OBJC_IVAR_$_VRVSharedDeviceInfo._manufacturer
+_OBJC_IVAR_$_VRVSharedDeviceInfo._model
+_OBJC_IVAR_$_VRVSharedDeviceInfo._systemName
+_OBJC_IVAR_$_VRVSharedDeviceInfo._systemVersion
+_OBJC_IVAR_$_VRVSharedDeviceInfo._systemApi
+_OBJC_IVAR_$_VRVSharedDeviceInfo._screenSize
+_OBJC_IVAR_$_VRVSharedDeviceInfo._screenDpi
+_OBJC_IVAR_$_VRVSharedDeviceInfo._bluetoothOn
+_OBJC_IVAR_$_VRVConnectionInfo._carrier
+_OBJC_IVAR_$_VRVConnectionInfo._connectionType
+_OBJC_IVAR_$_VRVUserInfoLocation._latitude
+_OBJC_IVAR_$_VRVUserInfoLocation._longitude
+_OBJC_IVAR_$_VRVUserInfoLocation._timestamp
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVRegistrationRequest.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVRegistrationRequest.h
+-[VRVLogger init]
++[VRVLogger log:]
++[VRVLogger infoLog:]
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVLogger.m
+-[VRVInitializationController initWithApplicationID:secret:options:delegate:]
+-[VRVInitializationController dealloc]
+-[VRVInitializationController options]
+-[VRVInitializationController roamConfiguration]
+-[VRVInitializationController adConfiguration]
+-[VRVInitializationController invalidateConfigurationData]
+-[VRVInitializationController userIdentifier]
+-[VRVInitializationController setUserIdentifier:]
+-[VRVInitializationController isLimitAdTrackinEnabled]
+-[VRVInitializationController setLimitAdTrackingEnabled:]
+-[VRVInitializationController didFetchRegistration]
+___51-[VRVInitializationController didFetchRegistration]_block_invoke
+-[VRVInitializationController didFailRegistrationFetchWithError:]
+___65-[VRVInitializationController didFailRegistrationFetchWithError:]_block_invoke
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
+-[VRVInitializationController requestRegistrationIfNeeded]
+-[VRVInitializationController initializeModules]
+-[VRVInitializationController modules]
+-[VRVInitializationController createDeviceIDIfNeeded]
+___53-[VRVInitializationController createDeviceIDIfNeeded]_block_invoke
+___53-[VRVInitializationController createDeviceIDIfNeeded]_block_invoke_2
+-[VRVInitializationController isValidDeviceId:]
+-[VRVInitializationController applicationID]
+-[VRVInitializationController setApplicationID:]
+-[VRVInitializationController applicationSecret]
+-[VRVInitializationController setApplicationSecret:]
+-[VRVInitializationController setOptions:]
+-[VRVInitializationController delegate]
+-[VRVInitializationController setDelegate:]
+-[VRVInitializationController logger]
+-[VRVInitializationController setLogger:]
+-[VRVInitializationController eventLogManager]
+-[VRVInitializationController setEventLogManager:]
+-[VRVInitializationController verveServerResources]
+-[VRVInitializationController setVerveServerResources:]
+-[VRVInitializationController registrationManager]
+-[VRVInitializationController setRegistrationManager:]
+-[VRVInitializationController userDefaults]
+-[VRVInitializationController setUserDefaults:]
+-[VRVInitializationController setModules:]
+-[VRVInitializationController .cxx_destruct]
+_OBJC_IVAR_$_VRVInitializationController._options
+___block_descriptor_28_e4_20s24s_e5_v4@?0l
+_OBJC_IVAR_$_VRVInitializationController._modules
+l_OBJC_PROTOCOL_$_VRVModule
+l_OBJC_LABEL_PROTOCOL_$_VRVModule
+l_OBJC_PROTOCOL_REFERENCE_$_VRVModule
+_OBJC_IVAR_$_VRVInitializationController._applicationID
+_OBJC_IVAR_$_VRVInitializationController._applicationSecret
+_OBJC_IVAR_$_VRVInitializationController._delegate
+_OBJC_IVAR_$_VRVInitializationController._logger
+_OBJC_IVAR_$_VRVInitializationController._eventLogManager
+_OBJC_IVAR_$_VRVInitializationController._verveServerResources
+_OBJC_IVAR_$_VRVInitializationController._registrationManager
+_OBJC_IVAR_$_VRVInitializationController._userDefaults
+l_OBJC_PROTOCOL_$_VRVVerveContext
+l_OBJC_LABEL_PROTOCOL_$_VRVVerveContext
+l_OBJC_PROTOCOL_$_VRVVerveContextInternal
+l_OBJC_LABEL_PROTOCOL_$_VRVVerveContextInternal
+l_OBJC_PROTOCOL_$_VRVRegistrationManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_VRVRegistrationManagerDelegate
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVInitializationController.m
+__53-[VRVInitializationController createDeviceIDIfNeeded]_block_invoke_2
+__53-[VRVInitializationController createDeviceIDIfNeeded]_block_invoke
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
+__65-[VRVInitializationController didFailRegistrationFetchWithError:]_block_invoke
+__51-[VRVInitializationController didFetchRegistration]_block_invoke
++[VRVVerveDefaults defaults]
+___28+[VRVVerveDefaults defaults]_block_invoke
+-[VRVVerveDefaults init]
+_defaults.sharedInstance
+_defaults.onceToken
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVVerveDefaults.m
+__28+[VRVVerveDefaults defaults]_block_invoke
+-[VRVConfiguration initWithUserIdentifier:limitAdTrackingEnabled:jsonData:]
+-[VRVConfiguration userIdentifier]
+-[VRVConfiguration setUserIdentifier:]
+-[VRVConfiguration limitAdTrackingEnabled]
+-[VRVConfiguration setLimitAdTrackingEnabled:]
+-[VRVConfiguration jsonData]
+-[VRVConfiguration setJsonData:]
+-[VRVConfiguration .cxx_destruct]
+_OBJC_IVAR_$_VRVConfiguration._userIdentifier
+_OBJC_IVAR_$_VRVConfiguration._limitAdTrackingEnabled
+_OBJC_IVAR_$_VRVConfiguration._jsonData
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVConfiguration.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVConfiguration.h
++[VRVFileInfo sdkApplicationSupportDirectory]
++[VRVFileInfo sdkApplicationSupportDirectoryURL]
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVFileInfo.m
+-[VRVVerveServerResources initWithApplicationID:secret:options:context:]
+-[VRVVerveServerResources postRegistrationRequest:completionHandler:]
+-[VRVVerveServerResources postEventLogFile:completionHandler:]
+___62-[VRVVerveServerResources postEventLogFile:completionHandler:]_block_invoke
+___copy_helper_block_e4_20b
+-[VRVVerveServerResources registrationPathForRequest:]
+-[VRVVerveServerResources logEventURL]
+-[VRVVerveServerResources basePathForServerEndpoint:]
+-[VRVVerveServerResources client]
+-[VRVVerveServerResources setClient:]
+-[VRVVerveServerResources applicationID]
+-[VRVVerveServerResources setApplicationID:]
+-[VRVVerveServerResources secret]
+-[VRVVerveServerResources setSecret:]
+-[VRVVerveServerResources options]
+-[VRVVerveServerResources setOptions:]
+-[VRVVerveServerResources context]
+-[VRVVerveServerResources setContext:]
+-[VRVVerveServerResources .cxx_destruct]
+___block_descriptor_24_e4_20bs_e19_v12@?0c4@"NSError"8l
+_OBJC_IVAR_$_VRVVerveServerResources._client
+_OBJC_IVAR_$_VRVVerveServerResources._applicationID
+_OBJC_IVAR_$_VRVVerveServerResources._secret
+_OBJC_IVAR_$_VRVVerveServerResources._options
+_OBJC_IVAR_$_VRVVerveServerResources._context
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVVerveServerResources.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVVerveServerResources.h
+__copy_helper_block_e4_20b
+__62-[VRVVerveServerResources postEventLogFile:completionHandler:]_block_invoke
+-[VRVVerveHTTPClient initWithApplicationID:secret:]
+-[VRVVerveHTTPClient post:json:completionHandler:]
+___50-[VRVVerveHTTPClient post:json:completionHandler:]_block_invoke
+___copy_helper_block_e4_20b24s
+-[VRVVerveHTTPClient upload:file:completionHandler:]
+___52-[VRVVerveHTTPClient upload:file:completionHandler:]_block_invoke
+-[VRVVerveHTTPClient addHTTPHeadersForRequest:]
+-[VRVVerveHTTPClient processJSONRequest:completionHandler:]
+___59-[VRVVerveHTTPClient processJSONRequest:completionHandler:]_block_invoke
+___59-[VRVVerveHTTPClient processJSONRequest:completionHandler:]_block_invoke_2
+___copy_helper_block_e4_20s24b28s32s36s
+___destroy_helper_block_e4_20s24s28s32s36s
+-[VRVVerveHTTPClient isValidResponse:data:error:]
+-[VRVVerveHTTPClient timeZoneHeaderValue]
+-[VRVVerveHTTPClient userAgentHeaderValue]
+-[VRVVerveHTTPClient authorizationHeaderValueWithAppID:secret:URL:]
+-[VRVVerveHTTPClient applicationID]
+-[VRVVerveHTTPClient setApplicationID:]
+-[VRVVerveHTTPClient secret]
+-[VRVVerveHTTPClient setSecret:]
+-[VRVVerveHTTPClient acceptableStatusCodes]
+-[VRVVerveHTTPClient setAcceptableStatusCodes:]
+-[VRVVerveHTTPClient acceptableContentTypes]
+-[VRVVerveHTTPClient setAcceptableContentTypes:]
+-[VRVVerveHTTPClient .cxx_destruct]
+___block_descriptor_28_e4_20bs24s_e5_v4@?0l
+___block_descriptor_28_e4_20bs24s_e45_v16@?0@"NSData"4@"NSURLResponse"8@"NSError"12l
+___block_descriptor_40_e4_20s24bs28s32s36s_e5_v4@?0l
+_OBJC_IVAR_$_VRVVerveHTTPClient._applicationID
+_OBJC_IVAR_$_VRVVerveHTTPClient._secret
+_OBJC_IVAR_$_VRVVerveHTTPClient._acceptableStatusCodes
+_OBJC_IVAR_$_VRVVerveHTTPClient._acceptableContentTypes
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVVerveHTTPClient.m
+__destroy_helper_block_e4_20s24s28s32s36s
+__copy_helper_block_e4_20s24b28s32s36s
+__59-[VRVVerveHTTPClient processJSONRequest:completionHandler:]_block_invoke_2
+__59-[VRVVerveHTTPClient processJSONRequest:completionHandler:]_block_invoke
+__52-[VRVVerveHTTPClient upload:file:completionHandler:]_block_invoke
+__copy_helper_block_e4_20b24s
+__50-[VRVVerveHTTPClient post:json:completionHandler:]_block_invoke
+-[VRVEventLogManager initWithVerveServceResources:context:]
+-[VRVEventLogManager dealloc]
+-[VRVEventLogManager logEvent:]
+-[VRVEventLogManager logEventJSON:]
+___35-[VRVEventLogManager logEventJSON:]_block_invoke
+___35-[VRVEventLogManager logEventJSON:]_block_invoke_2
+-[VRVEventLogManager uploadEventLogIfNeccessary]
+___48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke
+___48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke_2
+___48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke_3
+___copy_helper_block_e8_20s36s40s
+___destroy_helper_block_e8_20s36s40s
+___copy_helper_block_e8_20s36s
+___destroy_helper_block_e8_20s36s
+-[VRVEventLogManager uploadEventLogAfterDelay:]
+___47-[VRVEventLogManager uploadEventLogAfterDelay:]_block_invoke
+___copy_helper_block_e8_20s
+___destroy_helper_block_e8_20s
+-[VRVEventLogManager addAppAndUserInfoToEventJSON:]
+-[VRVEventLogManager pathToEventLog]
+-[VRVEventLogManager context]
+-[VRVEventLogManager setContext:]
+-[VRVEventLogManager serverResource]
+-[VRVEventLogManager setServerResource:]
+-[VRVEventLogManager eventLogQueue]
+-[VRVEventLogManager setEventLogQueue:]
+-[VRVEventLogManager hasEventLogRequestInFlight]
+-[VRVEventLogManager setEventLogRequestInFlight:]
+-[VRVEventLogManager .cxx_destruct]
+___block_descriptor_45_e8_20s36s40s_e5_v4@?0l
+___block_descriptor_40_e8_20s36s_e19_v12@?0c4@"NSError"8l
+___block_descriptor_36_e8_20s_e5_v4@?0l
+_OBJC_IVAR_$_VRVEventLogManager._context
+_OBJC_IVAR_$_VRVEventLogManager._serverResource
+_OBJC_IVAR_$_VRVEventLogManager._eventLogQueue
+_OBJC_IVAR_$_VRVEventLogManager._eventLogRequestInFlight
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVEventLogManager.m
+__destroy_helper_block_e8_20s
+__copy_helper_block_e8_20s
+__47-[VRVEventLogManager uploadEventLogAfterDelay:]_block_invoke
+__destroy_helper_block_e8_20s36s
+__copy_helper_block_e8_20s36s
+__destroy_helper_block_e8_20s36s40s
+__copy_helper_block_e8_20s36s40s
+__48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke_3
+__48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke_2
+__48-[VRVEventLogManager uploadEventLogIfNeccessary]_block_invoke
+__35-[VRVEventLogManager logEventJSON:]_block_invoke_2
+__35-[VRVEventLogManager logEventJSON:]_block_invoke
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVStrings.m
+-[VRVRegistrationManager initWithDelegate:userDefaults:verveServceResources:]
+-[VRVRegistrationManager isRegistered]
+-[VRVRegistrationManager isRegistrationValid]
+-[VRVRegistrationManager lastRegistrationDate]
+-[VRVRegistrationManager setLastRegistrationDate:]
+-[VRVRegistrationManager keepUserAnonymous]
+-[VRVRegistrationManager setKeepUserAnonymous:]
+-[VRVRegistrationManager setRegistrationJSON:]
+-[VRVRegistrationManager registrationJSON]
+-[VRVRegistrationManager fetchRegistration]
+___43-[VRVRegistrationManager fetchRegistration]_block_invoke
+-[VRVRegistrationManager invalidateRegistration]
+-[VRVRegistrationManager processRegistrationJSON:]
+-[VRVRegistrationManager registrationErrorFromError:]
+-[VRVRegistrationManager roamConfiguration]
+-[VRVRegistrationManager setRoamConfiguration:]
+-[VRVRegistrationManager adConfiguration]
+-[VRVRegistrationManager setAdConfiguration:]
+-[VRVRegistrationManager delegate]
+-[VRVRegistrationManager setDelegate:]
+-[VRVRegistrationManager setRegistered:]
+-[VRVRegistrationManager setRegistrationValid:]
+-[VRVRegistrationManager userDefaults]
+-[VRVRegistrationManager setUserDefaults:]
+-[VRVRegistrationManager verveServerResources]
+-[VRVRegistrationManager setVerveServerResources:]
+-[VRVRegistrationManager registrationRefreshInterval]
+-[VRVRegistrationManager setRegistrationRefreshInterval:]
+-[VRVRegistrationManager isRegistrationInFlight]
+-[VRVRegistrationManager setRegistrationInFlight:]
+-[VRVRegistrationManager .cxx_destruct]
+___block_descriptor_24_e4_20s_e33_v12@?0@"NSDictionary"4@"NSError"8l
+_OBJC_IVAR_$_VRVRegistrationManager._roamConfiguration
+_OBJC_IVAR_$_VRVRegistrationManager._adConfiguration
+_OBJC_IVAR_$_VRVRegistrationManager._delegate
+_OBJC_IVAR_$_VRVRegistrationManager._registered
+_OBJC_IVAR_$_VRVRegistrationManager._registrationValid
+_OBJC_IVAR_$_VRVRegistrationManager._userDefaults
+_OBJC_IVAR_$_VRVRegistrationManager._verveServerResources
+_OBJC_IVAR_$_VRVRegistrationManager._registrationRefreshInterval
+_OBJC_IVAR_$_VRVRegistrationManager._registrationInFlight
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVRegistrationManager.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVRegistrationManager.h
+__43-[VRVRegistrationManager fetchRegistration]_block_invoke
++[VRVFileHandleUtils sliceFileHandle:atOffset:]
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVFileHandleUtils.m
++[VRVError sdkErrorWithDescription:]
+/Users/Mohammad/dev/verve/verve-sdk-ios/Sources/VRVError.m
+/Users/Mohammad/Library/Developer/Xcode/DerivedData/VerveSDK-All-ekzbrakafnltchfstboxbdpvwynq/Build/Intermediates.noindex/DependentBuilds/VerveSDK.build/Release-iphoneos/Verve.build/DerivedSources/Verve_vers.c
+/Users/Mohammad/dev/verve/verve-sdk-ios/Pods/Target Support Files/Pods-Verve/Pods-Verve-dummy.m
+/Users/Mohammad/dev/verve/verve-sdk-ios/Pods

@@ -1,0 +1,1448 @@
+BCSymbolMap Version: 2.0
+-[ROAMInternalVisitEvent initWithCoder:]
+-[ROAMInternalVisitEvent encodeWithCoder:]
++[ROAMInternalVisitEvent supportsSecureCoding]
+-[ROAMInternalVisitEvent JSONDictionary]
+-[ROAMInternalVisitEvent description]
+-[ROAMInternalVisitEvent timestamp]
+-[ROAMInternalVisitEvent setTimestamp:]
+-[ROAMInternalVisitEvent clientTimezoneOffset]
+-[ROAMInternalVisitEvent setClientTimezoneOffset:]
+-[ROAMInternalVisitEvent signalID]
+-[ROAMInternalVisitEvent setSignalID:]
+-[ROAMInternalVisitEvent confidence]
+-[ROAMInternalVisitEvent setConfidence:]
+-[ROAMInternalVisitEvent confirmationMethod]
+-[ROAMInternalVisitEvent setConfirmationMethod:]
+-[ROAMInternalVisitEvent lastKnownLocation]
+-[ROAMInternalVisitEvent setLastKnownLocation:]
+-[ROAMInternalVisitEvent .cxx_destruct]
+_OBJC_IVAR_$_ROAMInternalVisitEvent._timestamp
+_OBJC_IVAR_$_ROAMInternalVisitEvent._clientTimezoneOffset
+_OBJC_IVAR_$_ROAMInternalVisitEvent._signalID
+_OBJC_IVAR_$_ROAMInternalVisitEvent._confidence
+_OBJC_IVAR_$_ROAMInternalVisitEvent._confirmationMethod
+_OBJC_IVAR_$_ROAMInternalVisitEvent._lastKnownLocation
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+l_OBJC_PROTOCOL_$_NSSecureCoding
+l_OBJC_LABEL_PROTOCOL_$_NSSecureCoding
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_VRVJSONSerializable
+l_OBJC_LABEL_PROTOCOL_$_VRVJSONSerializable
+l_OBJC_PROTOCOL_$_ROAMJSONSerializable
+l_OBJC_LABEL_PROTOCOL_$_ROAMJSONSerializable
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalVisitEvent.m
+/Users/Mohammad/dev/verve/roam-sdk-ios
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalVisitEvent.h
+-[ROAMInternalVisit initWithCoder:]
+-[ROAMInternalVisit encodeWithCoder:]
++[ROAMInternalVisit supportsSecureCoding]
+-[ROAMInternalVisit isEqual:]
+-[ROAMInternalVisit isEqualToVisit:]
+-[ROAMInternalVisit hash]
+-[ROAMInternalVisit JSONDictionary]
+-[ROAMInternalVisit description]
+-[ROAMInternalVisit identifier]
+-[ROAMInternalVisit setIdentifier:]
+-[ROAMInternalVisit parentVisitIdentifier]
+-[ROAMInternalVisit setParentVisitIdentifier:]
+-[ROAMInternalVisit presentSignalIDs]
+-[ROAMInternalVisit setPresentSignalIDs:]
+-[ROAMInternalVisit owned]
+-[ROAMInternalVisit setOwned:]
+-[ROAMInternalVisit arrival]
+-[ROAMInternalVisit setArrival:]
+-[ROAMInternalVisit departure]
+-[ROAMInternalVisit setDeparture:]
+-[ROAMInternalVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMInternalVisit._identifier
+_OBJC_IVAR_$_ROAMInternalVisit._parentVisitIdentifier
+_OBJC_IVAR_$_ROAMInternalVisit._presentSignalIDs
+_OBJC_IVAR_$_ROAMInternalVisit._owned
+_OBJC_IVAR_$_ROAMInternalVisit._arrival
+_OBJC_IVAR_$_ROAMInternalVisit._departure
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalVisit.h
+NSStringFromBOOL
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMMacros.h
+-[ROAMNearbyResultsHandler initWithPlaceRepository:regionRepository:nearbyCleanUp:regionRegistrar:]
+-[ROAMNearbyResultsHandler didFetchNearbyResult:]
+-[ROAMNearbyResultsHandler geofenceRegionsFromNearbyJSON:]
+-[ROAMNearbyResultsHandler beaconRegionsFromNearbyJSON:]
+___56-[ROAMNearbyResultsHandler beaconRegionsFromNearbyJSON:]_block_invoke
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
+-[ROAMNearbyResultsHandler placesFromNearbyJSON:]
+-[ROAMNearbyResultsHandler regionRepository]
+-[ROAMNearbyResultsHandler setRegionRepository:]
+-[ROAMNearbyResultsHandler placeRepository]
+-[ROAMNearbyResultsHandler setPlaceRepository:]
+-[ROAMNearbyResultsHandler nearbyCleanUp]
+-[ROAMNearbyResultsHandler setNearbyCleanUp:]
+-[ROAMNearbyResultsHandler regionRegistrar]
+-[ROAMNearbyResultsHandler setRegionRegistrar:]
+-[ROAMNearbyResultsHandler .cxx_destruct]
+___block_descriptor_28_e4_20s24s_e28_v16@?0@"NSDictionary"4I8^c12l
+_OBJC_IVAR_$_ROAMNearbyResultsHandler._regionRepository
+_OBJC_IVAR_$_ROAMNearbyResultsHandler._placeRepository
+_OBJC_IVAR_$_ROAMNearbyResultsHandler._nearbyCleanUp
+_OBJC_IVAR_$_ROAMNearbyResultsHandler._regionRegistrar
+l_OBJC_PROTOCOL_$_ROAMNearbyManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMNearbyManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyResultsHandler.m
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
+__56-[ROAMNearbyResultsHandler beaconRegionsFromNearbyJSON:]_block_invoke
+-[ROAMRangingManager initWithRegionRepository:configuration:]
+-[ROAMRangingManager startRanging]
+-[ROAMRangingManager stopRanging]
+-[ROAMRangingManager locationManager:didRangeBeacons:inRegion:]
+-[ROAMRangingManager locationManager:rangingBeaconsDidFailForRegion:withError:]
+-[ROAMRangingManager sendBeaconRangeUpdate]
+-[ROAMRangingManager internalBeaconsFromCLBeacons:]
+-[ROAMRangingManager dealloc]
+-[ROAMRangingManager delegate]
+-[ROAMRangingManager setDelegate:]
+-[ROAMRangingManager regionRepository]
+-[ROAMRangingManager setRegionRepository:]
+-[ROAMRangingManager configuration]
+-[ROAMRangingManager setConfiguration:]
+-[ROAMRangingManager locationManager]
+-[ROAMRangingManager setLocationManager:]
+-[ROAMRangingManager rangedBeaconsByRegionUUID]
+-[ROAMRangingManager setRangedBeaconsByRegionUUID:]
+-[ROAMRangingManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMRangingManager._delegate
+_OBJC_IVAR_$_ROAMRangingManager._regionRepository
+_OBJC_IVAR_$_ROAMRangingManager._configuration
+_OBJC_IVAR_$_ROAMRangingManager._locationManager
+_OBJC_IVAR_$_ROAMRangingManager._rangedBeaconsByRegionUUID
+l_OBJC_PROTOCOL_$_CLLocationManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRangingManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRangingManager.h
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMStrings.m
++[ROAMLocationUtils JSONDictionaryForLocation:]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMLocationUtils.m
++[ROAMApiCerts getCertsAsDataArray]
++[ROAMApiCerts AddTrustExternalCARoot]
++[ROAMApiCerts COMODORSADomainValidationSecureServerCA]
++[ROAMApiCerts COMODORSAAddTrustCA]
++[ROAMApiCerts cert2020_star_roximity_com]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMApiCerts.m
+-[ROAMRegionVisitRepository init]
+-[ROAMRegionVisitRepository visitForRegionSignalID:]
+-[ROAMRegionVisitRepository addOrUpdateVisit:]
+-[ROAMRegionVisitRepository removeVisit:]
+-[ROAMRegionVisitRepository loadRegionVisits]
+-[ROAMRegionVisitRepository saveRegionVisits]
+___45-[ROAMRegionVisitRepository saveRegionVisits]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+-[ROAMRegionVisitRepository pathToRegionVisitsArchive]
+-[ROAMRegionVisitRepository regionVisits]
+-[ROAMRegionVisitRepository setRegionVisits:]
+-[ROAMRegionVisitRepository .cxx_destruct]
+___block_descriptor_24_e4_20s_e5_v4@?0l
+_OBJC_IVAR_$_ROAMRegionVisitRepository._regionVisits
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionVisitRepository.m
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__45-[ROAMRegionVisitRepository saveRegionVisits]_block_invoke
+-[ROAMRegionRepository init]
+-[ROAMRegionRepository regionWithIdentifier:]
+-[ROAMRegionRepository beaconRegionWithUUID:major:minor:]
+-[ROAMRegionRepository allRegions]
+-[ROAMRegionRepository addOrUpdateRegions:]
+-[ROAMRegionRepository removeRegions:]
+-[ROAMRegionRepository synchronizeRegions:]
+-[ROAMRegionRepository unarchivedModel]
+-[ROAMRegionRepository saveModel]
+___33-[ROAMRegionRepository saveModel]_block_invoke
+-[ROAMRegionRepository pathToModelArchive]
+-[ROAMRegionRepository model]
+-[ROAMRegionRepository setModel:]
+-[ROAMRegionRepository .cxx_destruct]
+_OBJC_IVAR_$_ROAMRegionRepository._model
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionRepository.m
+__33-[ROAMRegionRepository saveModel]_block_invoke
+-[ROAMVisitMonitoringService initWithConfiguration:eventLogManager:centralVisitManager:centralBeaconManager:]
+-[ROAMVisitMonitoringService dealloc]
+-[ROAMVisitMonitoringService configurationsDidChangeNotification:]
+-[ROAMVisitMonitoringService updateVisitMonitoringState]
+-[ROAMVisitMonitoringService forceNearbyRefresh]
++[ROAMVisitMonitoringService purgePersistedData]
+-[ROAMVisitMonitoringService locationManager:didUpdateLocations:]
+-[ROAMVisitMonitoringService locationManager:didFailWithError:]
+-[ROAMVisitMonitoringService nearbyManager]
+-[ROAMVisitMonitoringService setNearbyManager:]
+-[ROAMVisitMonitoringService regionRepository]
+-[ROAMVisitMonitoringService setRegionRepository:]
+-[ROAMVisitMonitoringService configuration]
+-[ROAMVisitMonitoringService setConfiguration:]
+-[ROAMVisitMonitoringService regionVisitRepository]
+-[ROAMVisitMonitoringService setRegionVisitRepository:]
+-[ROAMVisitMonitoringService placeRepository]
+-[ROAMVisitMonitoringService setPlaceRepository:]
+-[ROAMVisitMonitoringService placeVisitRepository]
+-[ROAMVisitMonitoringService setPlaceVisitRepository:]
+-[ROAMVisitMonitoringService nearbyResultsHandler]
+-[ROAMVisitMonitoringService setNearbyResultsHandler:]
+-[ROAMVisitMonitoringService regionRegistrar]
+-[ROAMVisitMonitoringService setRegionRegistrar:]
+-[ROAMVisitMonitoringService nearbyCleanUp]
+-[ROAMVisitMonitoringService setNearbyCleanUp:]
+-[ROAMVisitMonitoringService geofenceVisitManager]
+-[ROAMVisitMonitoringService setGeofenceVisitManager:]
+-[ROAMVisitMonitoringService beaconVisitManager]
+-[ROAMVisitMonitoringService setBeaconVisitManager:]
+-[ROAMVisitMonitoringService proximityBasedBeaconVisitManager]
+-[ROAMVisitMonitoringService setProximityBasedBeaconVisitManager:]
+-[ROAMVisitMonitoringService computedVisitManager]
+-[ROAMVisitMonitoringService setComputedVisitManager:]
+-[ROAMVisitMonitoringService regionStateValidator]
+-[ROAMVisitMonitoringService setRegionStateValidator:]
+-[ROAMVisitMonitoringService placeVisitManager]
+-[ROAMVisitMonitoringService setPlaceVisitManager:]
+-[ROAMVisitMonitoringService globalBeaconVisitManager]
+-[ROAMVisitMonitoringService setGlobalBeaconVisitManager:]
+-[ROAMVisitMonitoringService placeVisitDispatcher]
+-[ROAMVisitMonitoringService setPlaceVisitDispatcher:]
+-[ROAMVisitMonitoringService rangingManager]
+-[ROAMVisitMonitoringService setRangingManager:]
+-[ROAMVisitMonitoringService locationManager]
+-[ROAMVisitMonitoringService setLocationManager:]
+-[ROAMVisitMonitoringService .cxx_destruct]
+_OBJC_IVAR_$_ROAMVisitMonitoringService._nearbyManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._regionRepository
+_OBJC_IVAR_$_ROAMVisitMonitoringService._configuration
+_OBJC_IVAR_$_ROAMVisitMonitoringService._regionVisitRepository
+_OBJC_IVAR_$_ROAMVisitMonitoringService._placeRepository
+_OBJC_IVAR_$_ROAMVisitMonitoringService._placeVisitRepository
+_OBJC_IVAR_$_ROAMVisitMonitoringService._nearbyResultsHandler
+_OBJC_IVAR_$_ROAMVisitMonitoringService._regionRegistrar
+_OBJC_IVAR_$_ROAMVisitMonitoringService._nearbyCleanUp
+_OBJC_IVAR_$_ROAMVisitMonitoringService._geofenceVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._beaconVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._proximityBasedBeaconVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._computedVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._regionStateValidator
+_OBJC_IVAR_$_ROAMVisitMonitoringService._placeVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._globalBeaconVisitManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._placeVisitDispatcher
+_OBJC_IVAR_$_ROAMVisitMonitoringService._rangingManager
+_OBJC_IVAR_$_ROAMVisitMonitoringService._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisitMonitoringService.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisitMonitoringService.h
+-[ROAMComputedVisit initWithCoder:]
+-[ROAMComputedVisit encodeWithCoder:]
++[ROAMComputedVisit supportsSecureCoding]
+-[ROAMComputedVisit JSONDictionary]
+-[ROAMComputedVisit description]
+-[ROAMComputedVisit location]
+-[ROAMComputedVisit setLocation:]
+-[ROAMComputedVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMComputedVisit._location
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMComputedVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMComputedVisit.h
+-[ROAMRegionRegistrar initWithRegionRepository:regionVisitRepository:configuration:]
+-[ROAMRegionRegistrar dealloc]
+-[ROAMRegionRegistrar updateRegisteredRegions]
+-[ROAMRegionRegistrar locationManager:didExitRegion:]
+-[ROAMRegionRegistrar startMonitoringCircularRegions]
+-[ROAMRegionRegistrar stopMonitoringCircularRegions]
+-[ROAMRegionRegistrar startMonitoringBeaconRegions]
+___51-[ROAMRegionRegistrar startMonitoringBeaconRegions]_block_invoke
+-[ROAMRegionRegistrar stopMonitoringBeaconRegions]
+-[ROAMRegionRegistrar stopMonitoringRegionsOfClass:]
+-[ROAMRegionRegistrar stopMonitoringRoamRegion:]
+-[ROAMRegionRegistrar updateMonitoredRegions:ofType:]
+___53-[ROAMRegionRegistrar updateMonitoredRegions:ofType:]_block_invoke
+-[ROAMRegionRegistrar refreshRegionForMonitoredRegions:registeredCount:ofType:]
+-[ROAMRegionRegistrar defaultRefreshRegionForRegionsOfType:]
+-[ROAMRegionRegistrar availableRegionCountForRegions:ofType:]
+-[ROAMRegionRegistrar updateOrRemoveMonitoredRegionsWithNewRegions:ofType:]
+-[ROAMRegionRegistrar regionInRegions:matchingRegion:]
+-[ROAMRegionRegistrar sortedRegions:]
+___37-[ROAMRegionRegistrar sortedRegions:]_block_invoke
+-[ROAMRegionRegistrar compareDistanceFrom:to:]
+-[ROAMRegionRegistrar radiusForRegion:]
+-[ROAMRegionRegistrar globalBeaconRegions]
+-[ROAMRegionRegistrar isMonitoringRegion:]
+-[ROAMRegionRegistrar delegate]
+-[ROAMRegionRegistrar setDelegate:]
+-[ROAMRegionRegistrar regionRepository]
+-[ROAMRegionRegistrar setRegionRepository:]
+-[ROAMRegionRegistrar regionVisitRepository]
+-[ROAMRegionRegistrar setRegionVisitRepository:]
+-[ROAMRegionRegistrar configuration]
+-[ROAMRegionRegistrar setConfiguration:]
+-[ROAMRegionRegistrar locationManager]
+-[ROAMRegionRegistrar setLocationManager:]
+-[ROAMRegionRegistrar .cxx_destruct]
+___block_descriptor_20_e24_c12@?0@4@"NSDictionary"8l
+___block_literal_global
+___block_descriptor_28_e4_20s_e26_v16@?0@"ROAMRegion"4I8^c12l
+___block_descriptor_24_e4_20s_e34_i12@?0@"ROAMRegion"4@"ROAMRegion"8l
+_OBJC_IVAR_$_ROAMRegionRegistrar._delegate
+_OBJC_IVAR_$_ROAMRegionRegistrar._regionRepository
+_OBJC_IVAR_$_ROAMRegionRegistrar._regionVisitRepository
+_OBJC_IVAR_$_ROAMRegionRegistrar._configuration
+_OBJC_IVAR_$_ROAMRegionRegistrar._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionRegistrar.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionRegistrar.h
+__37-[ROAMRegionRegistrar sortedRegions:]_block_invoke
+__53-[ROAMRegionRegistrar updateMonitoredRegions:ofType:]_block_invoke
+__51-[ROAMRegionRegistrar startMonitoringBeaconRegions]_block_invoke
+-[ROAMPlaceVisitDispatcher initWithCentralVisitManager:logManager:]
+-[ROAMPlaceVisitDispatcher didBeginPlaceVisit:forPlace:]
+-[ROAMPlaceVisitDispatcher didEndPlaceVisit:forPlace:]
+-[ROAMPlaceVisitDispatcher centralVisitManager]
+-[ROAMPlaceVisitDispatcher setCentralVisitManager:]
+-[ROAMPlaceVisitDispatcher eventLogManager]
+-[ROAMPlaceVisitDispatcher setEventLogManager:]
+-[ROAMPlaceVisitDispatcher .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceVisitDispatcher._centralVisitManager
+_OBJC_IVAR_$_ROAMPlaceVisitDispatcher._eventLogManager
+l_OBJC_PROTOCOL_$_ROAMPlaceVisitManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMPlaceVisitManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisitDispatcher.m
+-[ROAMBeaconSighting initWithBeacon:RSSI:proximity:]
+-[ROAMBeaconSighting copyWithZone:]
+-[ROAMBeaconSighting initWithCoder:]
+-[ROAMBeaconSighting encodeWithCoder:]
++[ROAMBeaconSighting supportsSecureCoding]
+-[ROAMBeaconSighting isEqual:]
+-[ROAMBeaconSighting isEqualToPlace:]
+-[ROAMBeaconSighting hash]
+-[ROAMBeaconSighting description]
+-[ROAMBeaconSighting beacon]
+-[ROAMBeaconSighting rssi]
+-[ROAMBeaconSighting proximity]
+-[ROAMBeaconSighting .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeaconSighting._beacon
+_OBJC_IVAR_$_ROAMBeaconSighting._rssi
+_OBJC_IVAR_$_ROAMBeaconSighting._proximity
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconSighting.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconSighting.h
++[ROAMDateUtils secondsSince1970ForDate:]
++[ROAMDateUtils millisecondsSince1970ForDate:]
++[ROAMDateUtils iso8601ForDate:]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMDateUtils.m
+-[ROAMPlaceVisitRepository init]
+-[ROAMPlaceVisitRepository inProgressPlaceVisitForPlaceIdentifier:]
+-[ROAMPlaceVisitRepository addOrUpdatePlaceVisit:]
+-[ROAMPlaceVisitRepository removePlaceVisit:]
+-[ROAMPlaceVisitRepository inProgressPlaceVisits]
+-[ROAMPlaceVisitRepository loadPlaceVisits]
+-[ROAMPlaceVisitRepository savePlaceVisits]
+___43-[ROAMPlaceVisitRepository savePlaceVisits]_block_invoke
+-[ROAMPlaceVisitRepository pathToPlaceVisitsArchive]
+-[ROAMPlaceVisitRepository placeVisits]
+-[ROAMPlaceVisitRepository setPlaceVisits:]
+-[ROAMPlaceVisitRepository .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceVisitRepository._placeVisits
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisitRepository.m
+__43-[ROAMPlaceVisitRepository savePlaceVisits]_block_invoke
+-[ROAMGlobalBeaconVisitManager initRegionRegionRepository:placeRepository:regionRegistrar:configuration:]
+-[ROAMGlobalBeaconVisitManager dealloc]
+-[ROAMGlobalBeaconVisitManager locationManager:didStartMonitoringForRegion:]
+-[ROAMGlobalBeaconVisitManager locationManager:monitoringDidFailForRegion:withError:]
+-[ROAMGlobalBeaconVisitManager locationManager:didDetermineState:forRegion:]
+-[ROAMGlobalBeaconVisitManager locationManager:didRangeBeacons:inRegion:]
+-[ROAMGlobalBeaconVisitManager stopRangingBeaconsInRegion:]
+-[ROAMGlobalBeaconVisitManager isGlobalBeaconRegion:]
+-[ROAMGlobalBeaconVisitManager attemptToResolveBeacon:]
+-[ROAMGlobalBeaconVisitManager resolveBeaconRegion:]
+___52-[ROAMGlobalBeaconVisitManager resolveBeaconRegion:]_block_invoke
+-[ROAMGlobalBeaconVisitManager processBeaconResolveResult:for:]
+___63-[ROAMGlobalBeaconVisitManager processBeaconResolveResult:for:]_block_invoke
+___copy_helper_block_e8_20s36s
+___destroy_helper_block_e8_20s36s
+-[ROAMGlobalBeaconVisitManager updateBeaconRegionMonitorPrioritiesWithUUID:]
+-[ROAMGlobalBeaconVisitManager updateBeaconRegionMonitorPrioritiesWithCurrentUUID:previousUUID:]
+-[ROAMGlobalBeaconVisitManager updateRegisteredRegionsAfterDelay:]
+-[ROAMGlobalBeaconVisitManager updateRegisteredRegions]
+-[ROAMGlobalBeaconVisitManager regionRepository]
+-[ROAMGlobalBeaconVisitManager setRegionRepository:]
+-[ROAMGlobalBeaconVisitManager placeRepository]
+-[ROAMGlobalBeaconVisitManager setPlaceRepository:]
+-[ROAMGlobalBeaconVisitManager regionRegistrar]
+-[ROAMGlobalBeaconVisitManager setRegionRegistrar:]
+-[ROAMGlobalBeaconVisitManager configuration]
+-[ROAMGlobalBeaconVisitManager setConfiguration:]
+-[ROAMGlobalBeaconVisitManager locationManager]
+-[ROAMGlobalBeaconVisitManager setLocationManager:]
+-[ROAMGlobalBeaconVisitManager .cxx_destruct]
+___block_descriptor_28_e4_20s24s_e33_v12@?0@"NSDictionary"4@"NSError"8l
+___block_descriptor_40_e8_20s36s_e28_v16@?0@"NSDictionary"4I8^c12l
+_OBJC_IVAR_$_ROAMGlobalBeaconVisitManager._regionRepository
+_OBJC_IVAR_$_ROAMGlobalBeaconVisitManager._placeRepository
+_OBJC_IVAR_$_ROAMGlobalBeaconVisitManager._regionRegistrar
+_OBJC_IVAR_$_ROAMGlobalBeaconVisitManager._configuration
+_OBJC_IVAR_$_ROAMGlobalBeaconVisitManager._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGlobalBeaconVisitManager.m
+__destroy_helper_block_e8_20s36s
+__copy_helper_block_e8_20s36s
+__63-[ROAMGlobalBeaconVisitManager processBeaconResolveResult:for:]_block_invoke
+__52-[ROAMGlobalBeaconVisitManager resolveBeaconRegion:]_block_invoke
+-[ROAMVisit initWithIdentifier:place:arrivalDate:departureDate:]
+-[ROAMVisit copyWithZone:]
+-[ROAMVisit initWithCoder:]
+-[ROAMVisit encodeWithCoder:]
++[ROAMVisit supportsSecureCoding]
+-[ROAMVisit isEqual:]
+-[ROAMVisit isEqualToVisit:]
+-[ROAMVisit hash]
+-[ROAMVisit description]
+-[ROAMVisit identifier]
+-[ROAMVisit place]
+-[ROAMVisit arrivalDate]
+-[ROAMVisit departureDate]
+-[ROAMVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMVisit._identifier
+_OBJC_IVAR_$_ROAMVisit._place
+_OBJC_IVAR_$_ROAMVisit._arrivalDate
+_OBJC_IVAR_$_ROAMVisit._departureDate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisit.h
+-[ROAMInternalBeacon identifier]
+-[ROAMInternalBeacon setIdentifier:]
+-[ROAMInternalBeacon name]
+-[ROAMInternalBeacon setName:]
+-[ROAMInternalBeacon proximity]
+-[ROAMInternalBeacon setProximity:]
+-[ROAMInternalBeacon rssi]
+-[ROAMInternalBeacon setRssi:]
+-[ROAMInternalBeacon properties]
+-[ROAMInternalBeacon setProperties:]
+-[ROAMInternalBeacon .cxx_destruct]
+_OBJC_IVAR_$_ROAMInternalBeacon._identifier
+_OBJC_IVAR_$_ROAMInternalBeacon._name
+_OBJC_IVAR_$_ROAMInternalBeacon._proximity
+_OBJC_IVAR_$_ROAMInternalBeacon._rssi
+_OBJC_IVAR_$_ROAMInternalBeacon._properties
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalBeacon.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalBeacon.h
++[ROAMNearbyAccessor sharedInstance]
+___36+[ROAMNearbyAccessor sharedInstance]_block_invoke
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
+-[ROAMNearbyAccessor nearbySummary]
+-[ROAMNearbyAccessor refreshNearbyWithCompletion:]
+-[ROAMNearbyAccessor nearbyGeofenceFromGeoRegion:withPlaceRepository:]
+-[ROAMNearbyAccessor nearbyBeaconFromBeaconRegion:withPlaceRepository:]
+_sharedInstance.sharedInstance
+_sharedInstance.onceToken
+___block_descriptor_24_e4__e5_v4@?0l
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyAccessor.m
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
+__36+[ROAMNearbyAccessor sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
++[ROAMUserDefaults defaults]
+___28+[ROAMUserDefaults defaults]_block_invoke
+-[ROAMUserDefaults init]
+_defaults.sharedInstance
+_defaults.onceToken
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMUserDefaults.m
+__28+[ROAMUserDefaults defaults]_block_invoke
+-[ROAMApiRequest initWithAppInfo:]
+-[ROAMApiRequest replaceEndpointPlaceholders:]
+-[ROAMApiRequest buildBaseRequestForURLPath:]
+-[ROAMApiRequest buildBaseRequestForURLPath:method:queryParameters:]
+-[ROAMApiRequest buildBaseRequestForURL:]
+-[ROAMApiRequest addHTTPHeadersForRequest:]
+-[ROAMApiRequest buildNearbyServerURLPathByAppending:]
+-[ROAMApiRequest buildNearbyBeaconServerURLPathByAppending:]
+-[ROAMApiRequest addParams:toRequest:forHTTPMethod:]
+-[ROAMApiRequest uploadTaskWithRequest:fromFile:completionHandler:]
+___67-[ROAMApiRequest uploadTaskWithRequest:fromFile:completionHandler:]_block_invoke
+___copy_helper_block_e4_20b24s
+-[ROAMApiRequest submitRequest:forSuccess:forFailure:]
+___54-[ROAMApiRequest submitRequest:forSuccess:forFailure:]_block_invoke
+___copy_helper_block_e4_20b24s28b
+___destroy_helper_block_e4_20s24s28s
+-[ROAMApiRequest validateResponse:data:error:]
++[ROAMApiRequest userAgentHeaderValue]
++[ROAMApiRequest timeZoneHeaderValue]
+-[ROAMApiRequest roamAuthorizationForURL:]
+-[ROAMApiRequest postConfigurationVersionForResponse:]
+-[ROAMApiRequest nearbyServerURLPath]
+-[ROAMApiRequest nearbyBeaconServerURLPath]
+-[ROAMApiRequest appInfo]
+-[ROAMApiRequest setAppInfo:]
+-[ROAMApiRequest acceptableStatusCodes]
+-[ROAMApiRequest setAcceptableStatusCodes:]
+-[ROAMApiRequest acceptableContentTypes]
+-[ROAMApiRequest setAcceptableContentTypes:]
+-[ROAMApiRequest .cxx_destruct]
+___block_descriptor_28_e4_20bs24s_e45_v16@?0@"NSData"4@"NSURLResponse"8@"NSError"12l
+___block_descriptor_32_e4_20bs24s28bs_e45_v16@?0@"NSData"4@"NSURLResponse"8@"NSError"12l
+_OBJC_IVAR_$_ROAMApiRequest._appInfo
+_OBJC_IVAR_$_ROAMApiRequest._acceptableStatusCodes
+_OBJC_IVAR_$_ROAMApiRequest._acceptableContentTypes
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMApiRequest.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMApiRequest.h
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20b24s28b
+__54-[ROAMApiRequest submitRequest:forSuccess:forFailure:]_block_invoke
+__copy_helper_block_e4_20b24s
+__67-[ROAMApiRequest uploadTaskWithRequest:fromFile:completionHandler:]_block_invoke
+-[ROAMTimer init]
+-[ROAMTimer initWithInterval:identifier:andBlock:]
+-[ROAMTimer fireWhenReady]
+-[ROAMTimer previousFireTime]
+-[ROAMTimer identifier]
+-[ROAMTimer setIdentifier:]
+-[ROAMTimer nextFire]
+-[ROAMTimer setNextFire:]
+-[ROAMTimer intervalSeconds]
+-[ROAMTimer setIntervalSeconds:]
+-[ROAMTimer fireTimes]
+-[ROAMTimer setFireTimes:]
+-[ROAMTimer excecuteBlock]
+-[ROAMTimer setExcecuteBlock:]
+-[ROAMTimer .cxx_destruct]
+_OBJC_IVAR_$_ROAMTimer._identifier
+_OBJC_IVAR_$_ROAMTimer._nextFire
+_OBJC_IVAR_$_ROAMTimer._intervalSeconds
+_OBJC_IVAR_$_ROAMTimer._fireTimes
+_OBJC_IVAR_$_ROAMTimer._excecuteBlock
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMTimer.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMTimer.h
+-[ROAMWeakRefArray init]
+-[ROAMWeakRefArray addObject:]
+-[ROAMWeakRefArray removeObject:]
+-[ROAMWeakRefArray enumerateObjectsUsingBlock:]
+-[ROAMWeakRefArray objects]
+-[ROAMWeakRefArray .cxx_destruct]
+_OBJC_IVAR_$_ROAMWeakRefArray._objects
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMWeakRefArray.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMWeakRefArray.h
+-[ROAMBeaconRegion initWithCoder:]
+-[ROAMBeaconRegion encodeWithCoder:]
++[ROAMBeaconRegion supportsSecureCoding]
+-[ROAMBeaconRegion initWithJSON:]
+-[ROAMBeaconRegion identifier]
+-[ROAMBeaconRegion coreLocationRegion]
+-[ROAMBeaconRegion beaconRegion]
+-[ROAMBeaconRegion description]
+-[ROAMBeaconRegion proximityFromString:]
+-[ROAMBeaconRegion UUID]
+-[ROAMBeaconRegion setUUID:]
+-[ROAMBeaconRegion major]
+-[ROAMBeaconRegion setMajor:]
+-[ROAMBeaconRegion minor]
+-[ROAMBeaconRegion setMinor:]
+-[ROAMBeaconRegion entryProximity]
+-[ROAMBeaconRegion setEntryProximity:]
+-[ROAMBeaconRegion .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeaconRegion._UUID
+_OBJC_IVAR_$_ROAMBeaconRegion._major
+_OBJC_IVAR_$_ROAMBeaconRegion._minor
+_OBJC_IVAR_$_ROAMBeaconRegion._entryProximity
+l_OBJC_PROTOCOL_$_VRVJSONDeserializable
+l_OBJC_LABEL_PROTOCOL_$_VRVJSONDeserializable
+l_OBJC_PROTOCOL_$_ROAMJSONDeserializable
+l_OBJC_LABEL_PROTOCOL_$_ROAMJSONDeserializable
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconRegion.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconRegion.h
++[ROAMStartUpController sharedInstance]
+___39+[ROAMStartUpController sharedInstance]_block_invoke
+-[ROAMStartUpController init]
+-[ROAMStartUpController dealloc]
+-[ROAMStartUpController initializeWithVerveContext:]
+-[ROAMStartUpController refreshConfigurationData]
+-[ROAMStartUpController hasInitialized]
+-[ROAMStartUpController isOptedIn]
+-[ROAMStartUpController optIn:]
+-[ROAMStartUpController optOut]
+-[ROAMStartUpController configurationVersionNotification:]
+-[ROAMStartUpController locationManager]
+-[ROAMStartUpController hardDataResetIsNeededForApplicationID:]
+-[ROAMStartUpController startServicesIfNeeded]
+-[ROAMStartUpController stopServices]
+-[ROAMStartUpController hasValidLocationServicePermission]
+-[ROAMStartUpController requestLocationServiceAuthorizationStatus:]
+-[ROAMStartUpController locationManager:didChangeAuthorizationStatus:]
+-[ROAMStartUpController handleRegistrationConfigurationData:]
+-[ROAMStartUpController configuration]
+-[ROAMStartUpController setConfiguration:]
+-[ROAMStartUpController setLocationManager:]
+-[ROAMStartUpController desiredAuthorizationStatus]
+-[ROAMStartUpController setDesiredAuthorizationStatus:]
+-[ROAMStartUpController registrationVersion]
+-[ROAMStartUpController setRegistrationVersion:]
+-[ROAMStartUpController verveContext]
+-[ROAMStartUpController setVerveContext:]
+-[ROAMStartUpController .cxx_destruct]
+_OBJC_IVAR_$_ROAMStartUpController._locationManager
+_OBJC_IVAR_$_ROAMStartUpController._configuration
+_OBJC_IVAR_$_ROAMStartUpController._desiredAuthorizationStatus
+_OBJC_IVAR_$_ROAMStartUpController._registrationVersion
+_OBJC_IVAR_$_ROAMStartUpController._verveContext
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMStartUpController.m
+__39+[ROAMStartUpController sharedInstance]_block_invoke
+-[ROAMPlaceRepository init]
+-[ROAMPlaceRepository allPlaces]
+-[ROAMPlaceRepository placeWithIdentifier:]
+-[ROAMPlaceRepository placesWithSignalID:]
+-[ROAMPlaceRepository addOrUpdatePlaces:]
+-[ROAMPlaceRepository removePlaces:]
+-[ROAMPlaceRepository synchronizePlaces:]
+-[ROAMPlaceRepository unarchivedModel]
+-[ROAMPlaceRepository saveModel]
+___32-[ROAMPlaceRepository saveModel]_block_invoke
+-[ROAMPlaceRepository pathToModelArchive]
+-[ROAMPlaceRepository model]
+-[ROAMPlaceRepository setModel:]
+-[ROAMPlaceRepository .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceRepository._model
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceRepository.m
+__32-[ROAMPlaceRepository saveModel]_block_invoke
+-[ROAMPlaceVisitManager initWithPlaceRepository:placeVisitRepository:]
+-[ROAMPlaceVisitManager dealloc]
+-[ROAMPlaceVisitManager didEnterGeoRegion:]
+-[ROAMPlaceVisitManager didExitGeoRegion:]
+-[ROAMPlaceVisitManager didEnterBeaconRegion:]
+-[ROAMPlaceVisitManager didExitBeaconRegion:]
+-[ROAMPlaceVisitManager wifiConnectionEvent:]
+-[ROAMPlaceVisitManager wifiConnectionLost:]
+-[ROAMPlaceVisitManager processEntryToSignalID:]
+-[ROAMPlaceVisitManager processExitToSignalID:]
+-[ROAMPlaceVisitManager beginVisitForPlace:withSignalID:]
+-[ROAMPlaceVisitManager endVisitForPlace:withSignalID:forPlaceVisit:]
+-[ROAMPlaceVisitManager updateVisit:byAddingSignalID:]
+-[ROAMPlaceVisitManager updateVisit:byRemovingSignalID:]
+-[ROAMPlaceVisitManager placesContainingSignalID:]
+-[ROAMPlaceVisitManager delegate]
+-[ROAMPlaceVisitManager setDelegate:]
+-[ROAMPlaceVisitManager placeRepository]
+-[ROAMPlaceVisitManager setPlaceRepository:]
+-[ROAMPlaceVisitManager placeVisitRepository]
+-[ROAMPlaceVisitManager setPlaceVisitRepository:]
+-[ROAMPlaceVisitManager locationManager]
+-[ROAMPlaceVisitManager setLocationManager:]
+-[ROAMPlaceVisitManager connectedWiFi]
+-[ROAMPlaceVisitManager setConnectedWiFi:]
+-[ROAMPlaceVisitManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceVisitManager._delegate
+_OBJC_IVAR_$_ROAMPlaceVisitManager._placeRepository
+_OBJC_IVAR_$_ROAMPlaceVisitManager._placeVisitRepository
+_OBJC_IVAR_$_ROAMPlaceVisitManager._locationManager
+_OBJC_IVAR_$_ROAMPlaceVisitManager._connectedWiFi
+l_OBJC_PROTOCOL_$_ROAMGeofenceVisitManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMGeofenceVisitManagerDelegate
+l_OBJC_PROTOCOL_$_ROAMProximityBasedBeaconVisitManager
+l_OBJC_LABEL_PROTOCOL_$_ROAMProximityBasedBeaconVisitManager
+l_OBJC_PROTOCOL_$_ROAMInternetChangeResponder
+l_OBJC_LABEL_PROTOCOL_$_ROAMInternetChangeResponder
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisitManager.h
++[ROAMError sdkErrorWithDescription:]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMError.m
+-[ROAMUpdateController initWithLogManager:]
+-[ROAMUpdateController dealloc]
+-[ROAMUpdateController startPeriodicUpdates]
+___44-[ROAMUpdateController startPeriodicUpdates]_block_invoke
+-[ROAMUpdateController stopPeriodicUpdates]
+-[ROAMUpdateController checkTimers:]
+-[ROAMUpdateController currentTimers]
+-[ROAMUpdateController locationManager:didUpdateLocations:]
+-[ROAMUpdateController locationManager:didFailWithError:]
+-[ROAMUpdateController logManager]
+-[ROAMUpdateController setLogManager:]
+-[ROAMUpdateController timers]
+-[ROAMUpdateController setTimers:]
+-[ROAMUpdateController locationManager]
+-[ROAMUpdateController setLocationManager:]
+-[ROAMUpdateController .cxx_destruct]
+_OBJC_IVAR_$_ROAMUpdateController._logManager
+_OBJC_IVAR_$_ROAMUpdateController._timers
+_OBJC_IVAR_$_ROAMUpdateController._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMUpdateController.m
+__44-[ROAMUpdateController startPeriodicUpdates]_block_invoke
+-[ROAMConfiguration initWithAppInfo:deviceInfo:]
+-[ROAMConfiguration configureWithDeviceID:applicationID:secret:options:]
+-[ROAMConfiguration isOptedIn]
+-[ROAMConfiguration setOptedIn:]
+-[ROAMConfiguration applicationID]
+-[ROAMConfiguration setApplicationID:]
+-[ROAMConfiguration setShowLocationPermissionAlert:]
+-[ROAMConfiguration canShowLocationPermissionAlert]
+-[ROAMConfiguration globalBeaconUUIDs]
+-[ROAMConfiguration setGlobalBeaconUUIDs:]
+-[ROAMConfiguration secureBeaconUUIDs]
+-[ROAMConfiguration setSecureBeaconUUIDs:]
+-[ROAMConfiguration isGlobalMonitoringEnabled]
+-[ROAMConfiguration setGlobalMonitoringEnabled:]
+-[ROAMConfiguration isGeofenceMonitoringEnabled]
+-[ROAMConfiguration setGeofenceMonitoringEnabled:]
+-[ROAMConfiguration isBeaconMonitoringEnabled]
+-[ROAMConfiguration setBeaconMonitoringEnabled:]
+-[ROAMConfiguration isComputedVisitMonitoringEnabled]
+-[ROAMConfiguration setComputedVisitMonitoringEnabled:]
+-[ROAMConfiguration maxCircularRegionCount]
+-[ROAMConfiguration setMaxCircularRegionCount:]
+-[ROAMConfiguration maxBeaconRegionCount]
+-[ROAMConfiguration setMaxBeaconRegionCount:]
+-[ROAMConfiguration canMonitorGeofences]
+-[ROAMConfiguration canMonitorBeacons]
+-[ROAMConfiguration canMonitorComputedVisits]
+-[ROAMConfiguration canFetchNearbyPeriodically]
+-[ROAMConfiguration canEnableLocationServices]
+-[ROAMConfiguration appInfo]
+-[ROAMConfiguration setAppInfo:]
+-[ROAMConfiguration deviceInfo]
+-[ROAMConfiguration setDeviceInfo:]
+-[ROAMConfiguration eventLogUploadDelay]
+-[ROAMConfiguration defaults]
+-[ROAMConfiguration setDefaults:]
+-[ROAMConfiguration options]
+-[ROAMConfiguration setOptions:]
+-[ROAMConfiguration .cxx_destruct]
+_OBJC_IVAR_$_ROAMConfiguration._appInfo
+_OBJC_IVAR_$_ROAMConfiguration._deviceInfo
+_OBJC_IVAR_$_ROAMConfiguration._defaults
+_OBJC_IVAR_$_ROAMConfiguration._eventLogUploadDelay
+_OBJC_IVAR_$_ROAMConfiguration._options
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMConfiguration.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMConfiguration.h
+-[ROAMComputedVisitManager initWithRegionVisitRepository:eventLogManager:centralVisitManager:]
+-[ROAMComputedVisitManager dealloc]
+-[ROAMComputedVisitManager startVisitMonitoring]
+-[ROAMComputedVisitManager stopVisitMonitoring]
+-[ROAMComputedVisitManager locationManager:didVisit:]
+-[ROAMComputedVisitManager regionVisitRepository]
+-[ROAMComputedVisitManager setRegionVisitRepository:]
+-[ROAMComputedVisitManager eventLogManager]
+-[ROAMComputedVisitManager setEventLogManager:]
+-[ROAMComputedVisitManager centralVisitManager]
+-[ROAMComputedVisitManager setCentralVisitManager:]
+-[ROAMComputedVisitManager locationManager]
+-[ROAMComputedVisitManager setLocationManager:]
+-[ROAMComputedVisitManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMComputedVisitManager._regionVisitRepository
+_OBJC_IVAR_$_ROAMComputedVisitManager._eventLogManager
+_OBJC_IVAR_$_ROAMComputedVisitManager._centralVisitManager
+_OBJC_IVAR_$_ROAMComputedVisitManager._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMComputedVisitManager.m
+-[ROAMNearbySummary init]
+-[ROAMNearbySummary perimeter]
+-[ROAMNearbySummary setPerimeter:]
+-[ROAMNearbySummary nearbyGeofences]
+-[ROAMNearbySummary setNearbyGeofences:]
+-[ROAMNearbySummary nearbyBeacons]
+-[ROAMNearbySummary setNearbyBeacons:]
+-[ROAMNearbySummary nextUpdateDate]
+-[ROAMNearbySummary setNextUpdateDate:]
+-[ROAMNearbySummary .cxx_destruct]
+_OBJC_IVAR_$_ROAMNearbySummary._perimeter
+_OBJC_IVAR_$_ROAMNearbySummary._nearbyGeofences
+_OBJC_IVAR_$_ROAMNearbySummary._nearbyBeacons
+_OBJC_IVAR_$_ROAMNearbySummary._nextUpdateDate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbySummary.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbySummary.h
+-[ROAMBeaconVisit initWithCoder:]
+-[ROAMBeaconVisit encodeWithCoder:]
++[ROAMBeaconVisit supportsSecureCoding]
+-[ROAMBeaconVisit JSONDictionary]
+-[ROAMBeaconVisit description]
+-[ROAMBeaconVisit signalID]
+-[ROAMBeaconVisit setSignalID:]
+-[ROAMBeaconVisit beaconName]
+-[ROAMBeaconVisit setBeaconName:]
+-[ROAMBeaconVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeaconVisit._signalID
+_OBJC_IVAR_$_ROAMBeaconVisit._beaconName
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconVisit.h
+-[ROAMNearbyRequest fetchNearby:forSuccess:forFailure:]
+___55-[ROAMNearbyRequest fetchNearby:forSuccess:forFailure:]_block_invoke
+___copy_helper_block_e4_20b
+___55-[ROAMNearbyRequest fetchNearby:forSuccess:forFailure:]_block_invoke.4
+___block_descriptor_24_e4_20bs_e21_v8@?0@"NSDictionary"4l
+___block_descriptor_24_e4_20bs_e16_v8@?0@"NSError"4l
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyRequest.m
+__55-[ROAMNearbyRequest fetchNearby:forSuccess:forFailure:]_block_invoke.4
+__copy_helper_block_e4_20b
+__55-[ROAMNearbyRequest fetchNearby:forSuccess:forFailure:]_block_invoke
+-[ROAMCentralVisitManager init]
+-[ROAMCentralVisitManager dealloc]
+-[ROAMCentralVisitManager currentVisits]
+-[ROAMCentralVisitManager broadcastDidBeginPlaceVisit:forPlace:]
+___64-[ROAMCentralVisitManager broadcastDidBeginPlaceVisit:forPlace:]_block_invoke
+___64-[ROAMCentralVisitManager broadcastDidBeginPlaceVisit:forPlace:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s
+-[ROAMCentralVisitManager broadcastDidEndPlaceVisit:forPlace:]
+___62-[ROAMCentralVisitManager broadcastDidEndPlaceVisit:forPlace:]_block_invoke
+___62-[ROAMCentralVisitManager broadcastDidEndPlaceVisit:forPlace:]_block_invoke_2
+-[ROAMCentralVisitManager visitFromPlaceVisit:internalPlace:]
+-[ROAMCentralVisitManager broadcastDidBeginComputedVisit:]
+-[ROAMCentralVisitManager broadcastDidEndComputedVisit:]
+-[ROAMCentralVisitManager visitManagers]
+-[ROAMCentralVisitManager setVisitManagers:]
+-[ROAMCentralVisitManager placeVisitRepository]
+-[ROAMCentralVisitManager setPlaceVisitRepository:]
+-[ROAMCentralVisitManager placeRepository]
+-[ROAMCentralVisitManager setPlaceRepository:]
+-[ROAMCentralVisitManager .cxx_destruct]
+___block_descriptor_24_e4_20s_e32_v16@?0@"ROAMVisitManager"4I8^c12l
+___block_descriptor_32_e4_20s24s28s_e5_v4@?0l
+_OBJC_IVAR_$_ROAMCentralVisitManager._visitManagers
+_OBJC_IVAR_$_ROAMCentralVisitManager._placeVisitRepository
+_OBJC_IVAR_$_ROAMCentralVisitManager._placeRepository
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCentralVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCentralVisitManager.h
+__62-[ROAMCentralVisitManager broadcastDidEndPlaceVisit:forPlace:]_block_invoke_2
+__62-[ROAMCentralVisitManager broadcastDidEndPlaceVisit:forPlace:]_block_invoke
+__copy_helper_block_e4_20s24s28s
+__64-[ROAMCentralVisitManager broadcastDidBeginPlaceVisit:forPlace:]_block_invoke_2
+__64-[ROAMCentralVisitManager broadcastDidBeginPlaceVisit:forPlace:]_block_invoke
+-[ROAMWeakRef initWithValue:]
++[ROAMWeakRef weakRefWithValue:]
+-[ROAMWeakRef isEqual:]
+-[ROAMWeakRef hash]
+-[ROAMWeakRef value]
+-[ROAMWeakRef .cxx_destruct]
+_OBJC_IVAR_$_ROAMWeakRef._value
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMWeakRef.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMWeakRef.h
++[ROAMDictionaryHelper removeNullObjects:]
++[ROAMDictionaryHelper toJsonString:]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMDictionaryHelper.m
++[ROAMCoreService sharedInstance]
+___33+[ROAMCoreService sharedInstance]_block_invoke
+-[ROAMCoreService init]
+-[ROAMCoreService startCoreServices]
+-[ROAMCoreService stopCoreServices]
+-[ROAMCoreService startVisitMonitoring]
+-[ROAMCoreService stopVisitMonitoring]
+-[ROAMCoreService resetData:]
+-[ROAMCoreService purgeDataWithExcludedPaths:]
+-[ROAMCoreService configuration]
+-[ROAMCoreService setConfiguration:]
+-[ROAMCoreService centralVisitManager]
+-[ROAMCoreService setCentralVisitManager:]
+-[ROAMCoreService centralBeaconManager]
+-[ROAMCoreService setCentralBeaconManager:]
+-[ROAMCoreService visitMonitoringService]
+-[ROAMCoreService setVisitMonitoringService:]
+-[ROAMCoreService eventLogManager]
+-[ROAMCoreService setEventLogManager:]
+-[ROAMCoreService appInfo]
+-[ROAMCoreService setAppInfo:]
+-[ROAMCoreService deviceInfo]
+-[ROAMCoreService setDeviceInfo:]
+-[ROAMCoreService updateController]
+-[ROAMCoreService setUpdateController:]
+-[ROAMCoreService excludedPurgeDataPaths]
+-[ROAMCoreService setExcludedPurgeDataPaths:]
+-[ROAMCoreService .cxx_destruct]
+_OBJC_IVAR_$_ROAMCoreService._visitMonitoringService
+_OBJC_IVAR_$_ROAMCoreService._configuration
+_OBJC_IVAR_$_ROAMCoreService._centralVisitManager
+_OBJC_IVAR_$_ROAMCoreService._centralBeaconManager
+_OBJC_IVAR_$_ROAMCoreService._eventLogManager
+_OBJC_IVAR_$_ROAMCoreService._appInfo
+_OBJC_IVAR_$_ROAMCoreService._deviceInfo
+_OBJC_IVAR_$_ROAMCoreService._updateController
+_OBJC_IVAR_$_ROAMCoreService._excludedPurgeDataPaths
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCoreService.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCoreService.h
+__33+[ROAMCoreService sharedInstance]_block_invoke
+-[ROAMBeacon initWithIdentifier:name:properties:]
+-[ROAMBeacon copyWithZone:]
+-[ROAMBeacon initWithCoder:]
+-[ROAMBeacon encodeWithCoder:]
++[ROAMBeacon supportsSecureCoding]
+-[ROAMBeacon isEqual:]
+-[ROAMBeacon isEqualToBeacon:]
+-[ROAMBeacon hash]
+-[ROAMBeacon description]
+-[ROAMBeacon identifier]
+-[ROAMBeacon name]
+-[ROAMBeacon properties]
+-[ROAMBeacon .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeacon._identifier
+_OBJC_IVAR_$_ROAMBeacon._name
+_OBJC_IVAR_$_ROAMBeacon._properties
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeacon.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeacon.h
+-[ROAMCentralBeaconManager initWithConfiguration:]
+-[ROAMCentralBeaconManager dealloc]
+-[ROAMCentralBeaconManager canRangeForBeaconsInPlaceWithIdentifier:error:]
+-[ROAMCentralBeaconManager updateRangingState]
+___46-[ROAMCentralBeaconManager updateRangingState]_block_invoke
+___copy_helper_block_e4_20r
+___destroy_helper_block_e4_20r
+-[ROAMCentralBeaconManager didRangeBeacons:]
+___44-[ROAMCentralBeaconManager didRangeBeacons:]_block_invoke
+-[ROAMCentralBeaconManager sightingsByPlaceForBeacons:]
+-[ROAMCentralBeaconManager beaconSightingFromBeacon:]
+-[ROAMCentralBeaconManager beaconProximityFromCoreLocationProximity:]
+-[ROAMCentralBeaconManager beaconManagers]
+-[ROAMCentralBeaconManager setBeaconManagers:]
+-[ROAMCentralBeaconManager placeRepository]
+-[ROAMCentralBeaconManager setPlaceRepository:]
+-[ROAMCentralBeaconManager rangingManager]
+-[ROAMCentralBeaconManager setRangingManager:]
+-[ROAMCentralBeaconManager configuration]
+-[ROAMCentralBeaconManager setConfiguration:]
+-[ROAMCentralBeaconManager .cxx_destruct]
+___block_descriptor_24_e4_20r_e33_v16@?0@"ROAMBeaconManager"4I8^c12l
+___block_descriptor_24_e4_20s_e33_v16@?0@"ROAMBeaconManager"4I8^c12l
+_OBJC_IVAR_$_ROAMCentralBeaconManager._beaconManagers
+_OBJC_IVAR_$_ROAMCentralBeaconManager._placeRepository
+_OBJC_IVAR_$_ROAMCentralBeaconManager._rangingManager
+_OBJC_IVAR_$_ROAMCentralBeaconManager._configuration
+l_OBJC_PROTOCOL_$_ROAMRangingManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMRangingManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCentralBeaconManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMCentralBeaconManager.h
+__44-[ROAMCentralBeaconManager didRangeBeacons:]_block_invoke
+__destroy_helper_block_e4_20r
+__copy_helper_block_e4_20r
+__46-[ROAMCentralBeaconManager updateRangingState]_block_invoke
++[ROAMRegionUtils isRegion:equalToRegion:]
++[ROAMRegionUtils isBeaconRegion:equalToBeaconRegion:]
++[ROAMRegionUtils isCircularRegion:equalToCircularRegion:]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionUtils.m
+-[ROAMNearbyGeofence identifier]
+-[ROAMNearbyGeofence setIdentifier:]
+-[ROAMNearbyGeofence name]
+-[ROAMNearbyGeofence setName:]
+-[ROAMNearbyGeofence placeName]
+-[ROAMNearbyGeofence setPlaceName:]
+-[ROAMNearbyGeofence placeIdentifier]
+-[ROAMNearbyGeofence setPlaceIdentifier:]
+-[ROAMNearbyGeofence center]
+-[ROAMNearbyGeofence setCenter:]
+-[ROAMNearbyGeofence radius]
+-[ROAMNearbyGeofence setRadius:]
+-[ROAMNearbyGeofence owned]
+-[ROAMNearbyGeofence setOwned:]
+-[ROAMNearbyGeofence .cxx_destruct]
+_OBJC_IVAR_$_ROAMNearbyGeofence._identifier
+_OBJC_IVAR_$_ROAMNearbyGeofence._name
+_OBJC_IVAR_$_ROAMNearbyGeofence._placeName
+_OBJC_IVAR_$_ROAMNearbyGeofence._placeIdentifier
+_OBJC_IVAR_$_ROAMNearbyGeofence._center
+_OBJC_IVAR_$_ROAMNearbyGeofence._radius
+_OBJC_IVAR_$_ROAMNearbyGeofence._owned
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyGeofence.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyGeofence.h
+-[ROAMGeofenceVisitManager initWithRegionRepository:regionVisitRepository:eventLogManager:]
+-[ROAMGeofenceVisitManager dealloc]
+-[ROAMGeofenceVisitManager didStartMonitoringRegion:]
+-[ROAMGeofenceVisitManager didStopMonitoringRegion:]
+-[ROAMGeofenceVisitManager locationManager:didStartMonitoringForRegion:]
+-[ROAMGeofenceVisitManager locationManager:monitoringDidFailForRegion:withError:]
+-[ROAMGeofenceVisitManager locationManager:didDetermineState:forRegion:]
+-[ROAMGeofenceVisitManager geoRegionForRegion:]
+-[ROAMGeofenceVisitManager processEntryToGeoRegion:]
+-[ROAMGeofenceVisitManager processExitToGeoRegion:]
+-[ROAMGeofenceVisitManager delegate]
+-[ROAMGeofenceVisitManager setDelegate:]
+-[ROAMGeofenceVisitManager regionRepository]
+-[ROAMGeofenceVisitManager setRegionRepository:]
+-[ROAMGeofenceVisitManager regionVisitRepository]
+-[ROAMGeofenceVisitManager setRegionVisitRepository:]
+-[ROAMGeofenceVisitManager eventLogManager]
+-[ROAMGeofenceVisitManager setEventLogManager:]
+-[ROAMGeofenceVisitManager locationManager]
+-[ROAMGeofenceVisitManager setLocationManager:]
+-[ROAMGeofenceVisitManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMGeofenceVisitManager._delegate
+_OBJC_IVAR_$_ROAMGeofenceVisitManager._regionRepository
+_OBJC_IVAR_$_ROAMGeofenceVisitManager._regionVisitRepository
+_OBJC_IVAR_$_ROAMGeofenceVisitManager._eventLogManager
+_OBJC_IVAR_$_ROAMGeofenceVisitManager._locationManager
+l_OBJC_PROTOCOL_$_ROAMRegionMonitoringDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMRegionMonitoringDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeofenceVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeofenceVisitManager.h
+-[ROAMGeoRegion initWithCoder:]
+-[ROAMGeoRegion encodeWithCoder:]
++[ROAMGeoRegion supportsSecureCoding]
+-[ROAMGeoRegion initWithJSON:]
+-[ROAMGeoRegion coreLocationRegion]
+-[ROAMGeoRegion circularRegion]
+-[ROAMGeoRegion description]
+-[ROAMGeoRegion radius]
+-[ROAMGeoRegion setRadius:]
+_OBJC_IVAR_$_ROAMGeoRegion._radius
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeoRegion.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeoRegion.h
+-[ROAMNearbyManager initWithAppInfo:delegate:]
+-[ROAMNearbyManager dealloc]
+-[ROAMNearbyManager fetchNearbyIfTimeExpiredWithLocation:]
++[ROAMNearbyManager purgeNearbyInfo]
+-[ROAMNearbyManager locationManager:didEnterRegion:]
+-[ROAMNearbyManager locationManager:didExitRegion:]
+-[ROAMNearbyManager locationManager:didVisit:]
+-[ROAMNearbyManager fetchNearbyIfLocationDeltaMet:]
+-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]
+___57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke
+___57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32b
+___destroy_helper_block_e4_20s24s28s32s
+___copy_helper_block_e4_20s24s28b
+___57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke.113
+___copy_helper_block_e4_20s24b
+-[ROAMNearbyManager locationManager:didUpdateLocations:]
+-[ROAMNearbyManager nearbyRadius]
+-[ROAMNearbyManager setNearbyRadius:]
+-[ROAMNearbyManager nearbyExpiryDate]
+-[ROAMNearbyManager setNearbyExpiryDate:]
+-[ROAMNearbyManager nearbyLocation]
+-[ROAMNearbyManager setNearbyLocation:]
+-[ROAMNearbyManager appInfo]
+-[ROAMNearbyManager setAppInfo:]
+-[ROAMNearbyManager delegate]
+-[ROAMNearbyManager setDelegate:]
+-[ROAMNearbyManager defaults]
+-[ROAMNearbyManager setDefaults:]
+-[ROAMNearbyManager locationManager]
+-[ROAMNearbyManager setLocationManager:]
+-[ROAMNearbyManager nearbyRequestInFlight]
+-[ROAMNearbyManager setNearbyRequestInFlight:]
+-[ROAMNearbyManager .cxx_destruct]
+___block_descriptor_36_e4_20s24s28s32bs_e5_v4@?0l
+___block_descriptor_32_e4_20s24s28bs_e21_v8@?0@"NSDictionary"4l
+___block_descriptor_28_e4_20s24bs_e16_v8@?0@"NSError"4l
+_OBJC_IVAR_$_ROAMNearbyManager._appInfo
+_OBJC_IVAR_$_ROAMNearbyManager._delegate
+_OBJC_IVAR_$_ROAMNearbyManager._defaults
+_OBJC_IVAR_$_ROAMNearbyManager._locationManager
+_OBJC_IVAR_$_ROAMNearbyManager._nearbyRequestInFlight
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyManager.m
+__copy_helper_block_e4_20s24b
+__57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke.113
+__copy_helper_block_e4_20s24s28b
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20s24s28s32b
+__57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke_2
+__57-[ROAMNearbyManager fetchNearbyForLocation:onCompletion:]_block_invoke
+-[Roam init]
++[Roam sharedInstance]
+___22+[Roam sharedInstance]_block_invoke
+-[Roam isOptedIn]
+-[Roam optIn]
+-[Roam optIn:]
+-[Roam optOut]
+-[Roam hasInitialized]
+-[Roam startUpHandler]
+-[Roam setStartUpHandler:]
+-[Roam .cxx_destruct]
+_OBJC_IVAR_$_Roam._startUpHandler
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/Roam.m
+__22+[Roam sharedInstance]_block_invoke
+-[ROAMVisitManager init]
+-[ROAMVisitManager setDelegate:]
+-[ROAMVisitManager currentVisits]
+-[ROAMVisitManager delegate]
+-[ROAMVisitManager centralVisitManager]
+-[ROAMVisitManager setCentralVisitManager:]
+-[ROAMVisitManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMVisitManager._delegate
+_OBJC_IVAR_$_ROAMVisitManager._centralVisitManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMVisitManager.h
++[ROAMURLSessionManager defaultManager]
+___39+[ROAMURLSessionManager defaultManager]_block_invoke
+-[ROAMURLSessionManager init]
+-[ROAMURLSessionManager URLSession:didReceiveChallenge:completionHandler:]
+-[ROAMURLSessionManager sharedSession]
+-[ROAMURLSessionManager setSharedSession:]
+-[ROAMURLSessionManager .cxx_destruct]
+_defaultManager.sharedInstance
+_defaultManager.onceToken
+___block_descriptor_20_e5_v4@?0l
+_OBJC_IVAR_$_ROAMURLSessionManager._sharedSession
+l_OBJC_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMURLSessionManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMURLSessionManager.h
+__39+[ROAMURLSessionManager defaultManager]_block_invoke
+-[ROAMRegion init]
+-[ROAMRegion setResolveStatus:]
+-[ROAMRegion isResolveExpired]
+-[ROAMRegion coreLocationRegion]
+-[ROAMRegion initWithCoder:]
+-[ROAMRegion encodeWithCoder:]
++[ROAMRegion supportsSecureCoding]
+-[ROAMRegion initWithJSON:]
+-[ROAMRegion isEqual:]
+-[ROAMRegion isEqualToRegion:]
+-[ROAMRegion hash]
+-[ROAMRegion identifier]
+-[ROAMRegion setIdentifier:]
+-[ROAMRegion signalID]
+-[ROAMRegion setSignalID:]
+-[ROAMRegion name]
+-[ROAMRegion setName:]
+-[ROAMRegion owned]
+-[ROAMRegion setOwned:]
+-[ROAMRegion coordinate]
+-[ROAMRegion setCoordinate:]
+-[ROAMRegion properties]
+-[ROAMRegion setProperties:]
+-[ROAMRegion isActive]
+-[ROAMRegion setActive:]
+-[ROAMRegion monitorPriority]
+-[ROAMRegion setMonitorPriority:]
+-[ROAMRegion resolveStatus]
+-[ROAMRegion resolveExpiryDate]
+-[ROAMRegion setResolveExpiryDate:]
+-[ROAMRegion .cxx_destruct]
+_OBJC_IVAR_$_ROAMRegion._resolveStatus
+_OBJC_IVAR_$_ROAMRegion._identifier
+_OBJC_IVAR_$_ROAMRegion._signalID
+_OBJC_IVAR_$_ROAMRegion._name
+_OBJC_IVAR_$_ROAMRegion._owned
+_OBJC_IVAR_$_ROAMRegion._coordinate
+_OBJC_IVAR_$_ROAMRegion._properties
+_OBJC_IVAR_$_ROAMRegion._active
+_OBJC_IVAR_$_ROAMRegion._monitorPriority
+_OBJC_IVAR_$_ROAMRegion._resolveExpiryDate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegion.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegion.h
+-[ROAMRegionRepositoryModel init]
+-[ROAMRegionRepositoryModel initWithCoder:]
+-[ROAMRegionRepositoryModel encodeWithCoder:]
++[ROAMRegionRepositoryModel supportsSecureCoding]
+-[ROAMRegionRepositoryModel regionsByIdentifier]
+-[ROAMRegionRepositoryModel setRegionsByIdentifier:]
+-[ROAMRegionRepositoryModel .cxx_destruct]
+_OBJC_IVAR_$_ROAMRegionRepositoryModel._regionsByIdentifier
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionRepositoryModel.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionRepositoryModel.h
+-[ROAMNearbyCleanUp initWithRegionRepository:regionVisitRepository:placeRepository:placeVisitRepository:]
+-[ROAMNearbyCleanUp performCleanUp]
+-[ROAMNearbyCleanUp removeUnnecessaryPlaces]
+-[ROAMNearbyCleanUp removeUnnecessaryRegions]
+-[ROAMNearbyCleanUp regionRepository]
+-[ROAMNearbyCleanUp setRegionRepository:]
+-[ROAMNearbyCleanUp regionVisitRepository]
+-[ROAMNearbyCleanUp setRegionVisitRepository:]
+-[ROAMNearbyCleanUp placeRepository]
+-[ROAMNearbyCleanUp setPlaceRepository:]
+-[ROAMNearbyCleanUp placeVisitRepository]
+-[ROAMNearbyCleanUp setPlaceVisitRepository:]
+-[ROAMNearbyCleanUp .cxx_destruct]
+_OBJC_IVAR_$_ROAMNearbyCleanUp._regionRepository
+_OBJC_IVAR_$_ROAMNearbyCleanUp._regionVisitRepository
+_OBJC_IVAR_$_ROAMNearbyCleanUp._placeRepository
+_OBJC_IVAR_$_ROAMNearbyCleanUp._placeVisitRepository
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyCleanUp.m
++[ROAMFileInfo sdkApplicationSupportDirectory]
++[ROAMFileInfo sdkApplicationSupportDirectoryURL]
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMFileInfo.m
+-[ROAMInternalPlace init]
+-[ROAMInternalPlace setResolveStatus:]
+-[ROAMInternalPlace isResolveExpired]
+-[ROAMInternalPlace initWithCoder:]
+-[ROAMInternalPlace encodeWithCoder:]
++[ROAMInternalPlace supportsSecureCoding]
+-[ROAMInternalPlace initWithJSON:]
+-[ROAMInternalPlace signalIdsFromJSON:]
+-[ROAMInternalPlace isEqual:]
+-[ROAMInternalPlace isEqualToPlace:]
+-[ROAMInternalPlace hash]
+-[ROAMInternalPlace description]
+-[ROAMInternalPlace identifier]
+-[ROAMInternalPlace setIdentifier:]
+-[ROAMInternalPlace name]
+-[ROAMInternalPlace setName:]
+-[ROAMInternalPlace signalIds]
+-[ROAMInternalPlace setSignalIds:]
+-[ROAMInternalPlace properties]
+-[ROAMInternalPlace setProperties:]
+-[ROAMInternalPlace owned]
+-[ROAMInternalPlace setOwned:]
+-[ROAMInternalPlace parentId]
+-[ROAMInternalPlace setParentId:]
+-[ROAMInternalPlace accountId]
+-[ROAMInternalPlace setAccountId:]
+-[ROAMInternalPlace isActive]
+-[ROAMInternalPlace setActive:]
+-[ROAMInternalPlace resolveStatus]
+-[ROAMInternalPlace resolveExpiryDate]
+-[ROAMInternalPlace setResolveExpiryDate:]
+-[ROAMInternalPlace .cxx_destruct]
+_OBJC_IVAR_$_ROAMInternalPlace._resolveStatus
+_OBJC_IVAR_$_ROAMInternalPlace._identifier
+_OBJC_IVAR_$_ROAMInternalPlace._name
+_OBJC_IVAR_$_ROAMInternalPlace._signalIds
+_OBJC_IVAR_$_ROAMInternalPlace._properties
+_OBJC_IVAR_$_ROAMInternalPlace._owned
+_OBJC_IVAR_$_ROAMInternalPlace._parentId
+_OBJC_IVAR_$_ROAMInternalPlace._accountId
+_OBJC_IVAR_$_ROAMInternalPlace._active
+_OBJC_IVAR_$_ROAMInternalPlace._resolveExpiryDate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalPlace.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMInternalPlace.h
+-[ROAMGeofenceVisit initWithCoder:]
+-[ROAMGeofenceVisit encodeWithCoder:]
++[ROAMGeofenceVisit supportsSecureCoding]
+-[ROAMGeofenceVisit JSONDictionary]
+-[ROAMGeofenceVisit description]
+-[ROAMGeofenceVisit signalID]
+-[ROAMGeofenceVisit setSignalID:]
+-[ROAMGeofenceVisit geofenceName]
+-[ROAMGeofenceVisit setGeofenceName:]
+-[ROAMGeofenceVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMGeofenceVisit._signalID
+_OBJC_IVAR_$_ROAMGeofenceVisit._geofenceName
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeofenceVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMGeofenceVisit.h
+-[ROAMBeaconManager init]
+-[ROAMBeaconManager setDelegate:]
+-[ROAMBeaconManager rangedPlaces]
+-[ROAMBeaconManager startRangingBeaconsInPlace:]
+-[ROAMBeaconManager stopRangingBeaconsInPlace:]
+-[ROAMBeaconManager delegate]
+-[ROAMBeaconManager setRangedPlaces:]
+-[ROAMBeaconManager centralBeaconManager]
+-[ROAMBeaconManager setCentralBeaconManager:]
+-[ROAMBeaconManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeaconManager._delegate
+_OBJC_IVAR_$_ROAMBeaconManager._rangedPlaces
+_OBJC_IVAR_$_ROAMBeaconManager._centralBeaconManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconManager.h
+-[ROAMProximityBasedBeaconVisitManager initRegionRepository:]
+-[ROAMProximityBasedBeaconVisitManager didEnterBeaconRegion:]
+-[ROAMProximityBasedBeaconVisitManager didExitBeaconRegion:]
+-[ROAMProximityBasedBeaconVisitManager beginRangingForDesiredProximityMatchingBeaconRegion:]
+-[ROAMProximityBasedBeaconVisitManager locationManager:didRangeBeacons:inRegion:]
+-[ROAMProximityBasedBeaconVisitManager beginBackgroundTask]
+___59-[ROAMProximityBasedBeaconVisitManager beginBackgroundTask]_block_invoke
+___copy_helper_block_e4_20w
+___destroy_helper_block_e4_20w
+-[ROAMProximityBasedBeaconVisitManager endBackgroundTask]
+-[ROAMProximityBasedBeaconVisitManager delegate]
+-[ROAMProximityBasedBeaconVisitManager setDelegate:]
+-[ROAMProximityBasedBeaconVisitManager regionRepository]
+-[ROAMProximityBasedBeaconVisitManager setRegionRepository:]
+-[ROAMProximityBasedBeaconVisitManager locationManager]
+-[ROAMProximityBasedBeaconVisitManager setLocationManager:]
+-[ROAMProximityBasedBeaconVisitManager backgroundTaskIdentifier]
+-[ROAMProximityBasedBeaconVisitManager setBackgroundTaskIdentifier:]
+-[ROAMProximityBasedBeaconVisitManager .cxx_destruct]
+___block_descriptor_24_e4_20w_e5_v4@?0l
+_OBJC_IVAR_$_ROAMProximityBasedBeaconVisitManager._delegate
+_OBJC_IVAR_$_ROAMProximityBasedBeaconVisitManager._regionRepository
+_OBJC_IVAR_$_ROAMProximityBasedBeaconVisitManager._locationManager
+_OBJC_IVAR_$_ROAMProximityBasedBeaconVisitManager._backgroundTaskIdentifier
+l_OBJC_PROTOCOL_$_ROAMBeaconVisitManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMBeaconVisitManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMProximityBasedBeaconVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMProximityBasedBeaconVisitManager.h
+__destroy_helper_block_e4_20w
+__copy_helper_block_e4_20w
+__59-[ROAMProximityBasedBeaconVisitManager beginBackgroundTask]_block_invoke
+-[ROAMDeviceInfo init]
+-[ROAMDeviceInfo isAdTrackingEnabled]
+-[ROAMDeviceInfo bluetoothState]
+-[ROAMDeviceInfo gatherDeviceInfo]
+-[ROAMDeviceInfo deviceInfoJSON]
++[ROAMDeviceInfo platform]
++[ROAMDeviceInfo carrierName]
+-[ROAMDeviceInfo centralManagerDidUpdateState:]
+-[ROAMDeviceInfo deviceKind]
+-[ROAMDeviceInfo setDeviceKind:]
+-[ROAMDeviceInfo systemName]
+-[ROAMDeviceInfo setSystemName:]
+-[ROAMDeviceInfo osVersion]
+-[ROAMDeviceInfo setOsVersion:]
+-[ROAMDeviceInfo deviceModel]
+-[ROAMDeviceInfo setDeviceModel:]
+-[ROAMDeviceInfo carrierName]
+-[ROAMDeviceInfo setCarrierName:]
+-[ROAMDeviceInfo setBluetoothState:]
+-[ROAMDeviceInfo centralManager]
+-[ROAMDeviceInfo setCentralManager:]
+-[ROAMDeviceInfo .cxx_destruct]
+_OBJC_IVAR_$_ROAMDeviceInfo._bluetoothState
+_OBJC_IVAR_$_ROAMDeviceInfo._deviceKind
+_OBJC_IVAR_$_ROAMDeviceInfo._systemName
+_OBJC_IVAR_$_ROAMDeviceInfo._osVersion
+_OBJC_IVAR_$_ROAMDeviceInfo._deviceModel
+_OBJC_IVAR_$_ROAMDeviceInfo._carrierName
+_OBJC_IVAR_$_ROAMDeviceInfo._centralManager
+l_OBJC_PROTOCOL_$_CBCentralManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_CBCentralManagerDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMDeviceInfo.m
+-[ROAMModule initializeWithVerveContext:]
+-[ROAMModule onDidFetchConfiguration]
+l_OBJC_PROTOCOL_$_VRVModule
+l_OBJC_LABEL_PROTOCOL_$_VRVModule
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMModule.m
+-[ROAMPlaceRepositoryModel init]
+-[ROAMPlaceRepositoryModel initWithCoder:]
+-[ROAMPlaceRepositoryModel encodeWithCoder:]
++[ROAMPlaceRepositoryModel supportsSecureCoding]
+-[ROAMPlaceRepositoryModel placeByIdentifier]
+-[ROAMPlaceRepositoryModel setPlaceByIdentifier:]
+-[ROAMPlaceRepositoryModel placesBySignalID]
+-[ROAMPlaceRepositoryModel setPlacesBySignalID:]
+-[ROAMPlaceRepositoryModel .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceRepositoryModel._placeByIdentifier
+_OBJC_IVAR_$_ROAMPlaceRepositoryModel._placesBySignalID
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceRepositoryModel.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceRepositoryModel.h
+-[ROAMPlace initWithIdentifier:name:properties:]
+-[ROAMPlace copyWithZone:]
+-[ROAMPlace initWithCoder:]
+-[ROAMPlace encodeWithCoder:]
++[ROAMPlace supportsSecureCoding]
+-[ROAMPlace isEqual:]
+-[ROAMPlace isEqualToPlace:]
+-[ROAMPlace hash]
+-[ROAMPlace description]
+-[ROAMPlace identifier]
+-[ROAMPlace name]
+-[ROAMPlace properties]
+-[ROAMPlace .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlace._identifier
+_OBJC_IVAR_$_ROAMPlace._name
+_OBJC_IVAR_$_ROAMPlace._properties
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlace.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlace.h
+-[ROAMRegionStateValidator initWithGeofenceVisitManager:beaconVisitManager:]
+-[ROAMRegionStateValidator willStartMonitoringRegion:]
+-[ROAMRegionStateValidator didContinueMonitoringRegion:]
+-[ROAMRegionStateValidator didStopMonitoringRegion:]
+-[ROAMRegionStateValidator geofenceVisitManager]
+-[ROAMRegionStateValidator setGeofenceVisitManager:]
+-[ROAMRegionStateValidator beaconVisitManager]
+-[ROAMRegionStateValidator setBeaconVisitManager:]
+-[ROAMRegionStateValidator .cxx_destruct]
+_OBJC_IVAR_$_ROAMRegionStateValidator._geofenceVisitManager
+_OBJC_IVAR_$_ROAMRegionStateValidator._beaconVisitManager
+l_OBJC_PROTOCOL_$_ROAMRegionRegistrarDelegate
+l_OBJC_LABEL_PROTOCOL_$_ROAMRegionRegistrarDelegate
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMRegionStateValidator.m
+-[ROAMAppInfo init]
+-[ROAMAppInfo configureWithDeviceId:applicationID:secret:options:]
+-[ROAMAppInfo gatherApplicationInfo]
+-[ROAMAppInfo getMobileProvision]
+-[ROAMAppInfo applicationID]
+-[ROAMAppInfo setApplicationID:]
+-[ROAMAppInfo applicationSecret]
+-[ROAMAppInfo setApplicationSecret:]
+-[ROAMAppInfo applicationBundleIdentifier]
+-[ROAMAppInfo setApplicationBundleIdentifier:]
+-[ROAMAppInfo applicationBundleVersion]
+-[ROAMAppInfo setApplicationBundleVersion:]
+-[ROAMAppInfo deviceId]
+-[ROAMAppInfo setDeviceId:]
+-[ROAMAppInfo runtimeEnvironment]
+-[ROAMAppInfo setRuntimeEnvironment:]
+-[ROAMAppInfo options]
+-[ROAMAppInfo setOptions:]
+-[ROAMAppInfo .cxx_destruct]
+_OBJC_IVAR_$_ROAMAppInfo._applicationID
+_OBJC_IVAR_$_ROAMAppInfo._applicationSecret
+_OBJC_IVAR_$_ROAMAppInfo._applicationBundleIdentifier
+_OBJC_IVAR_$_ROAMAppInfo._applicationBundleVersion
+_OBJC_IVAR_$_ROAMAppInfo._deviceId
+_OBJC_IVAR_$_ROAMAppInfo._runtimeEnvironment
+_OBJC_IVAR_$_ROAMAppInfo._options
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMAppInfo.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMAppInfo.h
+-[ROAMBeaconResolveRequest resolveBeaconWithUUID:major:minor:location:completionHandler:]
+___89-[ROAMBeaconResolveRequest resolveBeaconWithUUID:major:minor:location:completionHandler:]_block_invoke
+___89-[ROAMBeaconResolveRequest resolveBeaconWithUUID:major:minor:location:completionHandler:]_block_invoke.40
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconResolveRequest.m
+__89-[ROAMBeaconResolveRequest resolveBeaconWithUUID:major:minor:location:completionHandler:]_block_invoke.40
+__89-[ROAMBeaconResolveRequest resolveBeaconWithUUID:major:minor:location:completionHandler:]_block_invoke
+-[ROAMNearbyBeacon identifier]
+-[ROAMNearbyBeacon setIdentifier:]
+-[ROAMNearbyBeacon name]
+-[ROAMNearbyBeacon setName:]
+-[ROAMNearbyBeacon placeName]
+-[ROAMNearbyBeacon setPlaceName:]
+-[ROAMNearbyBeacon placeIdentifier]
+-[ROAMNearbyBeacon setPlaceIdentifier:]
+-[ROAMNearbyBeacon coordinate]
+-[ROAMNearbyBeacon setCoordinate:]
+-[ROAMNearbyBeacon owned]
+-[ROAMNearbyBeacon setOwned:]
+-[ROAMNearbyBeacon resolved]
+-[ROAMNearbyBeacon setResolved:]
+-[ROAMNearbyBeacon expiry]
+-[ROAMNearbyBeacon setExpiry:]
+-[ROAMNearbyBeacon .cxx_destruct]
+_OBJC_IVAR_$_ROAMNearbyBeacon._identifier
+_OBJC_IVAR_$_ROAMNearbyBeacon._name
+_OBJC_IVAR_$_ROAMNearbyBeacon._placeName
+_OBJC_IVAR_$_ROAMNearbyBeacon._placeIdentifier
+_OBJC_IVAR_$_ROAMNearbyBeacon._coordinate
+_OBJC_IVAR_$_ROAMNearbyBeacon._owned
+_OBJC_IVAR_$_ROAMNearbyBeacon._resolved
+_OBJC_IVAR_$_ROAMNearbyBeacon._expiry
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyBeacon.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMNearbyBeacon.h
+-[ROAMBeaconVisitManager initRegionRepository:regionVisitRepository:eventLogManager:]
+-[ROAMBeaconVisitManager dealloc]
+-[ROAMBeaconVisitManager didStartMonitoringRegion:]
+-[ROAMBeaconVisitManager didStopMonitoringRegion:]
+-[ROAMBeaconVisitManager locationManager:didStartMonitoringForRegion:]
+-[ROAMBeaconVisitManager locationManager:monitoringDidFailForRegion:withError:]
+-[ROAMBeaconVisitManager locationManager:didDetermineState:forRegion:]
+-[ROAMBeaconVisitManager isFullyQualifiedBeaconRegion:]
+-[ROAMBeaconVisitManager beaconRegionForRegion:]
+-[ROAMBeaconVisitManager processEntryToRegion:]
+-[ROAMBeaconVisitManager processExitToRegion:]
+-[ROAMBeaconVisitManager updateVisit:byAddingSignalID:]
+-[ROAMBeaconVisitManager updateVisit:byRemovingSignalID:]
+-[ROAMBeaconVisitManager delegate]
+-[ROAMBeaconVisitManager setDelegate:]
+-[ROAMBeaconVisitManager regionRepository]
+-[ROAMBeaconVisitManager setRegionRepository:]
+-[ROAMBeaconVisitManager regionVisitRepository]
+-[ROAMBeaconVisitManager setRegionVisitRepository:]
+-[ROAMBeaconVisitManager eventLogManager]
+-[ROAMBeaconVisitManager setEventLogManager:]
+-[ROAMBeaconVisitManager locationManager]
+-[ROAMBeaconVisitManager setLocationManager:]
+-[ROAMBeaconVisitManager .cxx_destruct]
+_OBJC_IVAR_$_ROAMBeaconVisitManager._delegate
+_OBJC_IVAR_$_ROAMBeaconVisitManager._regionRepository
+_OBJC_IVAR_$_ROAMBeaconVisitManager._regionVisitRepository
+_OBJC_IVAR_$_ROAMBeaconVisitManager._eventLogManager
+_OBJC_IVAR_$_ROAMBeaconVisitManager._locationManager
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconVisitManager.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMBeaconVisitManager.h
+-[ROAMPlaceVisit initWithCoder:]
+-[ROAMPlaceVisit encodeWithCoder:]
++[ROAMPlaceVisit supportsSecureCoding]
+-[ROAMPlaceVisit JSONDictionary]
+-[ROAMPlaceVisit description]
+-[ROAMPlaceVisit placeIdentifier]
+-[ROAMPlaceVisit setPlaceIdentifier:]
+-[ROAMPlaceVisit placeName]
+-[ROAMPlaceVisit setPlaceName:]
+-[ROAMPlaceVisit placeAccountIdentifier]
+-[ROAMPlaceVisit setPlaceAccountIdentifier:]
+-[ROAMPlaceVisit parentPlaceIdentifier]
+-[ROAMPlaceVisit setParentPlaceIdentifier:]
+-[ROAMPlaceVisit .cxx_destruct]
+_OBJC_IVAR_$_ROAMPlaceVisit._placeIdentifier
+_OBJC_IVAR_$_ROAMPlaceVisit._placeName
+_OBJC_IVAR_$_ROAMPlaceVisit._placeAccountIdentifier
+_OBJC_IVAR_$_ROAMPlaceVisit._parentPlaceIdentifier
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisit.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Sources/ROAMPlaceVisit.h
+/Users/Mohammad/Library/Developer/Xcode/DerivedData/Roam-eidujkkbdzoaafgnfcgvgteazspa/Build/Intermediates.noindex/DependentBuilds/Roam.build/Release-iphoneos/Roam.build/DerivedSources/Roam_vers.c
+/Users/Mohammad/dev/verve/roam-sdk-ios/Pods/Target Support Files/Pods-Roam/Pods-Roam-dummy.m
+/Users/Mohammad/dev/verve/roam-sdk-ios/Pods

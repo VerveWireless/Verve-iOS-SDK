@@ -1,0 +1,6 @@
+framework module Roam {
+  umbrella header "Roam.h"
+
+  export *
+  module * { export * }
+}
