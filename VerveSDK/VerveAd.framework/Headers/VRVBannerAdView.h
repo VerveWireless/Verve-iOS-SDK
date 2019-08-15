@@ -76,6 +76,14 @@ NS_SWIFT_NAME(BannerAdView)
 - (void)loadAdForZone:(nullable NSString *)zone;
 
 /**
+ * Loads a banner ad. The ad will appear in the banner ad view object as soon as it is ready.
+ *
+ * @param zone The zone associated with the relevant ad
+ * @param markup The ad markup to be used
+ */
+- (void)loadAdForZone:(nullable NSString *)zone markup:(nullable NSString *)markup;
+
+/**
  * This optional method is used for ads that have special behavior associated with the scrolling of a scroll view. This method should be called in the scrollViewDidScroll: delegate method.
  *
  * @param scrollView The view whose scrolling should cause the ad to trigger

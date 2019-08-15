@@ -22,6 +22,7 @@ Apple LLVM version 10.0.1 (clang-1001.0.46.4)
 -[VRVClickOutViewController formatWebview]
 -[VRVClickOutViewController loadClickOutUrl]
 -[VRVClickOutViewController doneButtonTapped:]
+-[VRVClickOutViewController webView:decidePolicyForNavigationAction:decisionHandler:]
 -[VRVClickOutViewController brandNameLabel]
 -[VRVClickOutViewController setBrandNameLabel:]
 -[VRVClickOutViewController brandName]
@@ -39,6 +40,10 @@ _OBJC_IVAR_$_VRVClickOutViewController._brandName
 _OBJC_IVAR_$_VRVClickOutViewController._brandNameLabel
 _OBJC_IVAR_$_VRVClickOutViewController._doneButton
 _OBJC_IVAR_$_VRVClickOutViewController._url
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_WKNavigationDelegate
+l_OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVClickOutViewController.m
 -[VRVFSAd initFromAd:]
 -[VRVFSAd rewarded]
@@ -68,13 +73,11 @@ _sharedInstance.onceToken
 ___block_descriptor_32_e5_v8@?0l
 ___block_literal_global
 _OBJC_IVAR_$_VRVInterstitialAd._delegate
-l_OBJC_PROTOCOL_$_NSObject
-l_OBJC_LABEL_PROTOCOL_$_NSObject
 l_OBJC_PROTOCOL_$_VRVFSAdDelegate
 l_OBJC_LABEL_PROTOCOL_$_VRVFSAdDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVInterstitialAd.m
 __35+[VRVInterstitialAd sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/dispatch/once.h
 +[VRVManifestHandler sharedHandler]
 ___35+[VRVManifestHandler sharedHandler]_block_invoke
 -[VRVManifestHandler init]
@@ -494,7 +497,6 @@ __31+[VRVFSAdHandler sharedHandler]_block_invoke
 -[VRVBannerAdView dealloc]
 -[VRVBannerAdView setBannerSizeFromAdSize:]
 -[VRVBannerAdView calculateBannerSizeForAdSize:]
--[VRVBannerAdView calculateHeightForWidth:andAdSize:]
 -[VRVBannerAdView addObservers]
 -[VRVBannerAdView observeValueForKeyPath:ofObject:change:context:]
 -[VRVBannerAdView checkVisibilityAndSendToBridge]
@@ -502,8 +504,9 @@ ___49-[VRVBannerAdView checkVisibilityAndSendToBridge]_block_invoke
 -[VRVBannerAdView informBannerAdOfScrollViewEvent:]
 -[VRVBannerAdView setWebviewSize]
 -[VRVBannerAdView loadAdForZone:]
-___33-[VRVBannerAdView loadAdForZone:]_block_invoke
-___33-[VRVBannerAdView loadAdForZone:]_block_invoke.132
+-[VRVBannerAdView loadAdForZone:markup:]
+___40-[VRVBannerAdView loadAdForZone:markup:]_block_invoke
+___40-[VRVBannerAdView loadAdForZone:markup:]_block_invoke.129
 -[VRVBannerAdView fireAdReadyForZone:]
 ___38-[VRVBannerAdView fireAdReadyForZone:]_block_invoke
 -[VRVBannerAdView fireAdFailedForZone:]
@@ -563,8 +566,8 @@ _OBJC_IVAR_$_VRVBannerAdView._heightConstraint
 __39-[VRVBannerAdView fireAdClosedForZone:]_block_invoke
 __39-[VRVBannerAdView fireAdFailedForZone:]_block_invoke
 __38-[VRVBannerAdView fireAdReadyForZone:]_block_invoke
-__33-[VRVBannerAdView loadAdForZone:]_block_invoke.132
-__33-[VRVBannerAdView loadAdForZone:]_block_invoke
+__40-[VRVBannerAdView loadAdForZone:markup:]_block_invoke.129
+__40-[VRVBannerAdView loadAdForZone:markup:]_block_invoke
 __49-[VRVBannerAdView checkVisibilityAndSendToBridge]_block_invoke
 +[VRVMacros sharedMacros]
 ___25+[VRVMacros sharedMacros]_block_invoke
@@ -589,7 +592,7 @@ __25+[VRVMacros sharedMacros]_block_invoke
 -[VRVUrlParser fillMacrosForString:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVUrlParser.m
 UIDeviceOrientationIsPortrait
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
 -[NSString(VRVValidation) isNotEmpty]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Categories/NSString+VRVValidation.m
 +[VRVRewardedAd sharedInstance]
@@ -714,12 +717,10 @@ _OBJC_IVAR_$_VRVAdWebView._bridge
 _OBJC_IVAR_$_VRVAdWebView._allowRedirect
 _OBJC_IVAR_$_VRVAdWebView._scrollInitialized
 _OBJC_IVAR_$_VRVAdWebView._loadedAd
-l_OBJC_PROTOCOL_$_WKNavigationDelegate
-l_OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.m
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.h
 UIInterfaceOrientationIsPortrait
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
 __23-[VRVAdWebView loadAd:]_block_invoke
 -[VRVManifest init]
 -[VRVManifest initWithTtl:developer:privacy:viewability:monitoring:performance:demandSources:vastTemplateURI:]
@@ -848,7 +849,7 @@ _OBJC_IVAR_$_VRVVastWorkflow._successBlock
 _OBJC_IVAR_$_VRVVastWorkflow._failureBlock
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VAST/VRVVastWorkflow.m
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke.84
 __59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke
 -[VRVBannerAd initFromAd:]
@@ -922,24 +923,34 @@ __62-[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]_block_invoke
 +[VRVBannerAdHandler sharedHandler]
 ___35+[VRVBannerAdHandler sharedHandler]_block_invoke
 -[VRVBannerAdHandler init]
--[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]
-___72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke
-___72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke_2
+-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke
+___copy_helper_block_e8_32s40s48b56b
+___destroy_helper_block_e8_32s40s48s56s
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.25
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.29
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.31
+-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]
+___69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32s40s48b
-___72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke.26
-___72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke.31
+___69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.50
 -[VRVBannerAdHandler loadedAds]
 -[VRVBannerAdHandler setLoadedAds:]
 -[VRVBannerAdHandler .cxx_destruct]
 _OBJC_IVAR_$_VRVBannerAdHandler._loadedAds
+___block_descriptor_64_e8_32s40s48bs56bs_e15_v16@?0@"VRVAd"8l
+___block_descriptor_64_e8_32s40s48bs56bs_e21_v16@?0@"VRVBannerAd"8l
 ___block_descriptor_56_e8_32s40s48bs_e18_v16@?0@"NSString"8l
-___block_descriptor_56_e8_32s40bs48bs_e21_v16@?0@"VRVBannerAd"8l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Banner Ads/VRVBannerAdHandler.m
-__72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke.31
-__72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke.26
+__69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.50
 __copy_helper_block_e8_32s40s48b
-__72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke_2
-__72-[VRVBannerAdHandler loadBannerAdForZone:adSize:withSuccess:andFailure:]_block_invoke
+__69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.31
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.29
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.25
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48b56b
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke
 __35+[VRVBannerAdHandler sharedHandler]_block_invoke
 +[VRVNetworkClient makeJSONRequestWithURL:method:body:success:andFailure:]
 ___74+[VRVNetworkClient makeJSONRequestWithURL:method:body:success:andFailure:]_block_invoke
