@@ -148,7 +148,7 @@ To create a banner ad instantiate a VRVBannerAdView object using
                        andRootVC:(UIViewController *)rootVC;
 ```
 
-This view will automatically be sized to fit the width of the screen in portrait mode according to the following ratios for different VRVBannerAdSize's:
+This view will automatically be sized according to the following dimensions for different VRVBannerAdSize's:
 
 | Size          | Constant           | Description          |
 | ------------- |:------------------:| --------------------:|
@@ -216,7 +216,14 @@ Some ads will change behavior according to the scrolling of a view. To use this 
                                                                         attribute:NSLayoutAttributeBottom
                                                                        multiplier:1
                                                                          constant:0];
-        [self.view addConstraint:bottomBanner];
+        NSLayoutConstraint *centerBanner = [NSLayoutConstraint constraintWithItem:bannerAd
+                                                                        attribute:NSLayoutAttributeCenterX 
+                                                                        relatedBy:NSLayoutRelationEqual
+                                                                           toItem:self.view.layoutMarginsGuide 
+                                                                        attribute:NSLayoutAttributeCenterX
+                                                                       multiplier:1
+                                                                         constant:0];
+        [self.view addConstraints:@[bottomBanner, centerBanner]];
     }
 }
 
