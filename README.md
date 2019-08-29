@@ -1,7 +1,7 @@
 # Verve iOS SDK
 
 ## Integrating the SDK Framework
-The Ad SDK Supports iOS 10+
+Supports iOS 10 and above
 
 Add the provided framework files (Verve, VerveAd, and Roam) to your application by adding them as a Embedded Binaries to your target. You can do this by pressing the "+" button under the "Embedded Binaries" section under the "General" tab of your application's target or by dragging and dropping the framework file into this section. If dragging and dropping be sure to move the framework file into the same file as your Xcode project. Check "Copy Items If Needed" when prompted.
 
