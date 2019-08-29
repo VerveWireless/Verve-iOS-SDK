@@ -1,4 +1,4 @@
-# Verve-SDK-iOS
+# Verve iOS SDK
 
 ## Integrating the SDK Framework
 The Ad SDK Supports iOS 10+
