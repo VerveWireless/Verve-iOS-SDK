@@ -37,6 +37,14 @@ NS_SWIFT_NAME(InterstitialAdDelegate)
  */
 - (void)onInterstitialAdClosedForZone:(NSString *)zone;
 
+@optional
+/**
+ * Tells the delegate that the ad has loaded a clickout view
+ *
+ * @param zone The zone associated with the relevant ad
+ */
+- (void)onInterstitialAdClickedForZone:(NSString *)zone;
+
 @end
 
 NS_SWIFT_NAME(InterstitialAd)

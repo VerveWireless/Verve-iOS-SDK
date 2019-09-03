@@ -52,6 +52,14 @@ NS_SWIFT_NAME(BannerAdDelegate)
  */
 - (void)onBannerAd:(VRVBannerAdView *)bannerAd closedForZone:(NSString *)zone;
 
+@optional
+/**
+ * Tells the delegate that the ad has loaded a clickout view
+ *
+ * @param zone The zone associated with the relevant ad
+ */
+- (void)onBannerAdClickedForZone:(NSString *)zone;
+
 @end
 
 NS_SWIFT_NAME(BannerAdView)

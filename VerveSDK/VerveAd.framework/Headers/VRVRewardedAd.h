@@ -43,6 +43,14 @@ NS_SWIFT_NAME(RewardedAdDelegate)
  */
 - (void)onRewardedAdRewardedForZone:(NSString *)zone;
 
+@optional
+/**
+ * Tells the delegate that the ad has loaded a clickout view
+ *
+ * @param zone The zone associated with the relevant ad
+ */
+- (void)onRewardedAdClickedForZone:(NSString *)zone;
+
 @end
 
 NS_SWIFT_NAME(RewardedAd)

@@ -11,10 +11,11 @@ BCSymbolMap Version: 2.0
 _OBJC_IVAR_$_VRVMonitoring._logLevel
 _OBJC_IVAR_$_VRVMonitoring._url
 _OBJC_IVAR_$_VRVMonitoring._method
-Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Apple clang version 11.0.0 (clang-1100.0.32.5)
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVMonitoring.m
 /Users/samboyce/Documents/VerveSDK/VerveADSDK
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVMonitoring.h
+VerveAd/Manifest/Manifest Objects/VRVMonitoring.m
+VerveAd/Manifest/Manifest Objects/VRVMonitoring.h
 -[VRVClickOutViewController viewDidLoad]
 -[VRVClickOutViewController initWithBrand:andUrl:]
 -[VRVClickOutViewController formatBrandName]
@@ -22,7 +23,12 @@ Apple LLVM version 10.0.1 (clang-1001.0.46.4)
 -[VRVClickOutViewController formatWebview]
 -[VRVClickOutViewController loadClickOutUrl]
 -[VRVClickOutViewController doneButtonTapped:]
+___46-[VRVClickOutViewController doneButtonTapped:]_block_invoke
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
 -[VRVClickOutViewController webView:decidePolicyForNavigationAction:decisionHandler:]
+-[VRVClickOutViewController clickOutDelegate]
+-[VRVClickOutViewController setClickOutDelegate:]
 -[VRVClickOutViewController brandNameLabel]
 -[VRVClickOutViewController setBrandNameLabel:]
 -[VRVClickOutViewController brandName]
@@ -35,26 +41,36 @@ Apple LLVM version 10.0.1 (clang-1001.0.46.4)
 -[VRVClickOutViewController setUrl:]
 -[VRVClickOutViewController .cxx_destruct]
 ___clang_at_available_requires_core_foundation_framework
+___clang_at_available_requires_core_foundation_framework.cold.1
 _OBJC_IVAR_$_VRVClickOutViewController._webView
 _OBJC_IVAR_$_VRVClickOutViewController._brandName
 _OBJC_IVAR_$_VRVClickOutViewController._brandNameLabel
 _OBJC_IVAR_$_VRVClickOutViewController._doneButton
 _OBJC_IVAR_$_VRVClickOutViewController._url
-l_OBJC_PROTOCOL_$_NSObject
-l_OBJC_LABEL_PROTOCOL_$_NSObject
-l_OBJC_PROTOCOL_$_WKNavigationDelegate
-l_OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
+___block_descriptor_40_e8_32s_e5_v8?0l
+_OBJC_IVAR_$_VRVClickOutViewController._clickOutDelegate
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_WKNavigationDelegate
+__OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVClickOutViewController.m
+VerveAd/Ads/VRVClickOutViewController.m
+VerveAd/Ads/VRVClickOutViewController.h
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__46-[VRVClickOutViewController doneButtonTapped:]_block_invoke
 -[VRVFSAd initFromAd:]
 -[VRVFSAd rewarded]
 -[VRVFSAd setRewarded:]
 _OBJC_IVAR_$_VRVFSAd._rewarded
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAd.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAd.h
+VerveAd/Ads/Full Screen Ads/VRVFSAd.h
+VerveAd/Ads/Full Screen Ads/VRVFSAd.m
 +[VRVAdFactory generateAdFromDictionary:]
 +[VRVAdFactory generateVASTAdFromXML:mediaFileName:andTemplate:]
 +[VRVAdFactory parseMacroDictionaryIntoSDKVars:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdFactory.m
+VerveAd/Ads/VRVAdFactory.m
 +[VRVInterstitialAd sharedInstance]
 ___35+[VRVInterstitialAd sharedInstance]_block_invoke
 +[VRVInterstitialAd setInterstitialAdDelegate:appID:]
@@ -65,26 +81,27 @@ ___35+[VRVInterstitialAd sharedInstance]_block_invoke
 -[VRVInterstitialAd onFSAdReadyForZone:]
 -[VRVInterstitialAd onFSAdFailedForZone:]
 -[VRVInterstitialAd onFSAdClosedForZone:]
+-[VRVInterstitialAd onFSAdClickedForZone:]
 -[VRVInterstitialAd delegate]
 -[VRVInterstitialAd setDelegate:]
 -[VRVInterstitialAd .cxx_destruct]
 _sharedInstance.instance
 _sharedInstance.onceToken
-___block_descriptor_32_e5_v8@?0l
+___block_descriptor_32_e5_v8?0l
 ___block_literal_global
+__OBJC_PROTOCOL_$_VRVFSAdDelegate
+__OBJC_LABEL_PROTOCOL_$_VRVFSAdDelegate
 _OBJC_IVAR_$_VRVInterstitialAd._delegate
-l_OBJC_PROTOCOL_$_VRVFSAdDelegate
-l_OBJC_LABEL_PROTOCOL_$_VRVFSAdDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVInterstitialAd.m
+VerveAd/Public/VRVInterstitialAd.m
 __35+[VRVInterstitialAd sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/dispatch/once.h
 +[VRVManifestHandler sharedHandler]
 ___35+[VRVManifestHandler sharedHandler]_block_invoke
 -[VRVManifestHandler init]
 +[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]
 ___61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32b
-___destroy_helper_block_e8_32s
 ___61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke.28
 +[VRVManifestHandler manfiestIsValid]
 +[VRVManifestHandler resetManifest]
@@ -95,14 +112,14 @@ ___61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke.
 -[VRVManifestHandler .cxx_destruct]
 _sharedHandler.handler
 _sharedHandler.onceToken
-_OBJC_IVAR_$_VRVManifestHandler._expiryDate
-___block_descriptor_40_e8_32bs_e21_v16@?0@"VRVManifest"8l
-___block_descriptor_40_e8_32bs_e17_v16@?0@"NSError"8l
+___block_descriptor_40_e8_32bs_e21_v16?0"VRVManifest"8l
+___block_descriptor_40_e8_32bs_e17_v16?0"NSError"8l
 _OBJC_IVAR_$_VRVManifestHandler._manifest
+_OBJC_IVAR_$_VRVManifestHandler._expiryDate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestHandler.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestHandler.h
+VerveAd/Manifest/VRVManifestHandler.m
+VerveAd/Manifest/VRVManifestHandler.h
 __61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke.28
-__destroy_helper_block_e8_32s
 __copy_helper_block_e8_32b
 __61+[VRVManifestHandler retrieveManifestWithSuccess:andFailure:]_block_invoke
 __35+[VRVManifestHandler sharedHandler]_block_invoke
@@ -185,9 +202,10 @@ _StringCacheKeyHashCallBack
 -[VRV_GDataXMLDocument setCharacterEncoding:]
 -[VRV_GDataXMLDocument nodesForXPath:error:]
 -[VRV_GDataXMLDocument nodesForXPath:namespaces:error:]
-l_OBJC_PROTOCOL_$_NSCopying
-l_OBJC_LABEL_PROTOCOL_$_NSCopying
+__OBJC_PROTOCOL_$_NSCopying
+__OBJC_LABEL_PROTOCOL_$_NSCopying
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VAST/XML Support/GDataXMLNode.m
+VerveAd/Ads/VAST/XML Support/GDataXMLNode.m
 StringCacheKeyHashCallBack
 StringCacheKeyEqualCallBack
 StringCacheKeyCopyDescriptionCallBack
@@ -213,7 +231,6 @@ ___31+[VRVDeviceInfo sharedInstance]_block_invoke
 -[VRVDeviceInfo constructUserAgent]
 -[VRVDeviceInfo getWebviewUserAgent]
 ___36-[VRVDeviceInfo getWebviewUserAgent]_block_invoke
-___copy_helper_block_e8_32s
 -[VRVDeviceInfo getAdvertiserId]
 -[VRVDeviceInfo getAdTracking]
 -[VRVDeviceInfo getName]
@@ -268,7 +285,9 @@ ___copy_helper_block_e8_32s
 -[VRVDeviceInfo adTrackingIsBlocked]
 -[VRVDeviceInfo setAdTrackingIsBlocked:]
 -[VRVDeviceInfo .cxx_destruct]
+___block_descriptor_40_e8_32s_e20_v24?08"NSError"16l
 _OBJC_IVAR_$_VRVDeviceInfo._restricted
+_OBJC_IVAR_$_VRVDeviceInfo._adTrackingIsBlocked
 _OBJC_IVAR_$_VRVDeviceInfo._appSessionId
 _OBJC_IVAR_$_VRVDeviceInfo._carrier
 _OBJC_IVAR_$_VRVDeviceInfo._ipAddress
@@ -276,19 +295,17 @@ _OBJC_IVAR_$_VRVDeviceInfo._model
 _OBJC_IVAR_$_VRVDeviceInfo._appName
 _OBJC_IVAR_$_VRVDeviceInfo._width
 _OBJC_IVAR_$_VRVDeviceInfo._height
-_OBJC_IVAR_$_VRVDeviceInfo._version
-_OBJC_IVAR_$_VRVDeviceInfo._constructedUserAgent
-_OBJC_IVAR_$_VRVDeviceInfo._testWebview
-_OBJC_IVAR_$_VRVDeviceInfo._adId
-_OBJC_IVAR_$_VRVDeviceInfo._adTrackingIsBlocked
-_OBJC_IVAR_$_VRVDeviceInfo._language
 _OBJC_IVAR_$_VRVDeviceInfo._dpi
-_OBJC_IVAR_$_VRVDeviceInfo._name
-___block_descriptor_40_e8_32s_e20_v24@?0@8@"NSError"16l
+_OBJC_IVAR_$_VRVDeviceInfo._version
+_OBJC_IVAR_$_VRVDeviceInfo._language
+_OBJC_IVAR_$_VRVDeviceInfo._constructedUserAgent
 _OBJC_IVAR_$_VRVDeviceInfo._webviewUserAgent
+_OBJC_IVAR_$_VRVDeviceInfo._adId
+_OBJC_IVAR_$_VRVDeviceInfo._name
+_OBJC_IVAR_$_VRVDeviceInfo._testWebview
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVDeviceInfo.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVDeviceInfo.h
-__copy_helper_block_e8_32s
+VerveAd/Ads/Macros/VRVDeviceInfo.m
+VerveAd/Ads/Macros/VRVDeviceInfo.h
 __36-[VRVDeviceInfo getWebviewUserAgent]_block_invoke
 __31+[VRVDeviceInfo sharedInstance]_block_invoke
 -[VRVAd init]
@@ -296,6 +313,7 @@ __31+[VRVDeviceInfo sharedInstance]_block_invoke
 -[VRVAd adIsValid]
 -[VRVAd adClosed]
 -[VRVAd adRewarded]
+-[VRVAd adClicked]
 -[VRVAd sdkType]
 -[VRVAd setSdkType:]
 -[VRVAd creativeTag]
@@ -325,6 +343,7 @@ __31+[VRVDeviceInfo sharedInstance]_block_invoke
 -[VRVAd zone]
 -[VRVAd setZone:]
 -[VRVAd .cxx_destruct]
+_OBJC_IVAR_$_VRVAd._isVast
 _OBJC_IVAR_$_VRVAd._sdkType
 _OBJC_IVAR_$_VRVAd._creativeTag
 _OBJC_IVAR_$_VRVAd._assets
@@ -332,16 +351,18 @@ _OBJC_IVAR_$_VRVAd._adCopy
 _OBJC_IVAR_$_VRVAd._flags
 _OBJC_IVAR_$_VRVAd._trackers
 _OBJC_IVAR_$_VRVAd._payload
+_OBJC_IVAR_$_VRVAd._html
 _OBJC_IVAR_$_VRVAd._fullAd
-_OBJC_IVAR_$_VRVAd._isVast
 _OBJC_IVAR_$_VRVAd._xml
 _OBJC_IVAR_$_VRVAd._mediaFile
-_OBJC_IVAR_$_VRVAd._html
 _OBJC_IVAR_$_VRVAd._delegate
 _OBJC_IVAR_$_VRVAd._zone
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAd.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAd.h
+VerveAd/Ads/VRVAd.m
+VerveAd/Ads/VRVAd.h
 -[VRVFSAdViewController viewWillAppear:]
+-[VRVFSAdViewController presentationControllerDidDismiss:]
+-[VRVFSAdViewController clickOutDismissed:]
 -[VRVFSAdViewController dealloc]
 -[VRVFSAdViewController loadWebView:forViewController:]
 -[VRVFSAdViewController viewWillTransitionToSize:withTransitionCoordinator:]
@@ -358,12 +379,19 @@ ___52-[VRVFSAdViewController openUrl:actionSentByBridge:]_block_invoke
 -[VRVFSAdViewController sendBridgeMessageFromNotification:]
 -[VRVFSAdViewController loadedWebView]
 -[VRVFSAdViewController setLoadedWebView:]
+-[VRVFSAdViewController clickOutVC]
+-[VRVFSAdViewController setClickOutVC:]
 -[VRVFSAdViewController .cxx_destruct]
-___block_descriptor_40_e8_32s_e5_v8@?0l
 _OBJC_IVAR_$_VRVFSAdViewController._loadedWebView
-l_OBJC_PROTOCOL_$_VRVBridgeDelegate
-l_OBJC_LABEL_PROTOCOL_$_VRVBridgeDelegate
+_OBJC_IVAR_$_VRVFSAdViewController._clickOutVC
+__OBJC_PROTOCOL_$_VRVBridgeDelegate
+__OBJC_LABEL_PROTOCOL_$_VRVBridgeDelegate
+__OBJC_PROTOCOL_$_VRVClickOutDelegate
+__OBJC_LABEL_PROTOCOL_$_VRVClickOutDelegate
+__OBJC_PROTOCOL_$_UIAdaptivePresentationControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_UIAdaptivePresentationControllerDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAdViewController.m
+VerveAd/Ads/Full Screen Ads/VRVFSAdViewController.m
 __52-[VRVFSAdViewController openUrl:actionSentByBridge:]_block_invoke
 +[VRVOMHandler sharedHandler]
 ___29+[VRVOMHandler sharedHandler]_block_invoke
@@ -385,13 +413,14 @@ ___destroy_helper_block_e8_32s40s48r
 -[VRVOMHandler webviews]
 -[VRVOMHandler setWebviews:]
 -[VRVOMHandler .cxx_destruct]
+___block_descriptor_56_e8_32s40s48r_e17_v16?0"NSTimer"8l
 _OBJC_IVAR_$_VRVOMHandler._sdkStarted
 _OBJC_IVAR_$_VRVOMHandler._partner
 _OBJC_IVAR_$_VRVOMHandler._omidSessions
 _OBJC_IVAR_$_VRVOMHandler._webviews
-___block_descriptor_56_e8_32s40s48r_e17_v16@?0@"NSTimer"8l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVOMHandler.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVOMHandler.h
+VerveAd/VRVOMHandler.m
+VerveAd/VRVOMHandler.h
 __destroy_helper_block_e8_32s40s48r
 __copy_helper_block_e8_32s40s48r
 __45-[VRVOMHandler destroyOMIDSessionForWebView:]_block_invoke
@@ -407,6 +436,7 @@ ___27+[VRVHandler sharedHandler]_block_invoke
 -[VRVHandler .cxx_destruct]
 _OBJC_IVAR_$_VRVHandler._context
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVHandler.m
+VerveAd/VRVHandler.m
 __27+[VRVHandler sharedHandler]_block_invoke
 -[VRVDeveloper init]
 -[VRVDeveloper initWithPublisherId:applicationId:applicationName:active:]
@@ -419,12 +449,13 @@ __27+[VRVHandler sharedHandler]_block_invoke
 -[VRVDeveloper active]
 -[VRVDeveloper setActive:]
 -[VRVDeveloper .cxx_destruct]
+_OBJC_IVAR_$_VRVDeveloper._active
 _OBJC_IVAR_$_VRVDeveloper._publisherId
 _OBJC_IVAR_$_VRVDeveloper._applicationId
 _OBJC_IVAR_$_VRVDeveloper._applicationName
-_OBJC_IVAR_$_VRVDeveloper._active
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVDeveloper.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVDeveloper.h
+VerveAd/Manifest/Manifest Objects/VRVDeveloper.m
+VerveAd/Manifest/Manifest Objects/VRVDeveloper.h
 +[VRVReachability reachabilityWithHostName:]
 +[VRVReachability reachabilityWithAddress:]
 +[VRVReachability reachabilityForInternetConnection]
@@ -437,6 +468,7 @@ _ReachabilityCallback
 -[VRVReachability currentReachabilityStatus]
 _OBJC_IVAR_$_VRVReachability._reachabilityRef
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Macros/VRVReachability.m
+VerveAd/Macros/VRVReachability.m
 ReachabilityCallback
 +[VRVFSAdHandler sharedHandler]
 ___31+[VRVFSAdHandler sharedHandler]_block_invoke
@@ -446,12 +478,12 @@ ___31+[VRVFSAdHandler sharedHandler]_block_invoke
 ___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke
 ___copy_helper_block_e8_32s40s
 ___destroy_helper_block_e8_32s40s
-___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.47
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.45
+___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.51
 ___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.53
-___50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.55
 -[VRVFSAdHandler processFSAd:forZone:rewarded:]
 ___47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke
-___47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.100
+___47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.98
 -[VRVFSAdHandler processFSAdFailureInZone:rewarded:]
 -[VRVFSAdHandler showFSAdForZone:rewarded:]
 ___43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
@@ -459,6 +491,7 @@ ___43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
 -[VRVFSAdHandler fireAdReadyForZone:rewarded:]
 -[VRVFSAdHandler adWillCloseInZone:]
 -[VRVFSAdHandler adRewardedForZone:]
+-[VRVFSAdHandler adClickedForZone:]
 -[VRVFSAdHandler interstitialDelegate]
 -[VRVFSAdHandler setInterstitialDelegate:]
 -[VRVFSAdHandler rewardedDelegate]
@@ -470,25 +503,26 @@ ___43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
 -[VRVFSAdHandler interstitialRootVC]
 -[VRVFSAdHandler setInterstitialRootVC:]
 -[VRVFSAdHandler .cxx_destruct]
-_OBJC_IVAR_$_VRVFSAdHandler._loadedAds
-___block_descriptor_49_e8_32s40s_e15_v16@?0@"VRVAd"8l
-___block_descriptor_49_e8_32s40s_e17_v16@?0@"NSError"8l
-___block_descriptor_49_e8_32s40s_e17_v16@?0@"VRVFSAd"8l
-___block_descriptor_49_e8_32s40s_e18_v16@?0@"NSString"8l
-___block_descriptor_48_e8_32s40s_e5_v8@?0l
+___block_descriptor_49_e8_32s40s_e15_v16?0"VRVAd"8l
+___block_descriptor_49_e8_32s40s_e17_v16?0"NSError"8l
+___block_descriptor_49_e8_32s40s_e17_v16?0"VRVFSAd"8l
+___block_descriptor_49_e8_32s40s_e18_v16?0"NSString"8l
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+__OBJC_PROTOCOL_$_VRVAdDelegate
+__OBJC_LABEL_PROTOCOL_$_VRVAdDelegate
 _OBJC_IVAR_$_VRVFSAdHandler._interstitialDelegate
 _OBJC_IVAR_$_VRVFSAdHandler._rewardedDelegate
+_OBJC_IVAR_$_VRVFSAdHandler._loadedAds
 _OBJC_IVAR_$_VRVFSAdHandler._rewardedRootVC
 _OBJC_IVAR_$_VRVFSAdHandler._interstitialRootVC
-l_OBJC_PROTOCOL_$_VRVAdDelegate
-l_OBJC_LABEL_PROTOCOL_$_VRVAdDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Full Screen Ads/VRVFSAdHandler.m
+VerveAd/Ads/Full Screen Ads/VRVFSAdHandler.m
 __43-[VRVFSAdHandler showFSAdForZone:rewarded:]_block_invoke
-__47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.100
+__47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke.98
 __47-[VRVFSAdHandler processFSAd:forZone:rewarded:]_block_invoke
-__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.55
 __50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.53
-__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.47
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.51
+__50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke.45
 __destroy_helper_block_e8_32s40s
 __copy_helper_block_e8_32s40s
 __50-[VRVFSAdHandler loadFSAdForZone:markup:rewarded:]_block_invoke
@@ -558,11 +592,12 @@ _OBJC_IVAR_$_VRVBannerAdView._impressionSent
 _OBJC_IVAR_$_VRVBannerAdView._touchIgnoreZone
 _OBJC_IVAR_$_VRVBannerAdView._defaultHeight
 _OBJC_IVAR_$_VRVBannerAdView._adSizeForMacro
-___block_descriptor_48_e8_32s40s_e15_v16@?0@"VRVAd"8l
-___block_descriptor_48_e8_32s40s_e17_v16@?0@"NSError"8l
+___block_descriptor_48_e8_32s40s_e15_v16?0"VRVAd"8l
+___block_descriptor_48_e8_32s40s_e17_v16?0"NSError"8l
 _OBJC_IVAR_$_VRVBannerAdView._scrollView
 _OBJC_IVAR_$_VRVBannerAdView._heightConstraint
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVBannerAdView.m
+VerveAd/Public/VRVBannerAdView.m
 __39-[VRVBannerAdView fireAdClosedForZone:]_block_invoke
 __39-[VRVBannerAdView fireAdFailedForZone:]_block_invoke
 __38-[VRVBannerAdView fireAdReadyForZone:]_block_invoke
@@ -584,6 +619,7 @@ _sharedMacros.macros
 _sharedMacros.onceToken
 _OBJC_IVAR_$_VRVMacros._macroDict
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVMacros.m
+VerveAd/Ads/Macros/VRVMacros.m
 __25+[VRVMacros sharedMacros]_block_invoke
 -[VRVUrlParser fillMacrosForUrl:withIndividualMacros:]
 -[VRVUrlParser createRandString]
@@ -591,10 +627,12 @@ __25+[VRVMacros sharedMacros]_block_invoke
 -[VRVUrlParser createOrientationString]
 -[VRVUrlParser fillMacrosForString:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVUrlParser.m
+VerveAd/Ads/Macros/VRVUrlParser.m
 UIDeviceOrientationIsPortrait
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
 -[NSString(VRVValidation) isNotEmpty]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Categories/NSString+VRVValidation.m
+VerveAd/Categories/NSString+VRVValidation.m
 +[VRVRewardedAd sharedInstance]
 ___31+[VRVRewardedAd sharedInstance]_block_invoke
 +[VRVRewardedAd setRewardedAdDelegate:appID:]
@@ -606,11 +644,13 @@ ___31+[VRVRewardedAd sharedInstance]_block_invoke
 -[VRVRewardedAd onFSAdFailedForZone:]
 -[VRVRewardedAd onFSAdClosedForZone:]
 -[VRVRewardedAd onFSAdRewardedForZone:]
+-[VRVRewardedAd onFSAdClickedForZone:]
 -[VRVRewardedAd delegate]
 -[VRVRewardedAd setDelegate:]
 -[VRVRewardedAd .cxx_destruct]
 _OBJC_IVAR_$_VRVRewardedAd._delegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Public/VRVRewardedAd.m
+VerveAd/Public/VRVRewardedAd.m
 __31+[VRVRewardedAd sharedInstance]_block_invoke
 +[VRVManifestFactory createManifestFromDictionary:]
 +[VRVManifestFactory createDeveloperFromDictionary:]
@@ -621,6 +661,7 @@ __31+[VRVRewardedAd sharedInstance]_block_invoke
 +[VRVManifestFactory createDemandSourcesFromDictionary:]
 +[VRVManifestFactory createDemandSourceFromDictionary:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestFactory.m
+VerveAd/Manifest/VRVManifestFactory.m
 -[VRVDemandSource init]
 -[VRVDemandSource initWithSource:rank:timeout:autofetch:url:]
 -[VRVDemandSource source]
@@ -634,13 +675,14 @@ __31+[VRVRewardedAd sharedInstance]_block_invoke
 -[VRVDemandSource url]
 -[VRVDemandSource setUrl:]
 -[VRVDemandSource .cxx_destruct]
+_OBJC_IVAR_$_VRVDemandSource._autofetch
 _OBJC_IVAR_$_VRVDemandSource._source
 _OBJC_IVAR_$_VRVDemandSource._rank
 _OBJC_IVAR_$_VRVDemandSource._timeout
-_OBJC_IVAR_$_VRVDemandSource._autofetch
 _OBJC_IVAR_$_VRVDemandSource._url
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.h
+VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.m
+VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSource.h
 -[VRVViewability init]
 -[VRVViewability initWithName:active:included:]
 -[VRVViewability name]
@@ -650,11 +692,12 @@ _OBJC_IVAR_$_VRVDemandSource._url
 -[VRVViewability included]
 -[VRVViewability setIncluded:]
 -[VRVViewability .cxx_destruct]
-_OBJC_IVAR_$_VRVViewability._name
 _OBJC_IVAR_$_VRVViewability._active
 _OBJC_IVAR_$_VRVViewability._included
+_OBJC_IVAR_$_VRVViewability._name
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVViewability.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVViewability.h
+VerveAd/Manifest/Manifest Objects/VRVViewability.m
+VerveAd/Manifest/Manifest Objects/VRVViewability.h
 +[VRVLocationService sharedService]
 ___35+[VRVLocationService sharedService]_block_invoke
 +[VRVLocationService makeLocationRequest]
@@ -669,10 +712,11 @@ ___41+[VRVLocationService makeLocationRequest]_block_invoke
 _sharedService.service
 _sharedService.onceToken
 ___block_literal_global.3
+__OBJC_PROTOCOL_$_CLLocationManagerDelegate
+__OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
 _OBJC_IVAR_$_VRVLocationService._manager
-l_OBJC_PROTOCOL_$_CLLocationManagerDelegate
-l_OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Macros/VRVLocationService.m
+VerveAd/Ads/Macros/VRVLocationService.m
 __41+[VRVLocationService makeLocationRequest]_block_invoke
 __35+[VRVLocationService sharedService]_block_invoke
 -[VRVPerformance init]
@@ -688,7 +732,8 @@ _OBJC_IVAR_$_VRVPerformance._logLevel
 _OBJC_IVAR_$_VRVPerformance._url
 _OBJC_IVAR_$_VRVPerformance._method
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPerformance.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPerformance.h
+VerveAd/Manifest/Manifest Objects/VRVPerformance.m
+VerveAd/Manifest/Manifest Objects/VRVPerformance.h
 -[VRVAdWebView init]
 -[VRVAdWebView loadAd:]
 ___23-[VRVAdWebView loadAd:]_block_invoke
@@ -718,9 +763,10 @@ _OBJC_IVAR_$_VRVAdWebView._allowRedirect
 _OBJC_IVAR_$_VRVAdWebView._scrollInitialized
 _OBJC_IVAR_$_VRVAdWebView._loadedAd
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdWebView.h
+VerveAd/Ads/VRVAdWebView.m
+VerveAd/Ads/VRVAdWebView.h
 UIInterfaceOrientationIsPortrait
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
 __23-[VRVAdWebView loadAd:]_block_invoke
 -[VRVManifest init]
 -[VRVManifest initWithTtl:developer:privacy:viewability:monitoring:performance:demandSources:vastTemplateURI:]
@@ -750,7 +796,8 @@ _OBJC_IVAR_$_VRVManifest._performance
 _OBJC_IVAR_$_VRVManifest._demandSources
 _OBJC_IVAR_$_VRVManifest._vastTemplateURI
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVManifest.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVManifest.h
+VerveAd/Manifest/Manifest Objects/VRVManifest.m
+VerveAd/Manifest/Manifest Objects/VRVManifest.h
 +[VRVTrackerHandler sharedHandler]
 ___34+[VRVTrackerHandler sharedHandler]_block_invoke
 -[VRVTrackerHandler init]
@@ -761,11 +808,12 @@ ___41+[VRVTrackerHandler sendTrackerForEvent:]_block_invoke.48
 -[VRVTrackerHandler monitoring]
 -[VRVTrackerHandler setMonitoring:]
 -[VRVTrackerHandler .cxx_destruct]
-___block_descriptor_40_e8_32s_e21_v16@?0@"VRVManifest"8l
-___block_descriptor_32_e17_v16@?0@"NSError"8l
+___block_descriptor_40_e8_32s_e21_v16?0"VRVManifest"8l
+___block_descriptor_32_e17_v16?0"NSError"8l
 ___block_literal_global.50
 _OBJC_IVAR_$_VRVTrackerHandler._monitoring
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Trackers/VRVTrackerHandler.m
+VerveAd/Trackers/VRVTrackerHandler.m
 __41+[VRVTrackerHandler sendTrackerForEvent:]_block_invoke.48
 __41+[VRVTrackerHandler sendTrackerForEvent:]_block_invoke_2
 __41+[VRVTrackerHandler sendTrackerForEvent:]_block_invoke
@@ -773,6 +821,7 @@ __34+[VRVTrackerHandler sharedHandler]_block_invoke
 -[VRVTrackerClient sendTrackerEventToURL:andMethod:]
 -[VRVTrackerClient createRequestFromUrl:andMethod:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Trackers/VRVTrackerClient.m
+VerveAd/Trackers/VRVTrackerClient.m
 -[VRVPrivacy init]
 -[VRVPrivacy initWithCoppa:gdpr:]
 -[VRVPrivacy coppa]
@@ -782,13 +831,15 @@ __34+[VRVTrackerHandler sharedHandler]_block_invoke
 _OBJC_IVAR_$_VRVPrivacy._coppa
 _OBJC_IVAR_$_VRVPrivacy._gdpr
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPrivacy.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/VRVPrivacy.h
+VerveAd/Manifest/Manifest Objects/VRVPrivacy.h
+VerveAd/Manifest/Manifest Objects/VRVPrivacy.m
 -[VRVManifestClient getManifestWithSuccess:andFailure:]
 ___55-[VRVManifestClient getManifestWithSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32b40b
 -[VRVManifestClient createManifestBody]
-___block_descriptor_48_e8_32bs40bs_e22_v16@?0@"NSDictionary"8l
+___block_descriptor_48_e8_32bs40bs_e22_v16?0"NSDictionary"8l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/VRVManifestClient.m
+VerveAd/Manifest/VRVManifestClient.m
 __copy_helper_block_e8_32b40b
 __55-[VRVManifestClient getManifestWithSuccess:andFailure:]_block_invoke
 +[VRVLog sharedLogger]
@@ -805,7 +856,8 @@ _sharedLogger.logger
 _sharedLogger.onceToken
 _OBJC_IVAR_$_VRVLog._showLogs
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVLog.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVLog.h
+VerveAd/VRVLog.h
+VerveAd/VRVLog.m
 __22+[VRVLog sharedLogger]_block_invoke
 -[VRVDemandSources init]
 -[VRVDemandSources initWithWorkFlow:demandSources:]
@@ -817,7 +869,8 @@ __22+[VRVLog sharedLogger]_block_invoke
 _OBJC_IVAR_$_VRVDemandSources._workflow
 _OBJC_IVAR_$_VRVDemandSources._demandSources
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.h
+VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.m
+VerveAd/Manifest/Manifest Objects/DemandSource/VRVDemandSources.h
 -[VRVVastWorkflow processXMLData:withSuccess:andFailure:]
 -[VRVVastWorkflow workflowWithDoc:]
 -[VRVVastWorkflow verifyCorrectMediaTypeForDoc:]
@@ -840,20 +893,22 @@ ___59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke.84
 -[VRVVastWorkflow failureBlock]
 -[VRVVastWorkflow setFailureBlock:]
 -[VRVVastWorkflow .cxx_destruct]
-___block_descriptor_40_e8_32s_e16_v16@?0@"NSData"8l
-___block_descriptor_40_e8_32s_e17_v16@?0@"NSError"8l
+___block_descriptor_40_e8_32s_e16_v16?0"NSData"8l
+___block_descriptor_40_e8_32s_e17_v16?0"NSError"8l
 _OBJC_IVAR_$_VRVVastWorkflow._redirects
 _OBJC_IVAR_$_VRVVastWorkflow._vastAds
 _OBJC_IVAR_$_VRVVastWorkflow._mediaFileName
 _OBJC_IVAR_$_VRVVastWorkflow._successBlock
 _OBJC_IVAR_$_VRVVastWorkflow._failureBlock
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VAST/VRVVastWorkflow.m
+VerveAd/Ads/VAST/VRVVastWorkflow.m
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke.84
 __59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke
 -[VRVBannerAd initFromAd:]
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Banner Ads/VRVBannerAd.m
+VerveAd/Ads/Banner Ads/VRVBannerAd.m
 -[VRVBridge respondToBridgeAction:]
 -[VRVBridge getValueFromExpandAction:]
 -[VRVBridge getTouchFromExpandAction:]
@@ -874,7 +929,8 @@ __59-[VRVVastWorkflow addDocToAdArray:andGetNextAdFromTagNode:]_block_invoke
 -[VRVBridge .cxx_destruct]
 _OBJC_IVAR_$_VRVBridge._delegate
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVBridge.m
-/Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVBridge.h
+VerveAd/Ads/VRVBridge.m
+VerveAd/Ads/VRVBridge.h
 -[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]
 ___62-[VRVAdClient getFSAdForZone:rewarded:withSuccess:andFailure:]_block_invoke
 -[VRVAdClient getBannerAdForZone:adSize:withSuccess:andFailure:]
@@ -887,31 +943,32 @@ ___destroy_helper_block_e8_32s40s48s56s64s
 ___112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32s40s48s56s64b72b
 ___destroy_helper_block_e8_32s40s48s56s64s72s
-___112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.60
-___112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.63
+___112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.58
+___112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.61
 -[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]
 ___62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32s40b48b
 ___destroy_helper_block_e8_32s40s48s
-___62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.71
+___62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.69
 -[VRVAdClient generateAdFromData:success:andFailure:]
 ___53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke
-___53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.92
-___block_descriptor_40_e8_32bs_e15_v16@?0@"VRVAd"8l
-___block_descriptor_74_e8_32s40s48s56bs64bs_e21_v16@?0@"VRVManifest"8l
-___block_descriptor_82_e8_32s40s48s56s64bs72bs_e5_v8@?0l
-___block_descriptor_48_e8_32bs40bs_e15_v16@?0@"VRVAd"8l
-___block_descriptor_56_e8_32s40bs48bs_e16_v16@?0@"NSData"8l
-___block_descriptor_40_e8_32bs_e31_v24@?0@"NSString"8@"NSString"16l
+___53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.90
+___block_descriptor_40_e8_32bs_e15_v16?0"VRVAd"8l
+___block_descriptor_74_e8_32s40s48s56bs64bs_e21_v16?0"VRVManifest"8l
+___block_descriptor_82_e8_32s40s48s56s64bs72bs_e5_v8?0l
+___block_descriptor_48_e8_32bs40bs_e15_v16?0"VRVAd"8l
+___block_descriptor_56_e8_32s40bs48bs_e16_v16?0"NSData"8l
+___block_descriptor_40_e8_32bs_e31_v24?0"NSString"8"NSString"16l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/VRVAdClient.m
-__53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.92
+__53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke.90
+VerveAd/Ads/VRVAdClient.m
 __53-[VRVAdClient generateAdFromData:success:andFailure:]_block_invoke
-__62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.71
+__62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke.69
 __destroy_helper_block_e8_32s40s48s
 __copy_helper_block_e8_32s40b48b
 __62-[VRVAdClient getAdFromUrl:isBannerAd:withSuccess:andFailure:]_block_invoke
-__112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.63
-__112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.60
+__112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.61
+__112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke.58
 __destroy_helper_block_e8_32s40s48s56s64s72s
 __copy_helper_block_e8_32s40s48s56s64b72b
 __112-[VRVAdClient attemptToRetrieveAdFromDemandSources:forZone:isBannerAd:adSize:isRewarded:withSuccess:andFailure:]_block_invoke
@@ -927,27 +984,28 @@ ___35+[VRVBannerAdHandler sharedHandler]_block_invoke
 ___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32s40s48b56b
 ___destroy_helper_block_e8_32s40s48s56s
-___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.25
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.23
+___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.27
 ___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.29
-___79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.31
 -[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]
 ___69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke
 ___copy_helper_block_e8_32s40s48b
-___69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.50
+___69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.48
 -[VRVBannerAdHandler loadedAds]
 -[VRVBannerAdHandler setLoadedAds:]
 -[VRVBannerAdHandler .cxx_destruct]
+___block_descriptor_64_e8_32s40s48bs56bs_e15_v16?0"VRVAd"8l
+___block_descriptor_64_e8_32s40s48bs56bs_e21_v16?0"VRVBannerAd"8l
+___block_descriptor_56_e8_32s40s48bs_e18_v16?0"NSString"8l
 _OBJC_IVAR_$_VRVBannerAdHandler._loadedAds
-___block_descriptor_64_e8_32s40s48bs56bs_e15_v16@?0@"VRVAd"8l
-___block_descriptor_64_e8_32s40s48bs56bs_e21_v16@?0@"VRVBannerAd"8l
-___block_descriptor_56_e8_32s40s48bs_e18_v16@?0@"NSString"8l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/Ads/Banner Ads/VRVBannerAdHandler.m
-__69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.50
+VerveAd/Ads/Banner Ads/VRVBannerAdHandler.m
+__69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke.48
 __copy_helper_block_e8_32s40s48b
 __69-[VRVBannerAdHandler processBannerAd:forZone:withSuccess:andFailure:]_block_invoke
-__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.31
 __79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.29
-__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.25
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.27
+__79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke.23
 __destroy_helper_block_e8_32s40s48s56s
 __copy_helper_block_e8_32s40s48b56b
 __79-[VRVBannerAdHandler loadBannerAdForZone:markup:adSize:withSuccess:andFailure:]_block_invoke
@@ -959,8 +1017,9 @@ ___69+[VRVNetworkClient makeHTMLRequestWithURL:method:success:andFailure:]_block
 +[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]
 ___68+[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]_block_invoke
 +[VRVNetworkClient createRequestFromUrl:body:andMethod:]
-___block_descriptor_48_e8_32bs40bs_e46_v32@?0@"NSData"8@"NSURLResponse"16@"NSError"24l
+___block_descriptor_48_e8_32bs40bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 /Users/samboyce/Documents/VerveSDK/VerveADSDK/VerveAd/VRVNetworkClient.m
+VerveAd/VRVNetworkClient.m
 __68+[VRVNetworkClient makeURLRequestWithURL:method:success:andFailure:]_block_invoke
 __69+[VRVNetworkClient makeHTMLRequestWithURL:method:success:andFailure:]_block_invoke
 __74+[VRVNetworkClient makeJSONRequestWithURL:method:body:success:andFailure:]_block_invoke
@@ -1065,6 +1124,8 @@ __36+[OMIDVerveStateWatcher getInstance]_block_invoke
 -[OMIDVerveViewKey setView:]
 -[OMIDVerveViewKey .cxx_destruct]
 _OBJC_IVAR_$_OMIDVerveViewKey._view
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
 /Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewKey.m
 /Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDViewKey.h
 -[OMIDVerveEventFilter initWithFinalEventCode:]
@@ -1134,6 +1195,8 @@ __44-[OMIDVerveJSTimer setupMethodsForJSObject:]_block_invoke
 -[OMIDVerveWKWebViewJSExecutor injectJavaScriptFromString:]
 -[OMIDVerveWKWebViewJSExecutor .cxx_destruct]
 _OBJC_IVAR_$_OMIDVerveWKWebViewJSExecutor._webView
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
 l_OBJC_PROTOCOL_$_OMIDVerveJSExecutor
 l_OBJC_LABEL_PROTOCOL_$_OMIDVerveJSExecutor
 /Users/travis/build/InteractiveAdvertisingBureau/Open-Measurement-SDKiOS/temp/AppVerificationLibrary/OMIDWKWebViewJSExecutor.m

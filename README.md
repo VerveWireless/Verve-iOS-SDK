@@ -21,7 +21,7 @@ In your AppDelegate class you should import the Verve SDK with your other import
 ```
 
 ### Zones
-The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use specific "keywords" when making ad requests, these should be passed in the Zone field. 
+The zone field can be passed an arbitrary string or can be used to target ads in certain situations. If you were directed by a Verve representative to use specific "keywords" when making ad requests, these should be passed in the Zone field.
 
 Alternatively you can this string to group your data for reporting, just limit the string length to 100 characters. Also note the "|" character is a restricted character. A nil or NULL Zone will be treated as an empty string.
 
@@ -217,9 +217,9 @@ Some ads will change behavior according to the scrolling of a view. To use this 
                                                                        multiplier:1
                                                                          constant:0];
         NSLayoutConstraint *centerBanner = [NSLayoutConstraint constraintWithItem:bannerAd
-                                                                        attribute:NSLayoutAttributeCenterX 
+                                                                        attribute:NSLayoutAttributeCenterX
                                                                         relatedBy:NSLayoutRelationEqual
-                                                                           toItem:self.view.layoutMarginsGuide 
+                                                                           toItem:self.view.layoutMarginsGuide
                                                                         attribute:NSLayoutAttributeCenterX
                                                                        multiplier:1
                                                                          constant:0];
@@ -235,3 +235,38 @@ Some ads will change behavior according to the scrolling of a view. To use this 
 
 @end
 ```
+
+## Using Roam
+
+#### Required Location Permission Descriptions
+Roam requires the `Always` location authorization from the user in order to operate correctly. iOS requires you to describe why the location permission is required describing as well. This is accomplished by adding several description keys describing your location services usage. In your App's `Info.plist`, add the following three keys and values:
+```xml
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>[Your App] offers indoor navigation maps</string>
+
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>[Your App] offers indoor navigation maps</string>
+
+<key>NSLocationAlwaysUsageDescription</key>
+<string>[Your App] offers indoor navigation maps</string>
+```
+Follow Apple's [Guide to Requesting Always Authorization](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization?language=objc) for best practices on how and when you should ask for the location permission. The Roam SDK will not request the location permission for you by default unless you pass in a `true` value for the `InitializationOption.presentLocationPermissionAlert` option when initializing Roam.
+
+#### Enabling Roam
+
+Before enabling Roam, you should prompt for the `Always` location permission in order for Roam to operate. When the user is ready to use Roam enabled features, simply call:
+````swift
+Roam.sharedInstance().optIn()
+````
+
+#### Disabling Roam
+To stop monitoring:
+````swift
+Roam.sharedInstance().optOut()
+````
+
+#### Checking the Opt-In State
+The opt-in state is remembered across app launches. Use the following to see if the user is opted in:
+````swift
+Roam.sharedInstance().isOptedIn()
+````
