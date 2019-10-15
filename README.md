@@ -270,3 +270,10 @@ The opt-in state is remembered across app launches. Use the following to see if 
 ````swift
 Roam.sharedInstance().isOptedIn()
 ````
+
+## Adapters
+### Mopub
+The files to integrate Mopub can be found here: https://github.com/VerveWireless/iOS_SDK_mopubAdapter
+
+### Admob
+The files to integrate Admob can be found here: https://github.com/VerveWireless/iOS_SDK_admobAdapter
